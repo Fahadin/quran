@@ -5,7 +5,7 @@
     id          = "com.Fahadin.quransorif"
     versionCode = "1" 
     version     = "1.0.0" >
-   <name>Fahadin Calculator</name>
+   <name>Quran beta version</name>
     <description>
             A mobile quransorif application. 
     </description>
