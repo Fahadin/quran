@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আল ফাতিহা Page -->
+		<div id="sura1" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আল ফাতিহা</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon" refresh>Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 7</div>
+				<audio class="audio" controls>
+					<source src="audio/001.ogg" type="audio/ogg">
+					<source src="audio/001.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<p class="suraCount">1</p>
+					<div class="sura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+					<div class="meaning">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।<br>In the name of Allah, Most Gracious, Most Merciful.</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">الْحَمْدُ للّهِ رَبِّ الْعَالَمِينَ</div>
+					<div class="meaning">যাবতীয় প্রশংসা আল্লাহ তা’আলার যিনি সকল সৃষ্টি জগতের পালনকর্তা।<br>Be to Allah, the Cherisher and Sustainer of the worlds;</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">الرَّحْمـنِ الرَّحِيمِ</div>
+					<div class="meaning">যিনি নিতান্ত মেহেরবান ও দয়ালু।<br>Most Gracious, Most Merciful;</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">مَـالِكِ يَوْمِ الدِّينِ</div>
+					<div class="meaning">যিনি বিচার দিনের মালিক।<br>Master of the Day of Judgment.</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">إِيَّاكَ نَعْبُدُ وإِيَّاكَ نَسْتَعِينُ</div>
+					<div class="meaning">আমরা একমাত্র তোমারই ইবাদত করি এবং শুধুমাত্র তোমারই সাহায্য প্রার্থনা করি।<br>Thee do we worship, and Thine aid we seek.</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">اهدِنَــــا الصِّرَاطَ المُستَقِيمَ</div>
+					<div class="meaning">আমাদেরকে সরল পথ দেখাও,<br>Show us the straight way,</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">صِرَاطَ الَّذِينَ أَنعَمتَ عَلَيهِمْ غَيرِ المَغضُوبِ عَلَيهِمْ وَلاَ الضَّالِّينَ</div>
+					<div class="meaning">সে সমস্ত লোকের পথ, যাদেরকে তুমি নেয়ামত দান করেছ। তাদের পথ নয়, যাদের প্রতি তোমার গজব নাযিল হয়েছে এবং যারা পথভ্রষ্ট হয়েছে।<br>The way of those on whom Thou hast bestowed Thy Grace, those whose (portion) is not wrath, and who go not astray.</div>
+				</p>
+			</div>
+		</div>
+	</body>

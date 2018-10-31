@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.banner {
+				display: block;
+				width: 100%;
+			}
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			/* audio {
+				width: 80%;
+				margin: 10px 10%;
+				border-radius: 3px;
+				box-shadow: 0px 0px 5px #000;
+			} */
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.h3 {
+				margin: 0px 0px 3px 0px;
+			}
+			.h5 {
+				margin: 0px 0px 10px 0px;
+			}
+			.other {
+				color: #4f8ff7;
+				border: 1px solid #4f8ff7;
+				padding: 5px;
+				border-radius: 5px;
+				text-decoration: none;
+				margin-left: 25%;
+				width: 50%;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা List Page -->
+		<div id="suraitems" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>পবিত্র কুরআন সূরা</h1>
+				<a href="index.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura001.html">1) সূরা আল ফাতিহা</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura002.html">2) সূরা আল বাক্বারাহ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura003.html">3) সূরা আল ইমরান</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura004.html">4) সূরা আন নিসা</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura005.html">5) সূরা আল মায়েদাহ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura006.html">6) সূরা আল আন-আম</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura007.html">7) সূরা আল আ’রাফ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura008.html">8) সূরা আল-আনফাল</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura009.html">9) সূরা আত তাওবাহ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura010.html">10) সূরা ইউনুস</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura011.html">11) সূরা হুদ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura012.html">12) সূরা ইউসূফ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura013.html">13) সূরা রা’দ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura014.html">14) সূরা ইব্রাহীম</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura015.html">15) সূরা হিজর</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura016.html">16) সূরা নাহল</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura017.html">17) সূরা বনী ইসরাঈল</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura018.html">18) সূরা কাহফ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura019.html">19) সূরা মারইয়াম</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura020.html">20) সূরা ত্বোয়া-হা</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura021.html">21) সূরা আম্বিয়া</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura022.html">22) সূরা হাজ্জ্ব</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura023.html">23) সূরা আল মু’মিনূন</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura024.html">24) সূরা আন-নূর</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura025.html">25) সূরা আল-ফুরকান</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura026.html">26) সূরা আশ-শো’আরা</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura027.html">27) সূরা নমল</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura028.html">28) সূরা আল কাসাস</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura029.html">29) সূরা আল আনকাবুত</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura030.html">30) সূরা আর-রূম</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura031.html">31) সূরা লোকমান</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura032.html">32) সূরা সেজদাহ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura033.html">33) সূরা আল আহযাব</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura034.html">34) সূরা সাবা</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura035.html">35) সূরা ফাতির</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura036.html">36) সূরা ইয়াসীন</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura037.html">37) সূরা আস-সাফফাত</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura038.html">38) সূরা ছোয়াদ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura039.html">39) সূরা আল-যুমার</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura040.html">40) সূরা আল-মু’মিন</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura041.html">41) সূরা হা-মীম সেজদাহ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura042.html">42) সূরা আশ-শুরা</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura043.html">43) সূরা যুখরুফ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura044.html">44) সূরা আদ দোখান</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura045.html">45) সূরা আল জাসিয়া</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura046.html">46) সূরা আল আহক্বাফ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura047.html">47) সূরা মুহাম্মদ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura048.html">48) সূরা আল ফাতহ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura049.html">49) সূরা আল হুজরাত</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura050.html">50) সূরা ক্বাফ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura051.html">51) সূরা আয-যারিয়াত</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura052.html">52) সূরা আত্ব তূর</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura053.html">53) সূরা আন-নাজম</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura054.html">54) সূরা আল ক্বামার</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura055.html">55) সূরা আর রহমান</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura056.html">56) সূরা আল ওয়াক্বিয়া</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura057.html">57) সূরা আল হাদীদ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura058.html">58) সূরা আল মুজাদালাহ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura059.html">59) সূরা আল হাশর</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura060.html">60) সূরা আল মুমতাহিনা</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura061.html">61) সূরা আছ-ছফ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura062.html">62) সূরা আল জুমুআহ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura063.html">63) সূরা মুনাফিকুন</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura064.html">64) সূরা আত-তাগাবুন</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura065.html">65) সূরা আত্ব-ত্বালাক্ব</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura066.html">66) সূরা আত-তাহরীম</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura067.html">67) সূরা আল মুলক</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura068.html">68) সূরা আল কলম</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura069.html">69) সূরা আল হাক্বক্বাহ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura070.html">70) সূরা আল মা’আরিজ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura071.html">71) সূরা নূহ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura072.html">72) সূরা আল জিন</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura073.html">73) সূরা মুযযামমিল</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura074.html">74) সূরা আল মুদ্দাসসির</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura075.html">75) সূরা আল ক্বেয়ামাহ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura076.html">76) সূরা আদ-দাহর</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura077.html">77) সূরা আল মুরসালাত</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura078.html">78) সূরা আন-নাবা</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura079.html">79) সূরা আন-নযিআ’ত</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura080.html">80) সূরা আবাসা</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura081.html">81) সূরা আত-তাকভীর</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura082.html">82) সূরা আল ইনফিতার</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura083.html">83) সূরা আত-তাতফীফ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura084.html">84) সূরা আল ইনশিক্বাক্ব</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura085.html">85) সূরা আল বুরূজ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura086.html">86) সূরা আত্ব-তারিক্ব</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura087.html">87) সূরা আল আ’লা</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura088.html">88) সূরা আল গাশিয়াহ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura089.html">89) সূরা আল ফজর</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura090.html">90) সূরা আল বালাদ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura091.html">91) সূরা আশ-শামস</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura092.html">92) সূরা আল লায়ল</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura093.html">93) সূরা আদ্ব-দ্বোহা</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura094.html">94) সূরা আল ইনশিরাহ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura095.html">95) সূরা ত্বীন</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura096.html">96) সূরা আলাক</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura097.html">97) সূরা কদর</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura098.html">98) সূরা বাইয়্যিনাহ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura099.html">99) সূরা যিলযাল</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura100.html">100) সূরা আদিয়াত</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura101.html">101) সূরা কারেয়া</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura102.html">102) সূরা তাকাসূর</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura103.html">103) সূরা আছর</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura104.html">104) সূরা হুমাযাহ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura105.html">105) সূরা ফীল</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura106.html">106) সূরা কোরাইশ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura107.html">107) সূরা মাউন</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura108.html">108) সূরা কাওসার</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura109.html">109) সূরা কাফিরুন</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura110.html">110) সূরা নছর</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura111.html">111) সূরা লাহাব</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura112.html">112) সূরা এখলাছ</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura113.html">113) সূরা ফালাক্ব</a></li>
+				</ul>
+				<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+					<li><a href="sura114.html">114) সূরা নাস</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>

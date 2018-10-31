@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা যুখরুফ Page -->
+		<div id="sura43" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা যুখরুফ</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 89</div>
+				<audio class="audio" controls>
+					<source src="audio/043.ogg" type="audio/ogg">
+					<source src="audio/043.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">حم</div>
+					<div class="meaning">হা-মীম।<br>Ha-Mim</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">وَالْكِتَابِ الْمُبِينِ</div>
+					<div class="meaning">শপথ সুস্পষ্ট কিতাবের,<br>By the Book that makes things clear,-</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">إِنَّا جَعَلْنَاهُ قُرْآنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ</div>
+					<div class="meaning">আমি একে করেছি কোরআন, আরবী ভাষায়, যাতে তোমরা বুঝ।<br>We have made it a Qur'an in Arabic, that ye may be able to understand (and learn wisdom).</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">وَإِنَّهُ فِي أُمِّ الْكِتَابِ لَدَيْنَا لَعَلِيٌّ حَكِيمٌ</div>
+					<div class="meaning">নিশ্চয় এ কোরআন আমার কাছে সমুন্নত অটল রয়েছে লওহে মাহফুযে।<br>And verily, it is in the Mother of the Book, in Our Presence, high (in dignity), full of wisdom.</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">أَفَنَضْرِبُ عَنكُمُ الذِّكْرَ صَفْحًا أَن كُنتُمْ قَوْمًا مُّسْرِفِينَ</div>
+					<div class="meaning">তোমরা সীমাতিক্রমকারী সম্প্রদায়-এ কারণে কি আমি তোমাদের কাছ থেকে কোরআন প্রত্যাহার করে নেব?<br>Shall We then take away the Message from you and repel (you), for that ye are a people transgressing beyond bounds?</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">وَكَمْ أَرْسَلْنَا مِن نَّبِيٍّ فِي الْأَوَّلِينَ</div>
+					<div class="meaning">পূর্ববর্তী লোকদের কাছে আমি অনেক রসূলই প্রেরণ করেছি।<br>But how many were the prophets We sent amongst the peoples of old?</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">وَمَا يَأْتِيهِم مِّن نَّبِيٍّ إِلَّا كَانُوا بِهِ يَسْتَهْزِؤُون</div>
+					<div class="meaning">যখনই তাদের কাছে কোন রসূল আগমন করেছেন, তখনই তারা তাঁর সাথে ঠাট্টা-বিদ্রুপ করেছে।<br>And never came there a prophet to them but they mocked him.</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">فَأَهْلَكْنَا أَشَدَّ مِنْهُم بَطْشًا وَمَضَى مَثَلُ الْأَوَّلِينَ</div>
+					<div class="meaning">সুতরাং আমি তাদের চেয়ে অধিক শক্তি সম্পন্নদেরকে ধ্বংস করে দিয়েছি। পূর্ববর্তীদের এ ঘটনা অতীত হয়ে গেছে।<br>So We destroyed (them)- stronger in power than these;- and (thus) has passed on the Parable of the peoples of old.</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ لَيَقُولُنَّ خَلَقَهُنَّ الْعَزِيزُ الْعَلِيمُ</div>
+					<div class="meaning">আপনি যদি তাদেরকে জিজ্ঞাসা করেন কে নভোমন্ডল ও ভূ-মন্ডল সৃষ্টি করেছে? তারা অবশ্যই বলবে, এগুলো সৃষ্টি করেছেন পরাক্রমশালী সর্বজ্ঞ আল্লাহ।<br>If thou wert to question them, 'Who created the heavens and the earth?' They would be sure to reply, 'they were created by (Him), the Exalted in Power, Full of Knowledge';-</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">الَّذِي جَعَلَ لَكُمُ الْأَرْضَ مَهْدًا وَجَعَلَ لَكُمْ فِيهَا سُبُلًا لَّعَلَّكُمْ تَهْتَدُونَ</div>
+					<div class="meaning">যিনি তোমাদের জন্যে পৃথিবীকে করেছেন বিছানা এবং তাতে তোমাদের জন্যে করেছেন পথ, যাতে তোমরা গন্তব্যস্থলে পৌঁছতে পার।
+						(Yea, the same that) has made for you the earth (like a carpet) spread out, and has made for you roads (and channels) therein, in order that ye may find guidance (on the way);</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">وَالَّذِي نَزَّلَ مِنَ السَّمَاء مَاء بِقَدَرٍ فَأَنشَرْنَا بِهِ بَلْدَةً مَّيْتًا كَذَلِكَ تُخْرَجُونَ</div>
+					<div class="meaning">এবং যিনি আকাশ থেকে পানি বর্ষণ করেছেন পরিমিত। আতঃপর তদ্দ্বারা আমি মৃত ভূ-ভাগকে পুনরুজ্জীবিত করেছি। তোমরা এমনিভাবে উত্থিত হবে।<br>That sends down (from time to time) rain from the sky in due measure;- and We raise to life therewith a land that is dead; even so will ye be raised (from the dead);-</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">وَالَّذِي خَلَقَ الْأَزْوَاجَ كُلَّهَا وَجَعَلَ لَكُم مِّنَ الْفُلْكِ وَالْأَنْعَامِ مَا تَرْكَبُونَ</div>
+					<div class="meaning">এবং যিনি সবকিছুর যুগল সৃষ্টি করেছেন এবং নৌকা ও চতুস্পদ জন্তুকে তোমাদের জন্যে যানবাহনে পরিণত করেছেন,<br>That has created pairs in all things, and has made for you ships and cattle on which ye ride,</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">لِتَسْتَوُوا عَلَى ظُهُورِهِ ثُمَّ تَذْكُرُوا نِعْمَةَ رَبِّكُمْ إِذَا اسْتَوَيْتُمْ عَلَيْهِ وَتَقُولُوا سُبْحانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ</div>
+					<div class="meaning">যাতে তোমরা তাদের পিঠের উপর আরোহণ কর। অতঃপর তোমাদের পালনকর্তার নেয়ামত স্মরণ কর এবং বল পবিত্র তিনি, যিনি এদেরকে আমাদের বশীভূত করে দিয়েছেন এবং আমরা এদেরকে বশীভূত করতে সক্ষম ছিলাম না।<br>In order that ye may sit firm and square on their backs, and when so seated, ye may celebrate the (kind) favour of your Lord, and say, "Glory to Him Who has subjected these to our (use), for we could never have accomplished this (by ourselves),</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">وَإِنَّا إِلَى رَبِّنَا لَمُنقَلِبُونَ</div>
+					<div class="meaning">আমরা অবশ্যই আমাদের পালনকর্তার দিকে ফিরে যাব।<br>"And to our Lord, surely, must we turn back!"</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">وَجَعَلُوا لَهُ مِنْ عِبَادِهِ جُزْءًا إِنَّ الْإِنسَانَ لَكَفُورٌ مُّبِينٌ</div>
+					<div class="meaning">তারা আল্লাহর বান্দাদের মধ্য থেকে আল্লাহর অংশ স্থির করেছে। বাস্তবিক মানুষ স্পষ্ট অকৃতজ্ঞ।<br>Yet they attribute to some of His servants a share with Him (in his godhead)! truly is man a blasphemous ingrate avowed!</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">أَمِ اتَّخَذَ مِمَّا يَخْلُقُ بَنَاتٍ وَأَصْفَاكُم بِالْبَنِينَ</div>
+					<div class="meaning">তিনি কি তাঁর সৃষ্টি থেকে কন্যা সন্তান গ্রহণ করেছেন এবং তোমাদের জন্য মনোনীত করেছেন পুত্র সন্তান?<br>What! has He taken daughters out of what He himself creates, and granted to you sons for choice?</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">وَإِذَا بُشِّرَ أَحَدُهُم بِمَا ضَرَبَ لِلرَّحْمَنِ مَثَلًا ظَلَّ وَجْهُهُ مُسْوَدًّا وَهُوَ كَظِيمٌ</div>
+					<div class="meaning">তারা রহমান আল্লাহর জন্যে যে, কন্যা-সন্তান বর্ণনা করে, যখন তাদের কাউকে তার সংবাদ দেয়া হয়, তখন তার মুখমন্ডল কালো হয়ে যায় এবং ভীষণ মনস্তাপ ভোগ করে।<br>When news is brought to one of them of (the birth of) what he sets up as a likeness to ((Allah)) Most Gracious, his face darkens, and he is filled with inward grief!</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">أَوَمَن يُنَشَّأُ فِي الْحِلْيَةِ وَهُوَ فِي الْخِصَامِ غَيْرُ مُبِينٍ</div>
+					<div class="meaning">তারা কি এমন ব্যক্তিকে আল্লাহর জন্যে বর্ণনা করে, যে অলংকারে লালিত-পালিত হয় এবং বিতর্কে কথা বলতে অক্ষম।<br>Is then one brought up among trinkets, and unable to give a clear account in a dispute (to be associated with Allah.?</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">وَجَعَلُوا الْمَلَائِكَةَ الَّذِينَ هُمْ عِبَادُ الرَّحْمَنِ إِنَاثًا أَشَهِدُوا خَلْقَهُمْ سَتُكْتَبُ شَهَادَتُهُمْ وَيُسْأَلُونَ</div>
+					<div class="meaning">তারা নারী স্থির করে ফেরেশতাগণকে, যারা আল্লাহর বান্দা। তারা কি তাদের সৃষ্টি প্রত্যক্ষ করেছে? এখন তাদের দাবী লিপিবদ্ধ করা হবে এবং তাদের জিজ্ঞাসা করা হবে।<br>And they make into females angels who themselves serve Allah. Did they witness their creation? Their evidence will be recorded, and they will be called to account!</div>
+					<hr>
+					<p class="suraCount">20</p>
+					<div class="sura">وَقَالُوا لَوْ شَاء الرَّحْمَنُ مَا عَبَدْنَاهُم مَّا لَهُم بِذَلِكَ مِنْ عِلْمٍ إِنْ هُمْ إِلَّا يَخْرُصُونَ</div>
+					<div class="meaning">তারা বলে, রহমান আল্লাহ ইচছা না করলে আমরা ওদের পূজা করতাম না। এ বিষয়ে তারা কিছুই জানে না। তারা কেবল অনুমানে কথা বলে।<br>("Ah!") they say, "If it had been the will of ((Allah)) Most Gracious, we should not have worshipped such (deities)!" Of that they have no knowledge! they do nothing but lie!</div>
+					<hr>
+					<p class="suraCount">21</p>
+					<div class="sura">أَمْ آتَيْنَاهُمْ كِتَابًا مِّن قَبْلِهِ فَهُم بِهِ مُسْتَمْسِكُونَ</div>
+					<div class="meaning">আমি কি তাদেরকে কোরআনের পূর্বে কোন কিতাব দিয়েছি, অতঃপর তারা তাকে আঁকড়ে রেখেছে?<br>What! have We given them a Book before this, to which they are holding fast?</div>
+					<hr>
+					<p class="suraCount">22</p>
+					<div class="sura">بَلْ قَالُوا إِنَّا وَجَدْنَا آبَاءنَا عَلَى أُمَّةٍ وَإِنَّا عَلَى آثَارِهِم مُّهْتَدُونَ</div>
+					<div class="meaning">বরং তারা বলে, আমরা আমাদের পূর্বপুরুষদেরকে পেয়েছি এক পথের পথিক এবং আমরা তাদেরই পদাংক অনুসরণ করে পথপ্রাপ্ত।<br>Nay! they say: "We found our fathers following a certain religion, and we do guide ourselves by their footsteps."</div>
+					<hr>
+					<p class="suraCount">23</p>
+					<div class="sura">وَكَذَلِكَ مَا أَرْسَلْنَا مِن قَبْلِكَ فِي قَرْيَةٍ مِّن نَّذِيرٍ إِلَّا قَالَ مُتْرَفُوهَا إِنَّا وَجَدْنَا آبَاءنَا عَلَى أُمَّةٍ وَإِنَّا عَلَى آثَارِهِم مُّقْتَدُونَ</div>
+					<div class="meaning">এমনিভাবে আপনার পূর্বে আমি যখন কোন জনপদে কোন সতর্ককারী প্রেরণ করেছি, তখনই তাদের বিত্তশালীরা বলেছে, আমরা আমাদের পূর্বপুরুষদেরকে পেয়েছি এক পথের পথিক এবং আমরা তাদেরই পদাংক অনুসরণ করে চলছি।<br>Just in the same way, whenever We sent a Warner before thee to any people, the wealthy ones among them said: "We found our fathers following a certain religion, and we will certainly follow in their footsteps."</div>
+					<hr>
+					<p class="suraCount">24</p>
+					<div class="sura">قَالَ أَوَلَوْ جِئْتُكُم بِأَهْدَى مِمَّا وَجَدتُّمْ عَلَيْهِ آبَاءكُمْ قَالُوا إِنَّا بِمَا أُرْسِلْتُم بِهِ كَافِرُونَ</div>
+					<div class="meaning">সে বলত, তোমরা তোমাদের পূর্বপুরুষদেরকে যে বিষয়ের উপর পেয়েছ, আমি যদি তদপেক্ষা উত্তম বিষয় নিয়ে তোমাদের কাছে এসে থাকি, তবুও কি তোমরা তাই বলবে? তারা বলত তোমরা যে বিষয়সহ প্রেরিত হয়েছ, তা আমরা মানব না।<br>He said: "What! Even if I brought you better guidance than that which ye found your fathers following?" They said: "For us, we deny that ye (prophets) are sent (on a mission at all)."</div>
+					<hr>
+					<p class="suraCount">25</p>
+					<div class="sura">فَانتَقَمْنَا مِنْهُمْ فَانظُرْ كَيْفَ كَانَ عَاقِبَةُ الْمُكَذِّبِينَ</div>
+					<div class="meaning">অতঃপর আমি তাদের কাছ থেকে প্রতিশোধ নিয়েছি। অতএব দেখুন, মিথ্যারোপকারীদের পরিণাম কিরূপ হয়েছে।<br>So We exacted retribution from them: now see what was the end of those who rejected (Truth)!</div>
+					<hr>
+					<p class="suraCount">26</p>
+					<div class="sura">وَإِذْ قَالَ إِبْرَاهِيمُ لِأَبِيهِ وَقَوْمِهِ إِنَّنِي بَرَاء مِّمَّا تَعْبُدُونَ</div>
+					<div class="meaning">যখন ইব্রাহীম তার পিতা ও সম্প্রদায়কে বলল, তোমরা যাদের পূজা কর, তাদের সাথে আমার কোন সম্পর্ক নেই।<br>Behold! Abraham said to his father and his people: "I do indeed clear myself of what ye worship:</div>
+					<hr>
+					<p class="suraCount">27</p>
+					<div class="sura">إِلَّا الَّذِي فَطَرَنِي فَإِنَّهُ سَيَهْدِينِ</div>
+					<div class="meaning">তবে আমার সম্পর্ক তাঁর সাথে যিনি আমাকে সৃষ্টি করেছেন। অতএব, তিনিই আমাকে সৎপথ প্রদর্শন করবেন।<br>"(I worship) only Him Who made me, and He will certainly guide me."</div>
+					<hr>
+					<p class="suraCount">28</p>
+					<div class="sura">وَجَعَلَهَا كَلِمَةً بَاقِيَةً فِي عَقِبِهِ لَعَلَّهُمْ يَرْجِعُونَ</div>
+					<div class="meaning">এ কথাটিকে সে অক্ষয় বাণীরূপে তার সন্তানদের মধ্যে রেখে গেছে, যাতে তারা আল্লাহর দিকেই আকৃষ্ট থাকে।<br>And he left it as a Word to endure among those who came after him, that they may turn back (to Allah..</div>
+					<hr>
+					<p class="suraCount">29</p>
+					<div class="sura">بَلْ مَتَّعْتُ هَؤُلَاء وَآبَاءهُمْ حَتَّى جَاءهُمُ الْحَقُّ وَرَسُولٌ مُّبِينٌ</div>
+					<div class="meaning">পরন্ত আমিই এদেরকে ও এদের পূর্বপুরুষদেরকে জীবনোপভোগ করতে দিয়েছি, অবশেষে তাদের কাছে সত্য ও স্পষ্ট বর্ণনাকারী রসূল আগমন করেছে।<br>Yea, I have given the good things of this life to these (men) and their fathers, until the Truth has come to them, and an apostle making things clear.</div>
+					<hr>
+					<p class="suraCount">30</p>
+					<div class="sura">وَلَمَّا جَاءهُمُ الْحَقُّ قَالُوا هَذَا سِحْرٌ وَإِنَّا بِهِ كَافِرُونَ</div>
+					<div class="meaning">যখন সত্য তাদের কাছে আগমন করল, তখন তারা বলল, এটা যাদু, আমরা একে মানি না।<br>But when the Truth came to them, they said: "This is sorcery, and we do reject it."</div>
+					<hr>
+					<p class="suraCount">31</p>
+					<div class="sura">وَقَالُوا لَوْلَا نُزِّلَ هَذَا الْقُرْآنُ عَلَى رَجُلٍ مِّنَ الْقَرْيَتَيْنِ عَظِيمٍ</div>
+					<div class="meaning">তারা বলে, কোরআন কেন দুই জনপদের কোন প্রধান ব্যক্তির উপর অবতীর্ণ হল না?<br>Also, they say: "Why is not this Qur'an sent down to some leading man in either of the two (chief) cities?"</div>
+					<hr>
+					<p class="suraCount">32</p>
+					<div class="sura">أَهُمْ يَقْسِمُونَ رَحْمَةَ رَبِّكَ نَحْنُ قَسَمْنَا بَيْنَهُم مَّعِيشَتَهُمْ فِي الْحَيَاةِ الدُّنْيَا وَرَفَعْنَا بَعْضَهُمْ فَوْقَ بَعْضٍ دَرَجَاتٍ لِيَتَّخِذَ بَعْضُهُم بَعْضًا سُخْرِيًّا وَرَحْمَتُ رَبِّكَ خَيْرٌ مِّمَّا يَجْمَعُونَ</div>
+					<div class="meaning">তারা কি আপনার পালনকর্তার রহমত বন্টন করে? আমি তাদের মধ্যে তাদের জীবিকা বন্টন করেছি পার্থিব জীবনে এবং একের মর্যাদাকে অপরের উপর উন্নীত করেছি, যাতে একে অপরকে সেবক রূপে গ্রহণ করে। তারা যা সঞ্চয় করে, আপনার পালনকর্তার রহমত তদপেক্ষা উত্তম।<br>Is it they who would portion out the Mercy of thy Lord? It is We Who portion out between them their livelihood in the life of this world: and We raise some of them above others in ranks, so that some may command work from others. But the Mercy of thy Lord is better than the (wealth) which they amass.</div>
+					<hr>
+					<p class="suraCount">33</p>
+					<div class="sura">وَلَوْلَا أَن يَكُونَ النَّاسُ أُمَّةً وَاحِدَةً لَجَعَلْنَا لِمَن يَكْفُرُ بِالرَّحْمَنِ لِبُيُوتِهِمْ سُقُفًا مِّن فَضَّةٍ وَمَعَارِجَ عَلَيْهَا يَظْهَرُونَ</div>
+					<div class="meaning">যদি সব মানুষের এক মতাবলম্বী হয়ে যাওয়ার আশংকা না থাকত, তবে যারা দয়াময় আল্লাহকে অস্বীকার করে আমি তাদেরকে দিতাম তাদের গৃহের জন্যে রৌপ্য নির্মিত ছাদ ও সিঁড়ি, যার উপর তারা চড়ত।<br>And were it not that (all) men might become of one (evil) way of life, We would provide, for everyone that blasphemes against ((Allah)) Most Gracious, silver roofs for their houses and (silver) stair-ways on which to go up,</div>
+					<hr>
+					<p class="suraCount">34</p>
+					<div class="sura">وَلِبُيُوتِهِمْ أَبْوَابًا وَسُرُرًا عَلَيْهَا يَتَّكِؤُونَ</div>
+					<div class="meaning">এবং তাদের গৃহের জন্যে দরজা দিতাম এবং পালংক দিতাম যাতে তারা হেলান দিয়ে বসত।<br>And (silver) doors to their houses, and thrones (of silver) on which they could recline,</div>
+					<hr>
+					<p class="suraCount">35</p>
+					<div class="sura">وَزُخْرُفًا وَإِن كُلُّ ذَلِكَ لَمَّا مَتَاعُ الْحَيَاةِ الدُّنْيَا وَالْآخِرَةُ عِندَ رَبِّكَ لِلْمُتَّقِينَ</div>
+					<div class="meaning">এবং স্বর্ণনির্মিতও দিতাম। এগুলো সবই তো পার্থিব জীবনের ভোগ সামগ্রী মাত্র। আর পরকাল আপনার পালনকর্তার কাছে তাঁদের জন্যেই যারা ভয় করে।<br>And also adornments of gold. But all this were nothing but conveniences of the present life: The Hereafter, in the sight of thy Lord is for the Righteous.</div>
+					<hr>
+					<p class="suraCount">36</p>
+					<div class="sura">وَمَن يَعْشُ عَن ذِكْرِ الرَّحْمَنِ نُقَيِّضْ لَهُ شَيْطَانًا فَهُوَ لَهُ قَرِينٌ</div>
+					<div class="meaning">যে ব্যক্তি দয়াময় আল্লাহর স্মরণ থেকে চোখ ফিরিয়ে নেয়, আমি তার জন্যে এক শয়তান নিয়োজিত করে দেই, অতঃপর সে-ই হয় তার সঙ্গী।<br>If anyone withdraws himself from remembrance of ((Allah)) Most Gracious, We appoint for him an evil one, to be an intimate companion to him.</div>
+					<hr>
+					<p class="suraCount">37</p>
+					<div class="sura">وَإِنَّهُمْ لَيَصُدُّونَهُمْ عَنِ السَّبِيلِ وَيَحْسَبُونَ أَنَّهُم مُّهْتَدُونَ</div>
+					<div class="meaning">শয়তানরাই মানুষকে সৎপথে বাধা দান করে, আর মানুষ মনে করে যে, তারা সৎপথে রয়েছে।<br>Such (evil ones) really hinder them from the Path, but they think that they are being guided aright!</div>
+					<hr>
+					<p class="suraCount">38</p>
+					<div class="sura">حَتَّى إِذَا جَاءنَا قَالَ يَا لَيْتَ بَيْنِي وَبَيْنَكَ بُعْدَ الْمَشْرِقَيْنِ فَبِئْسَ الْقَرِينُ</div>
+					<div class="meaning">অবশেষে যখন সে আমার কাছে আসবে, তখন সে শয়তানকে বলবে, হায়, আমার ও তোমার মধ্যে যদি পূর্ব-পশ্চিমের দূরত্ব থাকত। কত হীন সঙ্গী সে।<br>At length, when (such a one) comes to Us, he says (to his evil companion): "Would that between me and thee were the distance of East and West!" Ah! evil is the companion (indeed)!</div>
+					<hr>
+					<p class="suraCount">39</p>
+					<div class="sura">وَلَن يَنفَعَكُمُ الْيَوْمَ إِذ ظَّلَمْتُمْ أَنَّكُمْ فِي الْعَذَابِ مُشْتَرِكُونَ</div>
+					<div class="meaning">তোমরা যখন কুফর করছিলে, তখন তোমাদের আজকের আযাবে শরীক হওয়া কোন কাজে আসবে না।<br>When ye have done wrong, it will avail you nothing, that Day, that ye shall be partners in Punishment!</div>
+					<hr>
+					<p class="suraCount">40</p>
+					<div class="sura">أَفَأَنتَ تُسْمِعُ الصُّمَّ أَوْ تَهْدِي الْعُمْيَ وَمَن كَانَ فِي ضَلَالٍ مُّبِينٍ</div>
+					<div class="meaning">আপনি কি বধিরকে শোনাতে পারবেন? অথবা যে অন্ধ ও যে স্পষ্ট পথ ভ্রষ্টতায় লিপ্ত, তাকে পথ প্রদর্শণ করতে পারবেন?<br>Canst thou then make the deaf to hear, or give direction to the blind or to such as (wander) in manifest error?</div>
+					<hr>
+					<p class="suraCount">41</p>
+					<div class="sura">فَإِمَّا نَذْهَبَنَّ بِكَ فَإِنَّا مِنْهُم مُّنتَقِمُونَ</div>
+					<div class="meaning">অতঃপর আমি যদি আপনাকে নিয়ে যাই, তবু আমি তাদের কাছে থেকে প্রতিশোধ নেব।<br>Even if We take thee away, We shall be sure to exact retribution from them,</div>
+					<hr>
+					<p class="suraCount">42</p>
+					<div class="sura">أَوْ نُرِيَنَّكَ الَّذِي وَعَدْنَاهُمْ فَإِنَّا عَلَيْهِم مُّقْتَدِرُونَ</div>
+					<div class="meaning">অথবা যদি আমি তাদেরকে যে আযাবের ওয়াদা দিয়েছি, তা আপনাকে দেখিয়ে দেই, তবু তাদের উপর আমার পূর্ণ ক্ষমতা রয়েছে।<br>Or We shall show thee that (accomplished) which We have promised them: for verily We shall prevail over them.</div>
+					<hr>
+					<p class="suraCount">43</p>
+					<div class="sura">فَاسْتَمْسِكْ بِالَّذِي أُوحِيَ إِلَيْكَ إِنَّكَ عَلَى صِرَاطٍ مُّسْتَقِيمٍ</div>
+					<div class="meaning">অতএব, আপনার প্রতি যে ওহী নাযিল করা হয়, তা দৃঢ়ভাবে অবলম্বন করুন। নিঃসন্দেহে আপনি সরল পথে রয়েছেন।<br>So hold thou fast to the Revelation sent down to thee; verily thou art on a Straight Way.</div>
+					<hr>
+					<p class="suraCount">44</p>
+					<div class="sura">وَإِنَّهُ لَذِكْرٌ لَّكَ وَلِقَوْمِكَ وَسَوْفَ تُسْأَلُونَ</div>
+					<div class="meaning">এটা আপনার ও আপনার সম্প্রদায়ের জন্যে উল্লেখিত থাকবে এবং শীঘ্রই আপনারা জিজ্ঞাসিত হবেন।<br>The (Qur'an) is indeed the message, for thee and for thy people; and soon shall ye (all) be brought to account.</div>
+					<hr>
+					<p class="suraCount">45</p>
+					<div class="sura">وَاسْأَلْ مَنْ أَرْسَلْنَا مِن قَبْلِكَ مِن رُّسُلِنَا أَجَعَلْنَا مِن دُونِ الرَّحْمَنِ آلِهَةً يُعْبَدُونَ</div>
+					<div class="meaning">আপনার পূর্বে আমি যেসব রসূল প্রেরণ করেছি, তাদেরকে জিজ্ঞেস করুন, দয়াময় আল্লাহ ব্যতীত আমি কি কোন উপাস্য স্থির করেছিলাম এবাদতের জন্যে?<br>And question thou our apostles whom We sent before thee; did We appoint any deities other than ((Allah)) Most Gracious, to be worshipped?</div>
+					<hr>
+					<p class="suraCount">46</p>
+					<div class="sura">وَلَقَدْ أَرْسَلْنَا مُوسَى بِآيَاتِنَا إِلَى فِرْعَوْنَ وَمَلَئِهِ فَقَالَ إِنِّي رَسُولُ رَبِّ الْعَالَمِينَ</div>
+					<div class="meaning">আমি মূসাকে আমার নিদর্শনাবলী দিয়ে ফেরাউন ও তার পরিষদবর্গের কাছে প্রেরণ করেছিলাম, অতঃপর সে বলেছিল, আমি বিশ্ব পালনকর্তার রসূল।<br>We did send Moses aforetime, with Our Signs, to Pharaoh and his Chiefs: He said, "I am an apostle of the Lord of the Worlds."</div>
+					<hr>
+					<p class="suraCount">47</p>
+					<div class="sura">فَلَمَّا جَاءهُم بِآيَاتِنَا إِذَا هُم مِّنْهَا يَضْحَكُونَ</div>
+					<div class="meaning">অতঃপর সে যখন তাদের কাছে আমার নিদর্শনাবলী উপস্থাপন করল, তখন তারা হাস্যবিদ্রুপ করতে লাগল।<br>But when he came to them with Our Signs, behold they ridiculed them.</div>
+					<hr>
+					<p class="suraCount">48</p>
+					<div class="sura">وَمَا نُرِيهِم مِّنْ آيَةٍ إِلَّا هِيَ أَكْبَرُ مِنْ أُخْتِهَا وَأَخَذْنَاهُم بِالْعَذَابِ لَعَلَّهُمْ يَرْجِعُونَ</div>
+					<div class="meaning">আমি তাদেরকে যে নিদর্শনই দেখাতাম, তাই হত পূর্ববর্তী নিদর্শন অপেক্ষা বৃহৎ এবং আমি তাদেরকে শাস্তি দ্বারা পাকড়াও করলাম, যাতে তারা ফিরে আসে।<br>We showed them Sign after Sign, each greater than its fellow, and We seized them with Punishment, in order that they might turn (to Us).</div>
+					<hr>
+					<p class="suraCount">49</p>
+					<div class="sura">وَقَالُوا يَا أَيُّهَا السَّاحِرُ ادْعُ لَنَا رَبَّكَ بِمَا عَهِدَ عِندَكَ إِنَّنَا لَمُهْتَدُونَ</div>
+					<div class="meaning">তারা বলল, হে যাদুকর, তুমি আমাদের জন্যে তোমার পালনকর্তার কাছে সে বিষয় প্রার্থনা কর, যার ওয়াদা তিনি তোমাকে দিয়েছেন; আমরা অবশ্যই সৎপথ অবলম্বন করব।<br>And they said, "O thou sorcerer! Invoke thy Lord for us according to His covenant with thee; for we shall truly accept guidance."</div>
+					<hr>
+					<p class="suraCount">50</p>
+					<div class="sura">فَلَمَّا كَشَفْنَا عَنْهُمُ الْعَذَابَ إِذَا هُمْ يَنكُثُونَ</div>
+					<div class="meaning">অতঃপর যখন আমি তাদের থেকে আযাব প্রত্যাহার করে নিলাম, তখনই তারা অঙ্গীকার ভঙ্গ করতে লাগলো।<br>But when We removed the Penalty from them, behold, they broke their word.</div>
+					<hr>
+					<p class="suraCount">51</p>
+					<div class="sura">وَنَادَى فِرْعَوْنُ فِي قَوْمِهِ قَالَ يَا قَوْمِ أَلَيْسَ لِي مُلْكُ مِصْرَ وَهَذِهِ الْأَنْهَارُ تَجْرِي مِن تَحْتِي أَفَلَا تُبْصِرُونَ</div>
+					<div class="meaning">ফেরাউন তার সম্প্রদায়কে ডেকে বলল, হে আমার কওম, আমি কি মিসরের অধিপতি নই? এই নদী গুলো আমার নিম্নদেশে প্রবাহিত হয়, তোমরা কি দেখ না?<br>And Pharaoh proclaimed among his people, saying: "O my people! Does not the dominion of Egypt belong to me, (witness) these streams flowing underneath my (palace)? What! see ye not then?</div>
+					<hr>
+					<p class="suraCount">52</p>
+					<div class="sura">أَمْ أَنَا خَيْرٌ مِّنْ هَذَا الَّذِي هُوَ مَهِينٌ وَلَا يَكَادُ يُبِينُ</div>
+					<div class="meaning">আমি যে শ্রেষ্ট এ ব্যক্তি থেকে, যে নীচ এবং কথা বলতেও সক্ষম নয়।<br>"Am I not better than this (Moses), who is a contemptible wretch and can scarcely express himself clearly?</div>
+					<hr>
+					<p class="suraCount">53</p>
+					<div class="sura">فَلَوْلَا أُلْقِيَ عَلَيْهِ أَسْوِرَةٌ مِّن ذَهَبٍ أَوْ جَاء مَعَهُ الْمَلَائِكَةُ مُقْتَرِنِينَ</div>
+					<div class="meaning">তাকে কেন স্বর্ণবলয় পরিধান করানো হল না, অথবা কেন আসল না তার সঙ্গে ফেরেশতাগণ দল বেঁধে?<br>"Then why are not gold bracelets bestowed on him, or (why) come (not) with him angels accompanying him in procession?"</div>
+					<hr>
+					<p class="suraCount">54</p>
+					<div class="sura">فَاسْتَخَفَّ قَوْمَهُ فَأَطَاعُوهُ إِنَّهُمْ كَانُوا قَوْمًا فَاسِقِينَ</div>
+					<div class="meaning">অতঃপর সে তার সম্প্রদায়কে বোকা বানিয়ে দিল, ফলে তারা তার কথা মেনে নিল। নিশ্চয় তারা ছিল পাপাচারী সম্প্রদায়।<br>Thus did he make fools of his people, and they obeyed him: truly were they a people rebellious (against Allah..</div>
+					<hr>
+					<p class="suraCount">55</p>
+					<div class="sura">فَلَمَّا آسَفُونَا انتَقَمْنَا مِنْهُمْ فَأَغْرَقْنَاهُمْ أَجْمَعِينَ</div>
+					<div class="meaning">অতঃপর যখন আমাকে রাগাম্বিত করল তখন আমি তাদের কাছ থেকে প্রতিশোধ নিলাম এবং নিমজ্জত করলাম। তাদের সবাইকে।<br>When at length they provoked Us, We exacted retribution from them, and We drowned them all.</div>
+					<hr>
+					<p class="suraCount">56</p>
+					<div class="sura">فَجَعَلْنَاهُمْ سَلَفًا وَمَثَلًا لِلْآخِرِينَ</div>
+					<div class="meaning">অতঃপর আমি তাদেরকে করে দিলাম অতীত লোক ও দৃষ্টান্ত পরবর্তীদের জন্যে।<br>And We made them (a people) of the Past and an Example to later ages.</div>
+					<hr>
+					<p class="suraCount">57</p>
+					<div class="sura">وَلَمَّا ضُرِبَ ابْنُ مَرْيَمَ مَثَلًا إِذَا قَوْمُكَ مِنْهُ يَصِدُّونَ</div>
+					<div class="meaning">যখনই মরিয়ম তনয়ের দৃষ্টান্ত বর্ণনা করা হল, তখনই আপনার সম্প্রদায় হঞ্জগোল শুরু করে দিল<br>When (Jesus) the son of Mary is held up as an example, behold, thy people raise a clamour thereat (in ridicule)!</div>
+					<hr>
+					<p class="suraCount">58</p>
+					<div class="sura">وَقَالُوا أَآلِهَتُنَا خَيْرٌ أَمْ هُوَ مَا ضَرَبُوهُ لَكَ إِلَّا جَدَلًا بَلْ هُمْ قَوْمٌ خَصِمُونَ</div>
+					<div class="meaning">এবং বলল, আমাদের উপাস্যরা শ্রেষ্ঠ, না সে? তারা আপনার সামনে যে উদাহরণ উপস্থাপন করে তা কেবল বিতর্কের জন্যেই করে। বস্তুতঃ তারা হল এক বিতর্ককারী সম্প্রদায়।<br>And they say, "Are our gods best, or he?" This they set forth to thee, only by way of disputation: yea, they are a contentious people.</div>
+					<hr>
+					<p class="suraCount">59</p>
+					<div class="sura">إِنْ هُوَ إِلَّا عَبْدٌ أَنْعَمْنَا عَلَيْهِ وَجَعَلْنَاهُ مَثَلًا لِّبَنِي إِسْرَائِيلَ</div>
+					<div class="meaning">সে তো এক বান্দাই বটে আমি তার প্রতি অনুগ্রহ করেছি এবং তাকে করেছি বণী-ইসরাঈলের জন্যে আদর্শ।<br>He was no more than a servant: We granted Our favour to him, and We made him an example to the Children of Israel.</div>
+					<hr>
+					<p class="suraCount">60</p>
+					<div class="sura">وَلَوْ نَشَاء لَجَعَلْنَا مِنكُم مَّلَائِكَةً فِي الْأَرْضِ يَخْلُفُونَ</div>
+					<div class="meaning">আমি ইচ্ছা করলে তোমাদের থেকে ফেরেশতা সৃষ্টি করতাম, যারা পৃথিবীতে একের পর এক বসবাস করত।<br>And if it were Our Will, We could make angels from amongst you, succeeding each other on the earth.</div>
+					<hr>
+					<p class="suraCount">61</p>
+					<div class="sura">وَإِنَّهُ لَعِلْمٌ لِّلسَّاعَةِ فَلَا تَمْتَرُنَّ بِهَا وَاتَّبِعُونِ هَذَا صِرَاطٌ مُّسْتَقِيمٌ</div>
+					<div class="meaning">সুতরাং তা হল কেয়ামতের নিদর্শন। কাজেই তোমরা কেয়ামতে সন্দেহ করো না এবং আমার কথা মান। এটা এক সরল পথ।<br>And (Jesus) shall be a Sign (for the coming of) the Hour (of Judgment): therefore have no doubt about the (Hour), but follow ye Me: this is a Straight Way.</div>
+					<hr>
+					<p class="suraCount">62</p>
+					<div class="sura">وَلَا يَصُدَّنَّكُمُ الشَّيْطَانُ إِنَّهُ لَكُمْ عَدُوٌّ مُّبِينٌ</div>
+					<div class="meaning">শয়তান যেন তোমাদেরকে নিবৃত্ত না করে। সে তোমাদের প্রকাশ্য শুত্রু।<br>Let not the Evil One hinder you: for he is to you an enemy avowed.</div>
+					<hr>
+					<p class="suraCount">63</p>
+					<div class="sura">وَلَمَّا جَاء عِيسَى بِالْبَيِّنَاتِ قَالَ قَدْ جِئْتُكُم بِالْحِكْمَةِ وَلِأُبَيِّنَ لَكُم بَعْضَ الَّذِي تَخْتَلِفُونَ فِيهِ فَاتَّقُوا اللَّهَ وَأَطِيعُونِ</div>
+					<div class="meaning">ঈসা যখন স্পষ্ট নিদর্শনসহ আগমন করল, তখন বলল, আমি তোমাদের কাছে প্রজ্ঞা নিয়ে এসেছি এবং তোমরা যে, কোন কোন বিষয়ে মতভেদ করছ তা ব্যক্ত করার জন্যে এসেছি, অতএব, তোমরা আল্লাহকে ভয় কর এবং আমার কথা মান।<br>When Jesus came with Clear Signs, he said: "Now have I come to you with Wisdom, and in order to make clear to you some of the (points) on which ye dispute: therefore fear Allah and obey me.</div>
+					<hr>
+					<p class="suraCount">64</p>
+					<div class="sura">إِنَّ اللَّهَ هُوَ رَبِّي وَرَبُّكُمْ فَاعْبُدُوهُ هَذَا صِرَاطٌ مُّسْتَقِيمٌ</div>
+					<div class="meaning">নিশ্চয় আল্লাহই আমার পালনকর্তা ও তোমাদের পালনকর্তা। অতএব, তাঁর এবাদত কর। এটা হল সরল পথ।<br>"For Allah, He is my Lord and your Lord: so worship ye Him: this is a Straight Way."</div>
+					<hr>
+					<p class="suraCount">65</p>
+					<div class="sura">فَاخْتَلَفَ الْأَحْزَابُ مِن بَيْنِهِمْ فَوَيْلٌ لِّلَّذِينَ ظَلَمُوا مِنْ عَذَابِ يَوْمٍ أَلِيمٍ</div>
+					<div class="meaning">অতঃপর তাদের মধ্যে থেকে বিভিন্ন দল মতভেদ সৃষ্টি করল। সুতরাং যালেমদের জন্যে রয়েছে যন্ত্রণাদায়ক দিবসের আযাবের দুর্ভোগ।<br>But sects from among themselves fell into disagreement: then woe to the wrong-doers, from the Penalty of a Grievous Day!</div>
+					<hr>
+					<p class="suraCount">66</p>
+					<div class="sura">هَلْ يَنظُرُونَ إِلَّا السَّاعَةَ أَن تَأْتِيَهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ</div>
+					<div class="meaning">তারা কেবল কেয়ামতেরই অপেক্ষা করছে যে, আকস্মিকভাবে তাদের কাছে এসে যাবে এবং তারা খবর ও রাখবে না।<br>Do they only wait for the Hour - that it should come on them all of a sudden, while they perceive not?</div>
+					<hr>
+					<p class="suraCount">67</p>
+					<div class="sura">الْأَخِلَّاء يَوْمَئِذٍ بَعْضُهُمْ لِبَعْضٍ عَدُوٌّ إِلَّا الْمُتَّقِينَ</div>
+					<div class="meaning">বন্ধুবর্গ সেদিন একে অপরের শত্রু হবে, তবে খোদাভীরুরা নয়।<br>Friends on that day will be foes, one to another,- except the Righteous.</div>
+					<hr>
+					<p class="suraCount">68</p>
+					<div class="sura">يَا عِبَادِ لَا خَوْفٌ عَلَيْكُمُ الْيَوْمَ وَلَا أَنتُمْ تَحْزَنُونَ</div>
+					<div class="meaning">হে আমার বান্দাগণ, তোমাদের আজ কোন ভয় নেই এবং তোমরা দুঃখিতও হবে না।<br>My devotees! no fear shall be on you that Day, nor shall ye grieve,-</div>
+					<hr>
+					<p class="suraCount">69</p>
+					<div class="sura">الَّذِينَ آمَنُوا بِآيَاتِنَا وَكَانُوا مُسْلِمِينَ</div>
+					<div class="meaning">তোমরা আমার আয়াতসমূহে বিশ্বাস স্থাপন করেছিলে এবং তোমরা আজ্ঞাবহ ছিলে।<br>(Being) those who have believed in Our Signs and bowed (their wills to Ours) in Islam.</div>
+					<hr>
+					<p class="suraCount">70</p>
+					<div class="sura">ادْخُلُوا الْجَنَّةَ أَنتُمْ وَأَزْوَاجُكُمْ تُحْبَرُونَ</div>
+					<div class="meaning">জান্নাতের প্রবেশ কর তোমরা এবং তোমাদের বিবিগণ সানন্দে।<br>Enter ye the Garden, ye and your wives, in (beauty and) rejoicing.</div>
+					<hr>
+					<p class="suraCount">71</p>
+					<div class="sura">يُطَافُ عَلَيْهِم بِصِحَافٍ مِّن ذَهَبٍ وَأَكْوَابٍ وَفِيهَا مَا تَشْتَهِيهِ الْأَنفُسُ وَتَلَذُّ الْأَعْيُنُ وَأَنتُمْ فِيهَا خَالِدُونَ</div>
+					<div class="meaning">তাদের কাছে পরিবেশন করা হবে স্বর্ণের থালা ও পানপাত্র এবং তথায় রয়েছে মনে যা চায় এবং নয়ন যাতে তৃপ্ত হয়। তোমরা তথায় চিরকাল অবস্থান করবে।<br>To them will be passed round, dishes and goblets of gold: there will be there all that the souls could desire, all that their ayes could delight in: and ye shall abide therein (for eye).</div>
+					<hr>
+					<p class="suraCount">72</p>
+					<div class="sura">وَتِلْكَ الْجَنَّةُ الَّتِي أُورِثْتُمُوهَا بِمَا كُنتُمْ تَعْمَلُونَ</div>
+					<div class="meaning">এই যে, জান্নাতের উত্তরাধিকারী তোমরা হয়েছ, এটা তোমাদের কর্মের ফল।<br>Such will be the Garden of which ye are made heirs for your (good) deeds (in life).</div>
+					<hr>
+					<p class="suraCount">73</p>
+					<div class="sura">لَكُمْ فِيهَا فَاكِهَةٌ كَثِيرَةٌ مِنْهَا تَأْكُلُونَ</div>
+					<div class="meaning">তথায় তোমাদের জন্যে আছে প্রচুর ফল-মূল, তা থেকে তোমরা আহার করবে।<br>Ye shall have therein abundance of fruit, from which ye shall have satisfaction.</div>
+					<hr>
+					<p class="suraCount">74</p>
+					<div class="sura">إِنَّ الْمُجْرِمِينَ فِي عَذَابِ جَهَنَّمَ خَالِدُونَ</div>
+					<div class="meaning">নিশ্চয় অপরাধীরা জাহান্নামের আযাবে চিরকাল থাকবে।<br>The sinners will be in the Punishment of Hell, to dwell therein (for aye):</div>
+					<hr>
+					<p class="suraCount">75</p>
+					<div class="sura">لَا يُفَتَّرُ عَنْهُمْ وَهُمْ فِيهِ مُبْلِسُونَ</div>
+					<div class="meaning">তাদের থেকে আযাব লাঘব করা হবে না এবং তারা তাতেই থাকবে হতাশ হয়ে।<br>Nowise will the (Punishment) be lightened for them, and in despair will they be there overwhelmed.</div>
+					<hr>
+					<p class="suraCount">76</p>
+					<div class="sura">وَمَا ظَلَمْنَاهُمْ وَلَكِن كَانُوا هُمُ الظَّالِمِينَ</div>
+					<div class="meaning">আমি তাদের প্রতি জুলুম করিনি; কিন্তু তারাই ছিল জালেম।<br>Nowise shall We be unjust to them: but it is they who have been unjust themselves.</div>
+					<hr>
+					<p class="suraCount">77</p>
+					<div class="sura">وَنَادَوْا يَا مَالِكُ لِيَقْضِ عَلَيْنَا رَبُّكَ قَالَ إِنَّكُم مَّاكِثُونَ</div>
+					<div class="meaning">তারা ডেকে বলবে, হে মালেক, পালনকর্তা আমাদের কিসসাই শেষ করে দিন। সে বলবে, নিশ্চয় তোমরা চিরকাল থাকবে।
+						They will cry: "O Malik! would that thy Lord put an end to us!" He will say, "Nay, but ye shall abide!"</div>
+					<hr>
+					<p class="suraCount">78</p>
+					<div class="sura">لَقَدْ جِئْنَاكُم بِالْحَقِّ وَلَكِنَّ أَكْثَرَكُمْ لِلْحَقِّ كَارِهُونَ</div>
+					<div class="meaning">আমি তোমাদের কাছে সত্যধর্ম পৌঁছিয়েছি; কিন্তু তোমাদের অধিকাংশই সত্যধর্মে নিস্পৃহ!<br>Verily We have brought the Truth to you: but most of you have a hatred for Truth.</div>
+					<hr>
+					<p class="suraCount">79</p>
+					<div class="sura">أَمْ أَبْرَمُوا أَمْرًا فَإِنَّا مُبْرِمُونَ</div>
+					<div class="meaning">তারা কি কোন ব্যবস্থা চুড়ান্ত করেছে? তাহলে আমিও এক ব্যবস্থা চুড়ান্ত করেছি।<br>What! have they settled some plan (among themselves)? But it is We Who settle things.</div>
+					<hr>
+					<p class="suraCount">80</p>
+					<div class="sura">أَمْ يَحْسَبُونَ أَنَّا لَا نَسْمَعُ سِرَّهُمْ وَنَجْوَاهُم بَلَى وَرُسُلُنَا لَدَيْهِمْ يَكْتُبُونَ</div>
+					<div class="meaning">তারা কি মনে করে যে, আমি তাদের গোপন বিষয় ও গোপন পরামর্শ শুনি না? হঁ্যা, শুনি। আমার ফেরেশতাগণ তাদের নিকটে থেকে লিপিবদ্ধ করে।<br>Or do they think that We hear not their secrets and their private counsels? Indeed (We do), and Our messengers are by them, to record.</div>
+					<hr>
+					<p class="suraCount">81</p>
+					<div class="sura">قُلْ إِن كَانَ لِلرَّحْمَنِ وَلَدٌ فَأَنَا أَوَّلُ الْعَابِدِينَ</div>
+					<div class="meaning">বলুন, দয়াময় আল্লাহর কোন সন্তান থাকলে আমি সর্ব প্রথম তার এবাদত করব।<br>Say: "If ((Allah)) Most Gracious had a son, I would be the first to worship."</div>
+					<hr>
+					<p class="suraCount">82</p>
+					<div class="sura">سُبْحَانَ رَبِّ السَّمَاوَاتِ وَالْأَرْضِ رَبِّ الْعَرْشِ عَمَّا يَصِفُونَ</div>
+					<div class="meaning">তারা যা বর্ণনা করে, তা থেকে নভোমন্ডল ও ভূমন্ডলের পালনকর্তা, আরশের পালনকর্তা পবিত্র।<br>Glory to the Lord of the heavens and the earth, the Lord of the Throne (of Authority)! (He is free) from the things they attribute (to him)!</div>
+					<hr>
+					<p class="suraCount">83</p>
+					<div class="sura">فَذَرْهُمْ يَخُوضُوا وَيَلْعَبُوا حَتَّى يُلَاقُوا يَوْمَهُمُ الَّذِي يُوعَدُونَ</div>
+					<div class="meaning">অতএব, তাদেরকে বাকচাতুরী ও ক্রীড়া-কৌতুক করতে দিন সেই দিবসের সাক্ষাত পর্যন্ত, যার ওয়াদা তাদেরকে দেয়া হয়।<br>So leave them to babble and play (with vanities) until they meet that Day of theirs, which they have been promised.</div>
+					<hr>
+					<p class="suraCount">84</p>
+					<div class="sura">وَهُوَ الَّذِي فِي السَّمَاء إِلَهٌ وَفِي الْأَرْضِ إِلَهٌ وَهُوَ الْحَكِيمُ الْعَلِيمُ</div>
+					<div class="meaning">তিনিই উপাস্য নভোমন্ডলে এবং তিনিই উপাস্য ভুমন্ডলে। তিনি প্রজ্ঞাময়, সর্বজ্ঞ,<br>It is He Who is Allah in heaven and Allah on earth; and He is full of Wisdom and Knowledge.</div>
+					<hr>
+					<p class="suraCount">85</p>
+					<div class="sura">وَتَبَارَكَ الَّذِي لَهُ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا وَعِندَهُ عِلْمُ السَّاعَةِ وَإِلَيْهِ تُرْجَعُونَ</div>
+					<div class="meaning">বরকতময় তিনিই, নভোমন্ডল, ভূমন্ডল ও এতদুভয়ের মধ্যবর্তী সবকিছু যার। তাঁরই কাছে আছে কেয়ামতের জ্ঞান এবং তাঁরই দিকে তোমরা প্রত্যাবর্তিত হবে।<br>And blessed is He to Whom belongs the dominion of the heavens and the earth, and all between them: with Him is the Knowledge of the Hour (of Judgment): and to Him shall ye be brought back.</div>
+					<hr>
+					<p class="suraCount">86</p>
+					<div class="sura">وَلَا يَمْلِكُ الَّذِينَ يَدْعُونَ مِن دُونِهِ الشَّفَاعَةَ إِلَّا مَن شَهِدَ بِالْحَقِّ وَهُمْ يَعْلَمُونَ</div>
+					<div class="meaning">তিনি ব্যতীত তারা যাদের পুজা করে, তারা সুপারিশের অধিকারী হবে না, তবে যারা সত্য স্বীকার করত ও বিশ্বাস করত।<br>And those whom they invoke besides Allah have no power of intercession;- only he who bears witness to the Truth, and they know (him).</div>
+					<hr>
+					<p class="suraCount">87</p>
+					<div class="sura">وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَهُمْ لَيَقُولُنَّ اللَّهُ فَأَنَّى يُؤْفَكُونَ</div>
+					<div class="meaning">যদি আপনি তাদেরকে জিজ্ঞাসা করেন, কে তাদেরকে সৃষ্টি করেছেন, তবে অবশ্যই তারা বলবে, আল্লাহ, অতঃপর তারা কোথায় ফিরে যাচ্ছে ?<br>If thou ask them, who created them, they will certainly say, Allah. How then are they deluded away (from the Truth)?</div>
+					<hr>
+					<p class="suraCount">88</p>
+					<div class="sura">وَقِيلِهِ يَارَبِّ إِنَّ هَؤُلَاء قَوْمٌ لَّا يُؤْمِنُونَ</div>
+					<div class="meaning">রসূলের এই উক্তির কসম, হে আমার পালনকর্তা, এ সম্প্রদায় তো বিশ্বাস স্থাপন করে না।<br>((Allah) has knowledge) of the (Prophet's) cry, "O my Lord! Truly these are people who will not believe!"</div>
+					<hr>
+					<p class="suraCount">89</p>
+					<div class="sura">فَاصْفَحْ عَنْهُمْ وَقُلْ سَلَامٌ فَسَوْفَ يَعْلَمُونَ</div>
+					<div class="meaning">অতএব, আপনি তাদের থেকে মুখ ফিরিয়ে নিন এবং বলুন, ‘সালাম’। তারা শীঘ্রই জানতে পারবে।<br>But turn away from them, and say "Peace!" But soon shall they know!</div>
+				</p>
+			</div>
+		</div>
+	</body>

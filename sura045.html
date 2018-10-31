@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আল জাসিয়া Page -->
+		<div id="sura45" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আল জাসিয়া</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 37</div>
+				<audio class="audio" controls>
+					<source src="audio/045.ogg" type="audio/ogg">
+					<source src="audio/045.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">حم</div>
+					<div class="meaning">হা-মীম।<br>Ha-Mim.</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">تَنزِيلُ الْكِتَابِ مِنَ اللَّهِ الْعَزِيزِ الْحَكِيمِ</div>
+					<div class="meaning">পরাক্রান্ত, প্রজ্ঞাময় আল্লাহর পক্ষ থেকে অবতীর্ণ এ কিতাব।<br>The revelation of the Book is from Allah the Exalted in Power, Full of Wisdom.</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">إِنَّ فِي السَّمَاوَاتِ وَالْأَرْضِ لَآيَاتٍ لِّلْمُؤْمِنِينَ</div>
+					<div class="meaning">নিশ্চয় নভোমন্ডল ও ভূ-মন্ডলে মুমিনদের জন্যে নিদর্শনাবলী রয়েছে।<br>Verily in the heavens and the earth, are Signs for those who believe.</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">وَفِي خَلْقِكُمْ وَمَا يَبُثُّ مِن دَابَّةٍ آيَاتٌ لِّقَوْمٍ يُوقِنُونَ</div>
+					<div class="meaning">আর তোমাদের সৃষ্টিতে এবং চারদিকে ছড়িয়ে রাখা জীব জন্তুর সৃজনের মধ্যেও নিদর্শনাবলী রয়েছে বিশ্বাসীদের জন্য।<br>And in the creation of yourselves and the fact that animals are scattered (through the earth), are Signs for those of assured Faith.</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">وَاخْتِلَافِ اللَّيْلِ وَالنَّهَارِ وَمَا أَنزَلَ اللَّهُ مِنَ السَّمَاء مِن رِّزْقٍ فَأَحْيَا بِهِ الْأَرْضَ بَعْدَ مَوْتِهَا وَتَصْرِيفِ الرِّيَاحِ آيَاتٌ لِّقَوْمٍ يَعْقِلُونَ</div>
+					<div class="meaning">দিবারাত্রির পরিবর্তনে, আল্লাহ আকাশ থেকে যে রিযিক (বৃষ্টি) বর্ষণ করেন অতঃপর পৃথিবীকে তার মৃত্যুর পর পুনরুজ্জীবিত করেন, তাতে এবং বায়ুর পরিবর্তনে বুদ্ধিমানদের জন্যে নিদর্শনাবলী রয়েছে।<br>And in the alternation of Night and Day, and the fact that Allah sends down Sustenance from the sky, and revives therewith the earth after its death, and in the change of the winds,- are Signs for those that are wise.</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">تِلْكَ آيَاتُ اللَّهِ نَتْلُوهَا عَلَيْكَ بِالْحَقِّ فَبِأَيِّ حَدِيثٍ بَعْدَ اللَّهِ وَآيَاتِهِ يُؤْمِنُونَ</div>
+					<div class="meaning">এগুলো আল্লাহর আয়াত, যা আমি আপনার কাছে আবৃত্তি করি যথাযথরূপে। অতএব, আল্লাহ ও তাঁর আয়াতের পর তারা কোন কথায় বিশ্বাস স্থাপন করবে।<br>Such are the Signs of Allah, which We rehearse to thee in Truth; then in what exposition will they believe after (rejecting) Allah and His Signs?</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">وَيْلٌ لِّكُلِّ أَفَّاكٍ أَثِيمٍ</div>
+					<div class="meaning">প্রত্যেক মিথ্যাবাদী পাপাচারীর দুর্ভোগ।<br>Woe to each sinful dealer in Falsehoods:</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">يَسْمَعُ آيَاتِ اللَّهِ تُتْلَى عَلَيْهِ ثُمَّ يُصِرُّ مُسْتَكْبِرًا كَأَن لَّمْ يَسْمَعْهَا فَبَشِّرْهُ بِعَذَابٍ أَلِيمٍ</div>
+					<div class="meaning">সে আল্লাহর আয়াতসমূহ শুনে, অতঃপর অহংকারী হয়ে জেদ ধরে, যেন সে আয়াত শুনেনি। অতএব, তাকে যন্ত্রণাদায়ক শাস্তির সুসংবাদ দিন।<br>He hears the Signs of Allah rehearsed to him, yet is obstinate and lofty, as if he had not heard them: then announce to him a Penalty Grievous!</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">وَإِذَا عَلِمَ مِنْ آيَاتِنَا شَيْئًا اتَّخَذَهَا هُزُوًا أُوْلَئِكَ لَهُمْ عَذَابٌ مُّهِينٌ</div>
+					<div class="meaning">যখন সে আমার কোন আয়াত অবগত হয়, তখন তাকে ঠাট্টারূপে গ্রহণ করে। এদের জন্যই রয়েছে লাঞ্ছনাদায়ক শাস্তি।<br>And when he learns something of Our Signs, he takes them in jest: for such there will be a humiliating Penalty.</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">مِن وَرَائِهِمْ جَهَنَّمُ وَلَا يُغْنِي عَنْهُم مَّا كَسَبُوا شَيْئًا وَلَا مَا اتَّخَذُوا مِن دُونِ اللَّهِ أَوْلِيَاء وَلَهُمْ عَذَابٌ عَظِيمٌ</div>
+					<div class="meaning">তাদের সামনে রয়েছে জাহান্নাম। তারা যা উপার্জন করেছে, তা তাদের কোন কাজে আসবে না, তারা আল্লাহর পরিবর্তে যাদেরকে বন্ধুরূপে গ্রহণ করেছে তারাও নয়। তাদের জন্যে রয়েছে মহাশাস্তি।<br>In front of them is Hell: and of no profit to them is anything they may have earned, nor any protectors they may have taken to themselves besides Allah. for them is a tremendous Penalty.</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">هَذَا هُدًى وَالَّذِينَ كَفَرُوا بِآيَاتِ رَبِّهِمْ لَهُمْ عَذَابٌ مَّن رِّجْزٍ أَلِيمٌ</div>
+					<div class="meaning">এটা সৎপথ প্রদর্শন, আর যারা তাদের পালনকর্তার আয়াতসমূহ অস্বীকার করে, তাদের জন্যে রয়েছে কঠোর যন্ত্রণাদায়ক শাস্তি।<br>This is (true) Guidance and for those who reject the Signs of their Lord, is a grievous Penalty of abomination.</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">اللَّهُ الَّذِي سخَّرَ لَكُمُ الْبَحْرَ لِتَجْرِيَ الْفُلْكُ فِيهِ بِأَمْرِهِ وَلِتَبْتَغُوا مِن فَضْلِهِ وَلَعَلَّكُمْ تَشْكُرُونَ</div>
+					<div class="meaning">তিনি আল্লাহ যিনি সমুদ্রকে তোমাদের উপকারার্থে আয়ত্বাধীন করে দিয়েছেন, যাতে তাঁর আদেশক্রমে তাতে জাহাজ চলাচল করে এবং যাতে তোমরা তাঁর অনুগ্রহ তালাশ কর ও তাঁর প্রতি কৃতজ্ঞ হও।<br>It is Allah Who has subjected the sea to you, that ships may sail through it by His command, that ye may seek of his Bounty, and that ye may be grateful.</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">وَسَخَّرَ لَكُم مَّا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ جَمِيعًا مِّنْهُ إِنَّ فِي ذَلِكَ لَآيَاتٍ لَّقَوْمٍ يَتَفَكَّرُونَ</div>
+					<div class="meaning">এবং আয়ত্ত্বাধীন করে দিয়েছেন তোমাদের, যা আছে নভোমন্ডলে ও যা আছে ভূমন্ডলে; তাঁর পক্ষ থেকে। নিশ্চয় এতে চিন্তাশীল সম্প্রদায়ের জন্যে নিদর্শনাবলী রয়েছে।<br>And He has subjected to you, as from Him, all that is in the heavens and on earth: Behold, in that are Signs indeed for those who reflect.</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">قُل لِّلَّذِينَ آمَنُوا يَغْفِرُوا لِلَّذِينَ لا يَرْجُون أَيَّامَ اللَّهِ لِيَجْزِيَ قَوْمًا بِما كَانُوا يَكْسِبُونَ</div>
+					<div class="meaning">মুমিনদেরকে বলুন, তারা যেন তাদেরকে ক্ষমা করে, যারা আল্লাহর সে দিনগুলো সম্পর্কে বিশ্বাস রাখে না যাতে তিনি কোন সম্প্রদায়কে কৃতকর্মের প্রতিফল দেন।<br>Tell those who believe, to forgive those who do not look forward to the Days of Allah. It is for Him to recompense (for good or ill) each People according to what they have earned.</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">مَنْ عَمِلَ صَالِحًا فَلِنَفْسِهِ وَمَنْ أَسَاء فَعَلَيْهَا ثُمَّ إِلَى رَبِّكُمْ تُرْجَعُونَ</div>
+					<div class="meaning">যে সৎকাজ করছে, সে নিজের কল্যাণার্থেই তা করছে, আর যে অসৎকাজ করছে, তা তার উপরই বর্তাবে। অতঃপর তোমরা তোমাদের পালনকর্তার দিকে প্রত্যাবর্তিত হবে।<br>If any one does a righteous deed, it ensures to the benefit of his own soul; if he does evil, it works against (his own soul). In the end will ye (all) be brought back to your Lord.</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">وَلَقَدْ آتَيْنَا بَنِي إِسْرَائِيلَ الْكِتَابَ وَالْحُكْمَ وَالنُّبُوَّةَ وَرَزَقْنَاهُم مِّنَ الطَّيِّبَاتِ وَفَضَّلْنَاهُمْ عَلَى الْعَالَمِينَ</div>
+					<div class="meaning">আমি বনী ইসরাঈলকে কিতাব, রাজত্ব ও নবুওয়ত দান করেছিলাম এবং তাদেরকে পরিচ্ছন্ন রিযিক দিয়েছিলাম এবং বিশ্ববাসীর উপর শ্রেষ্ঠত্ব দিয়েছিলাম।<br>We did aforetime grant to the Children of Israel the Book the Power of Command, and Prophethood; We gave them, for Sustenance, things good and pure; and We favoured them above the nations.</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">وَآتَيْنَاهُم بَيِّنَاتٍ مِّنَ الْأَمْرِ فَمَا اخْتَلَفُوا إِلَّا مِن بَعْدِ مَا جَاءهُمْ الْعِلْمُ بَغْيًا بَيْنَهُمْ إِنَّ رَبَّكَ يَقْضِي بَيْنَهُمْ يَوْمَ الْقِيَامَةِ فِيمَا كَانُوا فِيهِ يَخْتَلِفُونَ</div>
+					<div class="meaning">আরও দিয়েছিলাম তাদেরকে ধর্মের সুস্পষ্ট প্রমাণাদি। অতঃপর তারা জ্ঞান লাভ করার পর শুধু পারস্পরিক জেদের বশবর্তী হয়ে মতভেদ সৃষ্টি করেছে। তারা যে বিষয়ে মতভেদ করত, আপনার পালনকর্তা কেয়ামতের দিন তার ফয়সালা করে দেবেন।<br>And We granted them Clear Signs in affairs (of Religion): it was only after knowledge had been granted to them that they fell into schisms, through insolent envy among themselves. Verily thy Lord will judge between them on the Day of Judgment as to those matters in which they set up differences.</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">ثُمَّ جَعَلْنَاكَ عَلَى شَرِيعَةٍ مِّنَ الْأَمْرِ فَاتَّبِعْهَا وَلَا تَتَّبِعْ أَهْوَاء الَّذِينَ لَا يَعْلَمُونَ</div>
+					<div class="meaning">এরপর আমি আপনাকে রেখেছি ধর্মের এক বিশেষ শরীয়তের উপর। অতএব, আপনি এর অনুসরণ করুন এবং অজ্ঞানদের খেয়াল-খুশীর অনুসরণ করবেন না।<br>Then We put thee on the (right) Way of Religion: so follow thou that (Way), and follow not the desires of those who know not.</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">إِنَّهُمْ لَن يُغْنُوا عَنكَ مِنَ اللَّهِ شَيئًا وإِنَّ الظَّالِمِينَ بَعْضُهُمْ أَوْلِيَاء بَعْضٍ وَاللَّهُ وَلِيُّ الْمُتَّقِينَ</div>
+					<div class="meaning">আল্লাহর সামনে তারা আপনার কোন উপকারে আসবে না। যালেমরা একে অপরের বন্ধু। আর আল্লাহ পরহেযগারদের বন্ধু।<br>They will be of no use to thee in the sight of Allah. it is only Wrong-doers (that stand as) protectors, one to another: but Allah is the Protector of the Righteous.</div>
+					<hr>
+					<p class="suraCount">20</p>
+					<div class="sura">هَذَا بَصَائِرُ لِلنَّاسِ وَهُدًى وَرَحْمَةٌ لِّقَوْمِ يُوقِنُونَ</div>
+					<div class="meaning">এটা মানুষের জন্যে জ্ঞানের কথা এবং বিশ্বাসী সম্প্রদায়ের জন্য হেদায়েত ও রহমত।<br>These are clear evidences to men and a Guidance and Mercy to those of assured Faith.</div>
+					<hr>
+					<p class="suraCount">21</p>
+					<div class="sura">أًمْ حَسِبَ الَّذِينَ اجْتَرَحُوا السَّيِّئَاتِ أّن نَّجْعَلَهُمْ كَالَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ سَوَاء مَّحْيَاهُم وَمَمَاتُهُمْ سَاء مَا يَحْكُمُونَ</div>
+					<div class="meaning">যারা দুস্কর্ম উপার্জন করেছে তারা কি মনে করে যে, আমি তাদেরকে সে লোকদের মত করে দেব, যারা ঈমান আনে ও সৎকর্ম করে এবং তাদের জীবন ও মুত্যু কি সমান হবে? তাদের দাবী কত মন্দ।<br>What! Do those who seek after evil ways think that We shall hold them equal with those who believe and do righteous deeds,- that equal will be their life and their death? Ill is the judgment that they make.</div>
+					<hr>
+					<p class="suraCount">22</p>
+					<div class="sura">وَخَلَقَ اللَّهُ السَّمَاوَاتِ وَالْأَرْضَ بِالْحَقِّ وَلِتُجْزَى كُلُّ نَفْسٍ بِمَا كَسَبَتْ وَهُمْ لَا يُظْلَمُونَ</div>
+					<div class="meaning">আল্লাহ নভোমন্ডল ও ভূ-মন্ডল যথাযথভাবে সৃষ্টি করেছেন, যাতে প্রত্যেক ব্যক্তি তার উপার্জনের ফল পায়। তাদের প্রতি যুলুম করা হবে না।<br>Allah created the heavens and the earth for just ends, and in order that each soul may find the recompense of what it has earned, and none of them be wronged.</div>
+					<hr>
+					<p class="suraCount">23</p>
+					<div class="sura">أَفَرَأَيْتَ مَنِ اتَّخَذَ إِلَهَهُ هَوَاهُ وَأَضَلَّهُ اللَّهُ عَلَى عِلْمٍ وَخَتَمَ عَلَى سَمْعِهِ وَقَلْبِهِ وَجَعَلَ عَلَى بَصَرِهِ غِشَاوَةً فَمَن يَهْدِيهِ مِن بَعْدِ اللَّهِ أَفَلَا تَذَكَّرُونَ</div>
+					<div class="meaning">আপনি কি তার প্রতি লক্ষ্য করেছেন, যে তার খেয়াল-খুশীকে স্বীয় উপাস্য স্থির করেছে? আল্লাহ জেনে শুনে তাকে পথভ্রষ্ট করেছেন, তার কান ও অন্তরে মহর এঁটে দিয়েছেন এবং তার চোখের উপর রেখেছেন পর্দা। অতএব, আল্লাহর পর কে তাকে পথ প্রদর্শন করবে? তোমরা কি চিন্তাভাবনা কর না?<br>Then seest thou such a one as takes as his god his own vain desire? Allah has, knowing (him as such), left him astray, and sealed his hearing and his heart (and understanding), and put a cover on his sight. Who, then, will guide him after Allah (has withdrawn Guidance)? Will ye not then receive admonition?</div>
+					<hr>
+					<p class="suraCount">24</p>
+					<div class="sura">وَقَالُوا مَا هِيَ إِلَّا حَيَاتُنَا الدُّنْيَا نَمُوتُ وَنَحْيَا وَمَا يُهْلِكُنَا إِلَّا الدَّهْرُ وَمَا لَهُم بِذَلِكَ مِنْ عِلْمٍ إِنْ هُمْ إِلَّا يَظُنُّونَ</div>
+					<div class="meaning">তারা বলে, আমাদের পার্থিব জীবনই তো শেষ; আমরা মরি ও বাঁচি মহাকালই আমাদেরকে ধ্বংস করে। তাদের কাছে এ ব্যাপারে কোন জ্ঞান নেই। তারা কেবল অনুমান করে কথা বলে।<br>And they say: "What is there but our life in this world? We shall die and we live, and nothing but time can destroy us." But of that they have no knowledge: they merely conjecture:</div>
+					<hr>
+					<p class="suraCount">25</p>
+					<div class="sura">وَإِذَا تُتْلَى عَلَيْهِمْ آيَاتُنَا بَيِّنَاتٍ مَّا كَانَ حُجَّتَهُمْ إِلَّا أَن قَالُوا ائْتُوا بِآبَائِنَا إِن كُنتُمْ صَادِقِينَ</div>
+					<div class="meaning">তাদের কাছে যখন আমার সুস্পষ্ট আয়াতসমূহ পাঠ করা হয়, তখন একথা বলা ছাড়া তাদের কোন মুক্তিই থাকে না যে, তোমরা সত্যবাদী হলে আমাদের পূর্বপুরুষদেরকে নিয়ে আস।<br>And when Our Clear Signs are rehearsed to them their argument is nothing but this: They say, "Bring (back) our forefathers, if what ye say is true!"</div>
+					<hr>
+					<p class="suraCount">26</p>
+					<div class="sura">قُلِ اللَّهُ يُحْيِيكُمْ ثُمَّ يُمِيتُكُمْ ثُمَّ يَجْمَعُكُمْ إِلَى يَوْمِ الْقِيَامَةِ لَا رَيبَ فِيهِ وَلَكِنَّ أَكَثَرَ النَّاسِ لَا يَعْلَمُونَ</div>
+					<div class="meaning">আপনি বলুন, আল্লাহই তোমাদেরকে জীবন দান করেন, অতঃপর মৃত্যু দেন, অতঃপর তোমাদেরকে কেয়ামতের দিন একত্রিত করবেন, যাতে কোন সন্দেহ নেই। কিন্তু অধিকাংশ মানুষ বোঝে না।<br>Say: "It is Allah Who gives you life, then gives you death; then He will gather you together for the Day of Judgment about which there is no doubt": But most men do not understand.</div>
+					<hr>
+					<p class="suraCount">27</p>
+					<div class="sura">وَلَلَّهِ مُلْكُ السَّمَاوَاتِ وَالْأَرضِ وَيَومَ تَقُومُ السَّاعَةُ يَوْمَئِذٍ يَخْسَرُ الْمُبْطِلُونَ</div>
+					<div class="meaning">নভোমন্ডল ও ভূ-মন্ডলের রাজত্ব আল্লাহরই। যেদিন কেয়ামত সংঘটিত হবে, সেদিন মিথ্যাপন্থীরা ক্ষতিগ্রস্ত হবে।<br>To Allah belongs the dominion of the heavens and the earth, and the Day that the Hour of Judgment is established,- that Day will the dealers in Falsehood perish!</div>
+					<hr>
+					<p class="suraCount">28</p>
+					<div class="sura">وَتَرَى كُلَّ أُمَّةٍ جَاثِيَةً كُلُّ أُمَّةٍ تُدْعَى إِلَى كِتَابِهَا الْيَوْمَ تُجْزَوْنَ مَا كُنتُمْ تَعْمَلُونَ</div>
+					<div class="meaning">আপনি প্রত্যেক উম্মতকে দেখবেন নতজানু অবস্থায়। প্রত্যেক উম্মতকে তাদের আমলনামা দেখতে বলা হবে। তোমরা যা করতে, অদ্য তোমারদেরকে তার প্রতিফল দেয়া হবে।<br>And thou wilt see every sect bowing the knee: Every sect will be called to its Record: "This Day shall ye be recompensed for all that ye did!</div>
+					<hr>
+					<p class="suraCount">29</p>
+					<div class="sura">هَذَا كِتَابُنَا يَنطِقُ عَلَيْكُم بِالْحَقِّ إِنَّا كُنَّا نَسْتَنسِخُ مَا كُنتُمْ تَعْمَلُونَ</div>
+					<div class="meaning">আমার কাছে রক্ষিত এই আমলনামা তোমাদের সম্পর্কে সত্য কথা বলবে। তোমরা যা করতে আমি তা লিপিবদ্ধ করতাম।<br>"This Our Record speaks about you with truth: For We were wont to put on Record all that ye did."</div>
+					<hr>
+					<p class="suraCount">30</p>
+					<div class="sura">فَأَمَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ فَيُدْخِلُهُمْ رَبُّهُمْ فِي رَحْمَتِهِ ذَلِكَ هُوَ الْفَوْزُ الْمُبِينُ</div>
+					<div class="meaning">যারা বিশ্বাস স্থাপন করেছে ও সৎকর্ম করেছে, তাদেরকে তাদের পালনকর্তা স্বীয় রহমতে দাখিল করবেন। এটাই প্রকাশ্য সাফল্য।<br>Then, as to those who believed and did righteous deeds, their Lord will admit them to His Mercy that will be the achievement for all to see.</div>
+					<hr>
+					<p class="suraCount">31</p>
+					<div class="sura">وَأَمَّا الَّذِينَ كَفَرُوا أَفَلَمْ تَكُنْ آيَاتِي تُتْلَى عَلَيْكُمْ فَاسْتَكْبَرْتُمْ وَكُنتُمْ قَوْمًا مُّجْرِمِينَ</div>
+					<div class="meaning">আর যারা কুফর করেছে, তাদেরকে জিজ্ঞাসা করা হবে, তোমাদের কাছে কি আয়াতসমূহ পঠিত হত না? কিন্তু তোমরা অহংকার করছিলে এবং তোমরা ছিলে এক অপরাধী সম্প্রদায়।<br>But as to those who rejected Allah, (to them will be said): "Were not Our Signs rehearsed to you? But ye were arrogant, and were a people given to sin!</div>
+					<hr>
+					<p class="suraCount">32</p>
+					<div class="sura">وَإِذَا قِيلَ إِنَّ وَعْدَ اللَّهِ حَقٌّ وَالسَّاعَةُ لَا رَيْبَ فِيهَا قُلْتُم مَّا نَدْرِي مَا السَّاعَةُ إِن نَّظُنُّ إِلَّا ظَنًّا وَمَا نَحْنُ بِمُسْتَيْقِنِينَ</div>
+					<div class="meaning">যখন বলা হত, আল্লাহর ওয়াদা সত্য এবং কেয়ামতে কোন সন্দেহ নেই, তখন তোমরা বলতে আমরা জানি না কেয়ামত কি ? আমরা কেবল ধারণাই করি এবং এ বিষয়ে আমরা নিশ্চিত নই।<br>"And when it was said that the promise of Allah was true, and that the Hour- there was no doubt about its (coming), ye used to say, 'We know not what is the hour: we only think it is an idea, and we have no firm assurance.'"</div>
+					<hr>
+					<p class="suraCount">33</p>
+					<div class="sura">وَبَدَا لَهُمْ سَيِّئَاتُ مَا عَمِلُوا وَحَاقَ بِهِم مَّا كَانُوا بِهِ يَسْتَهْزِؤُون</div>
+					<div class="meaning">তাদের মন্দ কর্ম গুলো তাদের সামনে প্রকাশ হয়ে পড়বে এবং যে আযাব নিয়ে তারা ঠাট্টা-বিদ্রুপ করত, তা তাদেরকে গ্রাস করবে।<br>Then will appear to them the evil (fruits) of what they did, and they will be completely encircled by that which they used to mock at!</div>
+					<hr>
+					<p class="suraCount">34</p>
+					<div class="sura">وَقِيلَ الْيَوْمَ نَنسَاكُمْ كَمَا نَسِيتُمْ لِقَاء يَوْمِكُمْ هَذَا وَمَأْوَاكُمْ النَّارُ وَمَا لَكُم مِّن نَّاصِرِينَ</div>
+					<div class="meaning">বলা হবে, আজ আমি তোমাদেরকে ভুলে যাব, যেমন তোমরা এ দিনের সাক্ষাৎকে ভুলে গিয়েছিলে। তোমাদের আবাসস্থল জাহান্নাম এবং তোমাদের সাহায্যকারী নেই।<br>It will also be said: "This Day We will forget you as ye forgot the meeting of this Day of yours! and your abode is the Fire, and no helpers have ye!</div>
+					<hr>
+					<p class="suraCount">35</p>
+					<div class="sura">ذَلِكُم بِأَنَّكُمُ اتَّخَذْتُمْ آيَاتِ اللَّهِ هُزُوًا وَغَرَّتْكُمُ الْحَيَاةُ الدُّنْيَا فَالْيَوْمَ لَا يُخْرَجُونَ مِنْهَا وَلَا هُمْ يُسْتَعْتَبُونَ</div>
+					<div class="meaning">এটা এজন্যে যে, তোমরা আল্লাহর আয়াতসমূহকে ঠাট্টারূপে গ্রহণ করেছিলে এবং পার্থিব জীবন তোমাদেরকে প্রতারিত করেছিল। সুতরাং আজ তাদেরকে জাহান্নাম থেকে বের করা হবে না এবং তাদের কাছে তওবা চাওয়া হবে না।<br>"This, because ye used to take the Signs of Allah in jest, and the life of the world deceived you:" (From) that Day, therefore, they shall not be taken out thence, nor shall they be received into Grace.</div>
+					<hr>
+					<p class="suraCount">36</p>
+					<div class="sura">فَلِلَّهِ الْحَمْدُ رَبِّ السَّمَاوَاتِ وَرَبِّ الْأَرْضِ رَبِّ الْعَالَمِينَ</div>
+					<div class="meaning">অতএব, বিশ্বজগতের পালনকর্তা, ভূ-মন্ডলের পালনকর্তা ও নভোমন্ডলের পালনকর্তা আল্লাহর-ই প্রশংসা।<br>Then Praise be to Allah, Lord of the heavens and Lord of the earth,- Lord and Cherisher of all the Worlds!</div>
+					<hr>
+					<p class="suraCount">37</p>
+					<div class="sura">وَلَهُ الْكِبْرِيَاء فِي السَّمَاوَاتِ وَالْأَرْضِ وَهُوَ الْعَزِيزُ الْحَكِيمُ</div>
+					<div class="meaning">নভোমন্ডলে ও ভূ-মন্ডলে তাঁরই গৌরব। তিনি পরাক্রমশালী, প্রজ্ঞাময়।<br>To Him be glory throughout the heavens and the earth: and He is Exalted in Power, Full of Wisdom!</div>
+				</p>
+			</div>
+		</div>
+	</body>
