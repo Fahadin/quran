@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আদ্ব-দ্বোহা Page -->
+		<div id="sura93" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আদ্ব-দ্বোহা</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 11</div>
+				<audio class="audio" controls>
+					<source src="audio/093.ogg" type="audio/ogg">
+					<source src="audio/093.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">وَالضُّحَى</div>
+					<div class="meaning">শপথ পূর্বাহ্নের,<br>By the Glorious Morning Light,</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">وَاللَّيْلِ إِذَا سَجَى</div>
+					<div class="meaning">শপথ রাত্রির যখন তা গভীর হয়,<br>And by the Night when it is still,-</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَى</div>
+					<div class="meaning">আপনার পালনকর্তা আপনাকে ত্যাগ করেনি এবং আপনার প্রতি বিরূপও হননি।<br>Thy Guardian-Lord hath not forsaken thee, nor is He displeased.</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">وَلَلْآخِرَةُ خَيْرٌ لَّكَ مِنَ الْأُولَى</div>
+					<div class="meaning">আপনার জন্যে পরকাল ইহকাল অপেক্ষা শ্রেয়।<br>And verily the Hereafter will be better for thee than the present.</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَى</div>
+					<div class="meaning">আপনার পালনকর্তা সত্বরই আপনাকে দান করবেন, অতঃপর আপনি সন্তুষ্ট হবেন।<br>And soon will thy Guardian-Lord give thee (that wherewith) thou shalt be well-pleased.</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">أَلَمْ يَجِدْكَ يَتِيمًا فَآوَى</div>
+					<div class="meaning">তিনি কি আপনাকে এতীমরূপে পাননি? অতঃপর তিনি আশ্রয় দিয়েছেন।<br>Did He not find thee an orphan and give thee shelter (and care)?</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">وَوَجَدَكَ ضَالًّا فَهَدَى</div>
+					<div class="meaning">তিনি আপনাকে পেয়েছেন পথহারা, অতঃপর পথপ্রদর্শন করেছেন।<br>And He found thee wandering, and He gave thee guidance.</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">وَوَجَدَكَ عَائِلًا فَأَغْنَى</div>
+					<div class="meaning">তিনি আপনাকে পেয়েছেন নিঃস্ব, অতঃপর অভাবমুক্ত করেছেন।<br>And He found thee in need, and made thee independent.</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">فَأَمَّا الْيَتِيمَ فَلَا تَقْهَرْ</div>
+					<div class="meaning">সুতরাং আপনি এতীমের প্রতি কঠোর হবেন না;<br>Therefore, treat not the orphan with harshness,</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">وَأَمَّا السَّائِلَ فَلَا تَنْهَرْ</div>
+					<div class="meaning">সওয়ালকারীকে ধমক দেবেন না।<br>Nor repulse the petitioner (unheard);</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ</div>
+					<div class="meaning">এবং আপনার পালনকর্তার নেয়ামতের কথা প্রকাশ করুন।<br>But the bounty of the Lord - rehearse and proclaim!</div>
+				</p>
+			</div>
+		</div>
+	</body>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আত্ব-তারিক্ব Page -->
+		<div id="sura86" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আত্ব-তারিক্ব</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 17</div>
+				<audio class="audio" controls>
+					<source src="audio/086.ogg" type="audio/ogg">
+					<source src="audio/086.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">وَالسَّمَاء وَالطَّارِقِ</div>
+					<div class="meaning">শপথ আকাশের এবং রাত্রিতে আগমনকারীর।<br>By the Sky and the Night-Visitant (therein);-</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">وَمَا أَدْرَاكَ مَا الطَّارِقُ</div>
+					<div class="meaning">আপনি জানেন, যে রাত্রিতে আসে সেটা কি?<br>And what will explain to thee what the Night-Visitant is?-</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">النَّجْمُ الثَّاقِبُ</div>
+					<div class="meaning">সেটা এক উজ্জ্বল নক্ষত্র।<br>(It is) the Star of piercing brightness;-</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">إِن كُلُّ نَفْسٍ لَّمَّا عَلَيْهَا حَافِظٌ</div>
+					<div class="meaning">প্রত্যেকের উপর একজন তত্ত্বাবধায়ক রয়েছে।<br>There is no soul but has a protector over it.</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ</div>
+					<div class="meaning">অতএব, মানুষের দেখা উচিত কি বস্তু থেকে সে সৃজিত হয়েছে।<br>Now let man but think from what he is created!</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">خُلِقَ مِن مَّاء دَافِقٍ</div>
+					<div class="meaning">সে সৃজিত হয়েছে সবেগে স্খলিত পানি থেকে।<br>He is created from a drop emitted-</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">يَخْرُجُ مِن بَيْنِ الصُّلْبِ وَالتَّرَائِبِ</div>
+					<div class="meaning">এটা নির্গত হয় মেরুদন্ড ও বক্ষপাজরের মধ্য থেকে।<br>Proceeding from between the backbone and the ribs:</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">إِنَّهُ عَلَى رَجْعِهِ لَقَادِرٌ</div>
+					<div class="meaning">নিশ্চয় তিনি তাকে ফিরিয়ে নিতে সক্ষম।<br>Surely ((Allah)) is able to bring him back (to life)!</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">يَوْمَ تُبْلَى السَّرَائِرُ</div>
+					<div class="meaning">যেদিন গোপন বিষয়াদি পরীক্ষিত হবে,<br>The Day that (all) things secret will be tested,</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">فَمَا لَهُ مِن قُوَّةٍ وَلَا نَاصِرٍ</div>
+					<div class="meaning">সেদিন তার কোন শক্তি থাকবে না এবং সাহায্যকারীও থাকবে না।<br>(Man) will have no power, and no helper.</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">وَالسَّمَاء ذَاتِ الرَّجْعِ</div>
+					<div class="meaning">শপথ চক্রশীল আকাশের<br>By the Firmament which returns (in its round),</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">وَالْأَرْضِ ذَاتِ الصَّدْعِ</div>
+					<div class="meaning">এবং বিদারনশীল পৃথিবীর<br>And by the Earth which opens out (for the gushing of springs or the sprouting of vegetation),-</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">إِنَّهُ لَقَوْلٌ فَصْلٌ</div>
+					<div class="meaning">নিশ্চয় কোরআন সত্য-মিথ্যার ফয়সালা।<br>Behold this is the Word that distinguishes (Good from Evil):</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">وَمَا هُوَ بِالْهَزْلِ</div>
+					<div class="meaning">এবং এটা উপহাস নয়।<br>It is not a thing for amusement.</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">إِنَّهُمْ يَكِيدُونَ كَيْدًا</div>
+					<div class="meaning">তারা ভীষণ চক্রান্ত করে,<br>As for them, they are but plotting a scheme,</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">وَأَكِيدُ كَيْدًا</div>
+					<div class="meaning">আর আমিও কৌশল করি।<br>And I am planning a scheme.</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">فَمَهِّلِ الْكَافِرِينَ أَمْهِلْهُمْ رُوَيْدًا</div>
+					<div class="meaning">অতএব, কাফেরদেরকে অবকাশ দিন, তাদেরকে অবকাশ দিন, কিছু দিনের জন্যে।<br>Therefore grant a delay to the Unbelievers: Give respite to them gently (for awhile).</div>
+				</p>
+			</div>
+		</div>
+	</body>

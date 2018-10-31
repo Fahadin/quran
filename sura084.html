@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আল ইনশিক্বাক্ব Page -->
+		<div id="sura84" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আল ইনশিক্বাক্ব</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 25</div>
+				<audio class="audio" controls>
+					<source src="audio/084.ogg" type="audio/ogg">
+					<source src="audio/084.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">إِذَا السَّمَاء انشَقَّتْ</div>
+					<div class="meaning">যখন আকাশ বিদীর্ণ হবে,<br>When the sky is rent asunder,</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ</div>
+					<div class="meaning">ও তার পালনকর্তার আদেশ পালন করবে এবং আকাশ এরই উপযুক্ত<br>And hearkens to (the Command of) its Lord, and it must needs (do so);-</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">وَإِذَا الْأَرْضُ مُدَّتْ</div>
+					<div class="meaning">এবং যখন পৃথিবীকে সম্প্রসারিত করা হবে।<br>And when the earth is flattened out,</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">وَأَلْقَتْ مَا فِيهَا وَتَخَلَّتْ</div>
+					<div class="meaning">এবং পৃথিবী তার গর্ভস্থিত সবকিছু বাইরে নিক্ষেপ করবে ও শুন্যগর্ভ হয়ে যাবে।<br>And casts forth what is within it and becomes (clean) empty,</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ</div>
+					<div class="meaning">এবং তার পালনকর্তার আদেশ পালন করবে এবং পৃথিবী এরই উপযুক্ত।<br>And hearkens to (the Command of) its Lord,- and it must needs (do so);- (then will come Home the full reality).</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">يَا أَيُّهَا الْإِنسَانُ إِنَّكَ كَادِحٌ إِلَى رَبِّكَ كَدْحًا فَمُلَاقِيهِ</div>
+					<div class="meaning">হে মানুষ, তোমাকে তোমরা পালনকর্তা পর্যন্ত পৌছতে কষ্ট স্বীকার করতে হবে, অতঃপর তার সাক্ষাৎ ঘটবে।<br>O thou man! Verily thou art ever toiling on towards thy Lord- painfully toiling,- but thou shalt meet Him.</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">فَأَمَّا مَنْ أُوتِيَ كِتَابَهُ بِيَمِينِهِ</div>
+					<div class="meaning">যাকে তার আমলনামা ডান হাতে দেয়া হবে<br>Then he who is given his Record in his right hand,</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">فَسَوْفَ يُحَاسَبُ حِسَابًا يَسِيرًا</div>
+					<div class="meaning">তার হিসাব-নিকাশ সহজে হয়ে যাবে<br>Soon will his account be taken by an easy reckoning,</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">وَيَنقَلِبُ إِلَى أَهْلِهِ مَسْرُورًا</div>
+					<div class="meaning">এবং সে তার পরিবার-পরিজনের কাছে হৃষ্টচিত্তে ফিরে যাবে<br>And he will turn to his people, rejoicing!</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">وَأَمَّا مَنْ أُوتِيَ كِتَابَهُ وَرَاء ظَهْرِهِ</div>
+					<div class="meaning">এবং যাকে তার আমলনামা পিঠের পশ্চাদ্দিক থেকে দেয়া, হবে,<br>But he who is given his Record behind his back,-</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">فَسَوْفَ يَدْعُو ثُبُورًا</div>
+					<div class="meaning">সে মৃত্যুকে আহবান করবে,<br>Soon will he cry for perdition,</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">وَيَصْلَى سَعِيرًا</div>
+					<div class="meaning">এবং জাহান্নামে প্রবেশ করবে।<br>And he will enter a Blazing Fire.</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">إِنَّهُ كَانَ فِي أَهْلِهِ مَسْرُورًا</div>
+					<div class="meaning">সে তার পরিবার-পরিজনের মধ্যে আনন্দিত ছিল।<br>Truly, did he go about among his people, rejoicing!</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">إِنَّهُ ظَنَّ أَن لَّن يَحُورَ</div>
+					<div class="meaning">সে মনে করত যে, সে কখনও ফিরে যাবে না।<br>Truly, did he think that he would not have to return (to Us)!</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">بَلَى إِنَّ رَبَّهُ كَانَ بِهِ بَصِيرًا</div>
+					<div class="meaning">কেন যাবে না, তার পালনকর্তা তো তাকে দেখতেন।<br>Nay, nay! for his Lord was (ever) watchful of him!</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">فَلَا أُقْسِمُ بِالشَّفَقِ</div>
+					<div class="meaning">আমি শপথ করি সন্ধ্যাকালীন লাল আভার<br>So I do call to witness the ruddy glow of Sunset;</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">وَاللَّيْلِ وَمَا وَسَقَ</div>
+					<div class="meaning">এবং রাত্রির, এবং তাতে যার সমাবেশ ঘটে<br>The Night and its Homing;</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">وَالْقَمَرِ إِذَا اتَّسَقَ</div>
+					<div class="meaning">এবং চন্দ্রের, যখন তা পূর্ণরূপ লাভ করে,<br>And the Moon in her fullness:</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">لَتَرْكَبُنَّ طَبَقًا عَن طَبَقٍ</div>
+					<div class="meaning">নিশ্চয় তোমরা এক সিঁড়ি থেকে আরেক সিঁড়িতে আরোহণ করবে।<br>Ye shall surely travel from stage to stage.</div>
+					<hr>
+					<p class="suraCount">20</p>
+					<div class="sura">فَمَا لَهُمْ لَا يُؤْمِنُونَ</div>
+					<div class="meaning">অতএব, তাদের কি হল যে, তারা ঈমান আনে না?<br>What then is the matter with them, that they believe not?-</div>
+					<hr>
+					<p class="suraCount">21</p>
+					<div class="sura">وَإِذَا قُرِئَ عَلَيْهِمُ الْقُرْآنُ لَا يَسْجُدُونَ</div>
+					<div class="meaning">যখন তাদের কাছে কোরআন পাঠ করা হয়, তখন সেজদা করে না।<br>And when the Qur'an is read to them, they fall not prostrate,</div>
+					<hr>
+					<p class="suraCount">22</p>
+					<div class="sura">بَلِ الَّذِينَ كَفَرُواْ يُكَذِّبُونَ</div>
+					<div class="meaning">বরং কাফেররা এর প্রতি মিথ্যারোপ করে।<br>But on the contrary the Unbelievers reject (it).</div>
+					<hr>
+					<p class="suraCount">23</p>
+					<div class="sura">وَاللَّهُ أَعْلَمُ بِمَا يُوعُونَ</div>
+					<div class="meaning">তারা যা সংরক্ষণ করে, আল্লাহ তা জানেন।<br>But Allah has full knowledge of what they secrete (in their breasts)</div>
+					<hr>
+					<p class="suraCount">24</p>
+					<div class="sura">فَبَشِّرْهُم بِعَذَابٍ أَلِيمٍ</div>
+					<div class="meaning">অতএব, তাদেরকে যন্ত্রণাদায়ক শাস্তির সুসংবাদ দিন।<br>So announce to them a Penalty Grievous,</div>
+					<hr>
+					<p class="suraCount">25</p>
+					<div class="sura">إِلَّا الَّذِينَ آمَنُواْ وَعَمِلُواْ الصَّالِحَاتِ لَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ</div>
+					<div class="meaning">কিন্তু যারা বিশ্বাস স্থাপন করে ও সৎকর্ম করে, তাদের জন্য রয়েছে অফুরন্ত পুরস্কার।<br>Except to those who believe and work righteous deeds: For them is a Reward that will never fail.</div>
+				</p>
+			</div>
+		</div>
+	</body>

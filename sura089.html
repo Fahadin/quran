@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আল ফজর Page -->
+		<div id="sura89" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আল ফজর</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 30</div>
+				<audio class="audio" controls>
+					<source src="audio/089.ogg" type="audio/ogg">
+					<source src="audio/089.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">وَالْفَجْرِ</div>
+					<div class="meaning">শপথ ফজরের,<br>By the break of Day</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">وَلَيَالٍ عَشْرٍ</div>
+					<div class="meaning">শপথ দশ রাত্রির, শপথ তার,<br>By the Nights twice five;</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">وَالشَّفْعِ وَالْوَتْرِ</div>
+					<div class="meaning">যা জোড় ও যা বিজোড়<br>By the even and odd (contrasted);</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">وَاللَّيْلِ إِذَا يَسْرِ</div>
+					<div class="meaning">এবং শপথ রাত্রির যখন তা গত হতে থাকে<br>And by the Night when it passeth away;-</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">هَلْ فِي ذَلِكَ قَسَمٌ لِّذِي حِجْرٍ</div>
+					<div class="meaning">এর মধ্যে আছে শপথ জ্ঞানী ব্যক্তির জন্যে।<br>Is there (not) in these an adjuration (or evidence) for those who understand?</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ</div>
+					<div class="meaning">আপনি কি লক্ষ্য করেননি, আপনার পালনকর্তা আদ বংশের ইরাম গোত্রের সাথে কি আচরণ করেছিলেন,<br>Seest thou not how thy Lord dealt with the 'Ad (people),-</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">إِرَمَ ذَاتِ الْعِمَادِ</div>
+					<div class="meaning">যাদের দৈহিক গঠন স্তম্ভ ও খুঁটির ন্যায় দীর্ঘ ছিল এবং<br>Of the (city of) Iram, with lofty pillars,</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">الَّتِي لَمْ يُخْلَقْ مِثْلُهَا فِي الْبِلَادِ</div>
+					<div class="meaning">যাদের সমান শক্তি ও বলবীর্যে সারা বিশ্বের শহরসমূহে কোন লোক সৃজিত হয়নি<br>The like of which were not produced in (all) the land?</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">وَثَمُودَ الَّذِينَ جَابُوا الصَّخْرَ بِالْوَادِ</div>
+					<div class="meaning">এবং সামুদ গোত্রের সাথে, যারা উপত্যকায় পাথর কেটে গৃহ নির্মাণ করেছিল।<br>And with the Thamud (people), who cut out (huge) rocks in the valley?-</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">وَفِرْعَوْنَ ذِي الْأَوْتَادِ</div>
+					<div class="meaning">এবং বহু কীলকের অধিপতি ফেরাউনের সাথে<br>And with Pharaoh, lord of stakes?</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">الَّذِينَ طَغَوْا فِي الْبِلَادِ</div>
+					<div class="meaning">যারা দেশে সীমালঙ্ঘন করেছিল।<br>(All) these transgressed beyond bounds in the lands,</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">فَأَكْثَرُوا فِيهَا الْفَسَادَ</div>
+					<div class="meaning">অতঃপর সেখানে বিস্তর অশান্তি সৃষ্টি করেছিল।<br>And heaped therein mischief (on mischief).</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ</div>
+					<div class="meaning">অতঃপর আপনার পালনকর্তা তাদেরকে শাস্তির কশাঘাত করলেন।<br>Therefore did thy Lord pour on them a scourge of diverse chastisements:</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">إِنَّ رَبَّكَ لَبِالْمِرْصَادِ</div>
+					<div class="meaning">নিশ্চয় আপনার পালকর্তা সতর্ক দৃষ্টি রাখেন।<br>For thy Lord is (as a Guardian) on a watch-tower.</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">فَأَمَّا الْإِنسَانُ إِذَا مَا ابْتَلَاهُ رَبُّهُ فَأَكْرَمَهُ وَنَعَّمَهُ فَيَقُولُ رَبِّي أَكْرَمَنِ</div>
+					<div class="meaning">মানুষ এরূপ যে, যখন তার পালনকর্তা তাকে পরীক্ষা করেন, অতঃপর সম্মান ও অনুগ্রহ দান করেন, তখন বলে, আমার পালনকর্তা আমাকে সম্মান দান করেছেন।<br>Now, as for man, when his Lord trieth him, giving him honour and gifts, then saith he, (puffed up), "My Lord hath honoured me."</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">وَأَمَّا إِذَا مَا ابْتَلَاهُ فَقَدَرَ عَلَيْهِ رِزْقَهُ فَيَقُولُ رَبِّي أَهَانَنِ</div>
+					<div class="meaning">এবং যখন তাকে পরীক্ষা করেন, অতঃপর রিযিক সংকুচিত করে দেন, তখন বলেঃ আমার পালনকর্তা আমাকে হেয় করেছেন।<br>But when He trieth him, restricting his subsistence for him, then saith he (in despair), "My Lord hath humiliated me!"</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">كَلَّا بَل لَّا تُكْرِمُونَ الْيَتِيمَ</div>
+					<div class="meaning">এটা অমূলক, বরং তোমরা এতীমকে সম্মান কর না।<br>Nay, nay! but ye honour not the orphans!</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">وَلَا تَحَاضُّونَ عَلَى طَعَامِ الْمِسْكِينِ</div>
+					<div class="meaning">এবং মিসকীনকে অন্নদানে পরস্পরকে উৎসাহিত কর না।<br>Nor do ye encourage one another to feed the poor!-</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">وَتَأْكُلُونَ التُّرَاثَ أَكْلًا لَّمًّا</div>
+					<div class="meaning">এবং তোমরা মৃতের ত্যাজ্য সম্পত্তি সম্পূর্ণরূপে কুক্ষিগত করে ফেল<br>And ye devour inheritance - all with greed,</div>
+					<hr>
+					<p class="suraCount">20</p>
+					<div class="sura">وَتُحِبُّونَ الْمَالَ حُبًّا جَمًّا</div>
+					<div class="meaning">এবং তোমরা ধন-সম্পদকে প্রাণভরে ভালবাস।<br>And ye love wealth with inordinate love!</div>
+					<hr>
+					<p class="suraCount">21</p>
+					<div class="sura">كَلَّا إِذَا دُكَّتِ الْأَرْضُ دَكًّا دَكًّا</div>
+					<div class="meaning">এটা অনুচিত। যখন পৃথিবী চুর্ণ-বিচুর্ণ হবে<br>Nay! When the earth is pounded to powder,</div>
+					<hr>
+					<p class="suraCount">22</p>
+					<div class="sura">وَجَاء رَبُّكَ وَالْمَلَكُ صَفًّا صَفًّا</div>
+					<div class="meaning">এবং আপনার পালনকর্তা ও ফেরেশতাগণ সারিবদ্ধভাবে উপস্থিত হবেন,<br>And thy Lord cometh, and His angels, rank upon rank,</div>
+					<hr>
+					<p class="suraCount">23</p>
+					<div class="sura">وَجِيءَ يَوْمَئِذٍ بِجَهَنَّمَ يَوْمَئِذٍ يَتَذَكَّرُ الْإِنسَانُ وَأَنَّى لَهُ الذِّكْرَى</div>
+					<div class="meaning">এবং সেদিন জাহান্নামকে আনা হবে, সেদিন মানুষ স্মরণ করবে, কিন্তু এই স্মরণ তার কি কাজে আসবে?<br>And Hell, that Day, is brought (face to face),- on that Day will man remember, but how will that remembrance profit him?</div>
+					<hr>
+					<p class="suraCount">24</p>
+					<div class="sura">يَقُولُ يَا لَيْتَنِي قَدَّمْتُ لِحَيَاتِي</div>
+					<div class="meaning">সে বলবেঃ হায়, এ জীবনের জন্যে আমি যদি কিছু অগ্রে প্রেরণ করতাম!<br>He will say: "Ah! Would that I had sent forth (good deeds) for (this) my (Future) Life!"</div>
+					<hr>
+					<p class="suraCount">25</p>
+					<div class="sura">فَيَوْمَئِذٍ لَّا يُعَذِّبُ عَذَابَهُ أَحَدٌ</div>
+					<div class="meaning">সেদিন তার শাস্তির মত শাস্তি কেউ দিবে না।<br>For, that Day, His Chastisement will be such as none (else) can inflict,</div>
+					<hr>
+					<p class="suraCount">26</p>
+					<div class="sura">وَلَا يُوثِقُ وَثَاقَهُ أَحَدٌ</div>
+					<div class="meaning">এবং তার বন্ধনের মত বন্ধন কেউ দিবে না।<br>And His bonds will be such as none (other) can bind.</div>
+					<hr>
+					<p class="suraCount">27</p>
+					<div class="sura">يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ</div>
+					<div class="meaning">হে প্রশান্ত মন,<br>(To the righteous soul will be said:) "O (thou) soul, in (complete) rest and satisfaction!</div>
+					<hr>
+					<p class="suraCount">28</p>
+					<div class="sura">ارْجِعِي إِلَى رَبِّكِ رَاضِيَةً مَّرْضِيَّةً</div>
+					<div class="meaning">তুমি তোমার পালনকর্তার নিকট ফিরে যাও সন্তুষ্ট ও সন্তোষভাজন হয়ে।<br>"Come back thou to thy Lord,- well pleased (thyself), and well-pleasing unto Him!</div>
+					<hr>
+					<p class="suraCount">29</p>
+					<div class="sura">فَادْخُلِي فِي عِبَادِي</div>
+					<div class="meaning">অতঃপর আমার বান্দাদের অন্তর্ভুক্ত হয়ে যাও।<br>"Enter thou, then, among My devotees!</div>
+					<hr>
+					<p class="suraCount">30</p>
+					<div class="sura">وَادْخُلِي جَنَّتِي</div>
+					<div class="meaning">এবং আমার জান্নাতে প্রবেশ কর।<br>"Yea, enter thou My Heaven!</div>
+				</p>
+			</div>
+		</div>
+	</body>

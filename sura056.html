@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আল ওয়াক্বিয়া Page -->
+		<div id="sura56" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আল ওয়াক্বিয়া</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 96</div>
+				<audio class="audio" controls>
+					<source src="audio/056.ogg" type="audio/ogg">
+					<source src="audio/056.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">إِذَا وَقَعَتِ الْوَاقِعَةُ</div>
+					<div class="meaning">যখন কিয়ামতের ঘটনা ঘটবে,<br>When the Event inevitable cometh to pass,</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">لَيْسَ لِوَقْعَتِهَا كَاذِبَةٌ</div>
+					<div class="meaning">যার বাস্তবতায় কোন সংশয় নেই।<br>Then will no (soul) entertain falsehood concerning its coming.</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">خَافِضَةٌ رَّافِعَةٌ</div>
+					<div class="meaning">এটা নীচু করে দেবে, সমুন্নত করে দেবে।<br>(Many) will it bring low; (many) will it exalt;</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">إِذَا رُجَّتِ الْأَرْضُ رَجًّا</div>
+					<div class="meaning">যখন প্রবলভাবে প্রকম্পিত হবে পৃথিবী।<br>When the earth shall be shaken to its depths,</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">وَبُسَّتِ الْجِبَالُ بَسًّا</div>
+					<div class="meaning">এবং পর্বতমালা ভেঙ্গে চুরমার হয়ে যাবে।<br>And the mountains shall be crumbled to atoms,</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">فَكَانَتْ هَبَاء مُّنبَثًّا</div>
+					<div class="meaning">অতঃপর তা হয়ে যাবে উৎক্ষিপ্ত ধূলিকণা।<br>Becoming dust scattered abroad,</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">وَكُنتُمْ أَزْوَاجًا ثَلَاثَةً</div>
+					<div class="meaning">এবং তোমরা তিনভাবে বিভক্ত হয়ে পড়বে।<br>And ye shall be sorted out into three classes.</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">فَأَصْحَابُ الْمَيْمَنَةِ مَا أَصْحَابُ الْمَيْمَنَةِ</div>
+					<div class="meaning">যারা ডান দিকে, কত ভাগ্যবান তারা।<br>Then (there will be) the Companions of the Right Hand;- What will be the Companions of the Right Hand?</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">وَأَصْحَابُ الْمَشْأَمَةِ مَا أَصْحَابُ الْمَشْأَمَةِ</div>
+					<div class="meaning">এবং যারা বামদিকে, কত হতভাগা তারা।<br>And the Companions of the Left Hand,- what will be the Companions of the Left Hand?</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">وَالسَّابِقُونَ السَّابِقُونَ</div>
+					<div class="meaning">অগ্রবর্তীগণ তো অগ্রবর্তীই।<br>And those Foremost (in Faith) will be Foremost (in the Hereafter).</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">أُوْلَئِكَ الْمُقَرَّبُونَ</div>
+					<div class="meaning">তারাই নৈকট্যশীল,<br>These will be those Nearest to Allah.</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">فِي جَنَّاتِ النَّعِيمِ</div>
+					<div class="meaning">অবদানের উদ্যানসমূহে,<br>In Gardens of Bliss:</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">ثُلَّةٌ مِّنَ الْأَوَّلِينَ</div>
+					<div class="meaning">তারা একদল পূর্ববর্তীদের মধ্য থেকে।<br>A number of people from those of old,</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">وَقَلِيلٌ مِّنَ الْآخِرِينَ</div>
+					<div class="meaning">এবং অল্পসংখ্যক পরবর্তীদের মধ্যে থেকে।<br>And a few from those of later times.</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">عَلَى سُرُرٍ مَّوْضُونَةٍ</div>
+					<div class="meaning">স্বর্ণ খচিত সিংহাসন।<br>(They will be) on Thrones encrusted (with gold and precious stones),</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">مُتَّكِئِينَ عَلَيْهَا مُتَقَابِلِينَ</div>
+					<div class="meaning">তারা তাতে হেলান দিয়ে বসবে পরস্পর মুখোমুখি হয়ে।<br>Reclining on them, facing each other.</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">يَطُوفُ عَلَيْهِمْ وِلْدَانٌ مُّخَلَّدُونَ</div>
+					<div class="meaning">তাদের কাছে ঘোরাফেরা করবে চির কিশোরেরা।<br>Round about them will (serve) youths of perpetual (freshness),</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">بِأَكْوَابٍ وَأَبَارِيقَ وَكَأْسٍ مِّن مَّعِينٍ</div>
+					<div class="meaning">পানপাত্র কুঁজা ও খাঁটি সূরাপূর্ণ পেয়ালা হাতে নিয়ে,<br>With goblets, (shining) beakers, and cups (filled) out of clear-flowing fountains:</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">لَا يُصَدَّعُونَ عَنْهَا وَلَا يُنزِفُونَ</div>
+					<div class="meaning">যা পান করলে তাদের শিরঃপীড়া হবে না এবং বিকারগ্রস্ত ও হবে না।<br>No after-ache will they receive therefrom, nor will they suffer intoxication:</div>
+					<hr>
+					<p class="suraCount">20</p>
+					<div class="sura">وَفَاكِهَةٍ مِّمَّا يَتَخَيَّرُونَ</div>
+					<div class="meaning">আর তাদের পছন্দমত ফল-মুল নিয়ে,<br>And with fruits, any that they may select:</div>
+					<hr>
+					<p class="suraCount">21</p>
+					<div class="sura">وَلَحْمِ طَيْرٍ مِّمَّا يَشْتَهُونَ</div>
+					<div class="meaning">এবং রুচিমত পাখীর মাংস নিয়ে।<br>And the flesh of fowls, any that they may desire.</div>
+					<hr>
+					<p class="suraCount">22</p>
+					<div class="sura">وَحُورٌ عِينٌ</div>
+					<div class="meaning">তথায় থাকবে আনতনয়না হুরগণ,<br>And (there will be) Companions with beautiful, big, and lustrous eyes,-</div>
+					<hr>
+					<p class="suraCount">23</p>
+					<div class="sura">كَأَمْثَالِ اللُّؤْلُؤِ الْمَكْنُونِ</div>
+					<div class="meaning">আবরণে রক্ষিত মোতির ন্যায়,<br>Like unto Pearls well-guarded.</div>
+					<hr>
+					<p class="suraCount">24</p>
+					<div class="sura">جَزَاء بِمَا كَانُوا يَعْمَلُونَ</div>
+					<div class="meaning">তারা যা কিছু করত, তার পুরস্কারস্বরূপ।<br>A Reward for the deeds of their past (life).</div>
+					<hr>
+					<p class="suraCount">25</p>
+					<div class="sura">لَا يَسْمَعُونَ فِيهَا لَغْوًا وَلَا تَأْثِيمًا</div>
+					<div class="meaning">তারা তথায় অবান্তর ও কোন খারাপ কথা শুনবে না।<br>Not frivolity will they hear therein, nor any taint of ill,-</div>
+					<hr>
+					<p class="suraCount">26</p>
+					<div class="sura">إِلَّا قِيلًا سَلَامًا سَلَامًا</div>
+					<div class="meaning">কিন্তু শুনবে সালাম আর সালাম।<br>Only the saying, "Peace! Peace".</div>
+					<hr>
+					<p class="suraCount">27</p>
+					<div class="sura">وَأَصْحَابُ الْيَمِينِ مَا أَصْحَابُ الْيَمِينِ</div>
+					<div class="meaning">যারা ডান দিকে থাকবে, তারা কত ভাগ্যবান।<br>The Companions of the Right Hand,- what will be the Companions of the Right Hand?</div>
+					<hr>
+					<p class="suraCount">28</p>
+					<div class="sura">فِي سِدْرٍ مَّخْضُودٍ</div>
+					<div class="meaning">তারা থাকবে কাঁটাবিহীন বদরিকা বৃক্ষে।<br>(They will be) among Lote-trees without thorns,</div>
+					<hr>
+					<p class="suraCount">29</p>
+					<div class="sura">وَطَلْحٍ مَّنضُودٍ</div>
+					<div class="meaning">এবং কাঁদি কাঁদি কলায়,<br>Among Talh trees with flowers (or fruits) piled one above another,-</div>
+					<hr>
+					<p class="suraCount">30</p>
+					<div class="sura">وَظِلٍّ مَّمْدُودٍ</div>
+					<div class="meaning">এবং দীর্ঘ ছায়ায়।<br>In shade long-extended,</div>
+					<hr>
+					<p class="suraCount">31</p>
+					<div class="sura">وَمَاء مَّسْكُوبٍ</div>
+					<div class="meaning">এবং প্রবাহিত পানিতে,<br>By water flowing constantly,</div>
+					<hr>
+					<p class="suraCount">32</p>
+					<div class="sura">وَفَاكِهَةٍ كَثِيرَةٍ</div>
+					<div class="meaning">ও প্রচুর ফল-মূলে,<br>And fruit in abundance.</div>
+					<hr>
+					<p class="suraCount">33</p>
+					<div class="sura">لَّا مَقْطُوعَةٍ وَلَا مَمْنُوعَةٍ</div>
+					<div class="meaning">যা শেষ হবার নয় এবং নিষিদ্ধ ও নয়,<br>Whose season is not limited, nor (supply) forbidden,</div>
+					<hr>
+					<p class="suraCount">34</p>
+					<div class="sura">وَفُرُشٍ مَّرْفُوعَةٍ</div>
+					<div class="meaning">আর থাকবে সমুন্নত শয্যায়।<br>And on Thrones (of Dignity), raised high.</div>
+					<hr>
+					<p class="suraCount">35</p>
+					<div class="sura">إِنَّا أَنشَأْنَاهُنَّ إِنشَاء</div>
+					<div class="meaning">আমি জান্নাতী রমণীগণকে বিশেষরূপে সৃষ্টি করেছি।<br>We have created (their Companions) of special creation.</div>
+					<hr>
+					<p class="suraCount">36</p>
+					<div class="sura">فَجَعَلْنَاهُنَّ أَبْكَارًا</div>
+					<div class="meaning">অতঃপর তাদেরকে করেছি চিরকুমারী।<br>And made them virgin - pure (and undefiled), -</div>
+					<hr>
+					<p class="suraCount">37</p>
+					<div class="sura">عُرُبًا أَتْرَابًا</div>
+					<div class="meaning">কামিনী, সমবয়স্কা।<br>Beloved (by nature), equal in age,-</div>
+					<hr>
+					<p class="suraCount">38</p>
+					<div class="sura">لِّأَصْحَابِ الْيَمِينِ</div>
+					<div class="meaning">ডান দিকের লোকদের জন্যে।<br>For the Companions of the Right Hand.</div>
+					<hr>
+					<p class="suraCount">39</p>
+					<div class="sura">ثُلَّةٌ مِّنَ الْأَوَّلِينَ</div>
+					<div class="meaning">তাদের একদল হবে পূর্ববর্তীদের মধ্য থেকে।<br>A (goodly) number from those of old,</div>
+					<hr>
+					<p class="suraCount">40</p>
+					<div class="sura">وَثُلَّةٌ مِّنَ الْآخِرِينَ</div>
+					<div class="meaning">এবং একদল পরবর্তীদের মধ্য থেকে।<br>And a (goodly) number from those of later times.</div>
+					<hr>
+					<p class="suraCount">41</p>
+					<div class="sura">وَأَصْحَابُ الشِّمَالِ مَا أَصْحَابُ الشِّمَالِ</div>
+					<div class="meaning">বামপার্শ্বস্থ লোক, কত না হতভাগা তারা।<br>The Companions of the Left Hand,- what will be the Companions of the Left Hand?</div>
+					<hr>
+					<p class="suraCount">42</p>
+					<div class="sura">فِي سَمُومٍ وَحَمِيمٍ</div>
+					<div class="meaning">তারা থাকবে প্রখর বাষ্পে এবং উত্তপ্ত পানিতে,<br>(They will be) in the midst of a Fierce Blast of Fire and in Boiling Water,</div>
+					<hr>
+					<p class="suraCount">43</p>
+					<div class="sura">وَظِلٍّ مِّن يَحْمُومٍ</div>
+					<div class="meaning">এবং ধুম্রকুঞ্জের ছায়ায়।<br>And in the shades of Black Smoke:</div>
+					<hr>
+					<p class="suraCount">44</p>
+					<div class="sura">لَّا بَارِدٍ وَلَا كَرِيمٍ</div>
+					<div class="meaning">যা শীতল নয় এবং আরামদায়কও নয়।<br>Nothing (will there be) to refresh, nor to please:</div>
+					<hr>
+					<p class="suraCount">45</p>
+					<div class="sura">إِنَّهُمْ كَانُوا قَبْلَ ذَلِكَ مُتْرَفِينَ</div>
+					<div class="meaning">তারা ইতিপূর্বে স্বাচ্ছন্দ্যশীল ছিল।<br>For that they were wont to be indulged, before that, in wealth (and luxury),</div>
+					<hr>
+					<p class="suraCount">46</p>
+					<div class="sura">وَكَانُوا يُصِرُّونَ عَلَى الْحِنثِ الْعَظِيمِ</div>
+					<div class="meaning">তারা সদাসর্বদা ঘোরতর পাপকর্মে ডুবে থাকত।<br>And persisted obstinately in wickedness supreme!</div>
+					<hr>
+					<p class="suraCount">47</p>
+					<div class="sura">وَكَانُوا يَقُولُونَ أَئِذَا مِتْنَا وَكُنَّا تُرَابًا وَعِظَامًا أَئِنَّا لَمَبْعُوثُونَ</div>
+					<div class="meaning">তারা বলতঃ আমরা যখন মরে অস্থি ও মৃত্তিকায় পরিণত হয়ে যাব, তখনও কি পুনরুত্থিত হব?<br>And they used to say, "What! when we die and become dust and bones, shall we then indeed be raised up again?-</div>
+					<hr>
+					<p class="suraCount">48</p>
+					<div class="sura">أَوَ آبَاؤُنَا الْأَوَّلُونَ</div>
+					<div class="meaning">এবং আমাদের পূর্বপুরুষগণও!<br>"(We) and our fathers of old?"</div>
+					<hr>
+					<p class="suraCount">49</p>
+					<div class="sura">قُلْ إِنَّ الْأَوَّلِينَ وَالْآخِرِينَ</div>
+					<div class="meaning">বলুনঃ পূর্ববর্তী ও পরবর্তীগণ,<br>Say: "Yea, those of old and those of later times,</div>
+					<hr>
+					<p class="suraCount">50</p>
+					<div class="sura">لَمَجْمُوعُونَ إِلَى مِيقَاتِ يَوْمٍ مَّعْلُومٍ</div>
+					<div class="meaning">সবাই একত্রিত হবে এক নির্দিষ্ট দিনের নির্দিষ্ট সময়ে।<br>"All will certainly be gathered together for the meeting appointed for a Day well-known.</div>
+					<hr>
+					<p class="suraCount">51</p>
+					<div class="sura">ثُمَّ إِنَّكُمْ أَيُّهَا الضَّالُّونَ الْمُكَذِّبُونَ</div>
+					<div class="meaning">অতঃপর হে পথভ্রষ্ট, মিথ্যারোপকারীগণ।<br>"Then will ye truly,- O ye that go wrong, and treat (Truth) as Falsehood!-</div>
+					<hr>
+					<p class="suraCount">52</p>
+					<div class="sura">لَآكِلُونَ مِن شَجَرٍ مِّن زَقُّومٍ</div>
+					<div class="meaning">তোমরা অবশ্যই ভক্ষণ করবে যাক্কুম বৃক্ষ থেকে,<br>"Ye will surely taste of the Tree of Zaqqum.</div>
+					<hr>
+					<p class="suraCount">53</p>
+					<div class="sura">فَمَالِؤُونَ مِنْهَا الْبُطُونَ</div>
+					<div class="meaning">অতঃপর তা দ্বারা উদর পূর্ণ করবে,<br>"Then will ye fill your insides therewith,</div>
+					<hr>
+					<p class="suraCount">54</p>
+					<div class="sura">فَشَارِبُونَ عَلَيْهِ مِنَ الْحَمِيمِ</div>
+					<div class="meaning">অতঃপর তার উপর পান করবে উত্তপ্ত পানি।<br>"And drink Boiling Water on top of it:</div>
+					<hr>
+					<p class="suraCount">55</p>
+					<div class="sura">فَشَارِبُونَ شُرْبَ الْهِيمِ</div>
+					<div class="meaning">পান করবে পিপাসিত উটের ন্যায়।<br>"Indeed ye shall drink like diseased camels raging with thirst!"</div>
+					<hr>
+					<p class="suraCount">56</p>
+					<div class="sura">هَذَا نُزُلُهُمْ يَوْمَ الدِّينِ</div>
+					<div class="meaning">কেয়ামতের দিন এটাই হবে তাদের আপ্যায়ন।<br>Such will be their entertainment on the Day of Requital!</div>
+					<hr>
+					<p class="suraCount">57</p>
+					<div class="sura">نَحْنُ خَلَقْنَاكُمْ فَلَوْلَا تُصَدِّقُونَ</div>
+					<div class="meaning">আমি সৃষ্টি করেছি তোমাদেরকে। অতঃপর কেন তোমরা তা সত্য বলে বিশ্বাস কর না।<br>It is We Who have created you: why will ye not witness the Truth?</div>
+					<hr>
+					<p class="suraCount">58</p>
+					<div class="sura">أَفَرَأَيْتُم مَّا تُمْنُونَ</div>
+					<div class="meaning">তোমরা কি ভেবে দেখেছ, তোমাদের বীর্যপাত সম্পর্কে।<br>Do ye then see?- The (human Seed) that ye throw out,-</div>
+					<hr>
+					<p class="suraCount">59</p>
+					<div class="sura">أَأَنتُمْ تَخْلُقُونَهُ أَمْ نَحْنُ الْخَالِقُونَ</div>
+					<div class="meaning">তোমরা তাকে সৃষ্টি কর, না আমি সৃষ্টি করি?<br>Is it ye who create it, or are We the Creators?</div>
+					<hr>
+					<p class="suraCount">60</p>
+					<div class="sura">نَحْنُ قَدَّرْنَا بَيْنَكُمُ الْمَوْتَ وَمَا نَحْنُ بِمَسْبُوقِينَ</div>
+					<div class="meaning">আমি তোমাদের মৃত্যুকাল নির্ধারিত করেছি এবং আমি অক্ষম নই।<br>We have decreed Death to be your common lot, and We are not to be frustrated</div>
+					<hr>
+					<p class="suraCount">61</p>
+					<div class="sura">عَلَى أَن نُّبَدِّلَ أَمْثَالَكُمْ وَنُنشِئَكُمْ فِي مَا لَا تَعْلَمُونَ</div>
+					<div class="meaning">এ ব্যাপারে যে, তোমাদের পরিবর্তে তোমাদের মত লোককে নিয়ে আসি এবং তোমাদেরকে এমন করে দেই, যা তোমরা জান না।<br>from changing your Forms and creating you (again) in (forms) that ye know not.</div>
+					<hr>
+					<p class="suraCount">62</p>
+					<div class="sura">وَلَقَدْ عَلِمْتُمُ النَّشْأَةَ الْأُولَى فَلَوْلَا تَذكَّرُونَ</div>
+					<div class="meaning">তোমরা অবগত হয়েছ প্রথম সৃষ্টি সম্পর্কে, তবে তোমরা অনুধাবন কর না কেন?<br>And ye certainly know already the first form of creation: why then do ye not celebrate His praises?</div>
+					<hr>
+					<p class="suraCount">63</p>
+					<div class="sura">أَفَرَأَيْتُم مَّا تَحْرُثُونَ</div>
+					<div class="meaning">তোমরা যে বীজ বপন কর, সে সম্পর্কে ভেবে দেখেছ কি?<br>See ye the seed that ye sow in the ground?</div>
+					<hr>
+					<p class="suraCount">64</p>
+					<div class="sura">أَأَنتُمْ تَزْرَعُونَهُ أَمْ نَحْنُ الزَّارِعُونَ</div>
+					<div class="meaning">তোমরা তাকে উৎপন্ন কর, না আমি উৎপন্নকারী ?<br>Is it ye that cause it to grow, or are We the Cause?</div>
+					<hr>
+					<p class="suraCount">65</p>
+					<div class="sura">لَوْ نَشَاء لَجَعَلْنَاهُ حُطَامًا فَظَلَلْتُمْ تَفَكَّهُونَ</div>
+					<div class="meaning">আমি ইচ্ছা করলে তাকে খড়কুটা করে দিতে পারি, অতঃপর হয়ে যাবে তোমরা বিস্ময়াবিষ্ট।<br>Were it Our Will, We could crumble it to dry powder, and ye would be left in wonderment,</div>
+					<hr>
+					<p class="suraCount">66</p>
+					<div class="sura">إِنَّا لَمُغْرَمُونَ</div>
+					<div class="meaning">বলবেঃ আমরা তো ঋণের চাপে পড়ে গেলাম;<br>(Saying), "We are indeed left with debts (for nothing):</div>
+					<hr>
+					<p class="suraCount">67</p>
+					<div class="sura">بَلْ نَحْنُ مَحْرُومُونَ</div>
+					<div class="meaning">বরং আমরা হূত সর্বস্ব হয়ে পড়লাম।<br>"Indeed are we shut out (of the fruits of our labour)"</div>
+					<hr>
+					<p class="suraCount">68</p>
+					<div class="sura">أَفَرَأَيْتُمُ الْمَاء الَّذِي تَشْرَبُونَ</div>
+					<div class="meaning">তোমরা যে পানি পান কর, সে সম্পর্কে ভেবে দেখেছ কি?<br>See ye the water which ye drink?</div>
+					<hr>
+					<p class="suraCount">69</p>
+					<div class="sura">أَأَنتُمْ أَنزَلْتُمُوهُ مِنَ الْمُزْنِ أَمْ نَحْنُ الْمُنزِلُونَ</div>
+					<div class="meaning">তোমরা তা মেঘ থেকে নামিয়ে আন, না আমি বর্ষন করি?<br>Do ye bring it down (in rain) from the cloud or do We?</div>
+					<hr>
+					<p class="suraCount">70</p>
+					<div class="sura">لَوْ نَشَاء جَعَلْنَاهُ أُجَاجًا فَلَوْلَا تَشْكُرُونَ</div>
+					<div class="meaning">আমি ইচ্ছা করলে তাকে লোনা করে দিতে পারি, অতঃপর তোমরা কেন কৃতজ্ঞতা প্রকাশ কর না?<br>Were it Our Will, We could make it salt (and unpalatable): then why do ye not give thanks?</div>
+					<hr>
+					<p class="suraCount">71</p>
+					<div class="sura">أَفَرَأَيْتُمُ النَّارَ الَّتِي تُورُونَ</div>
+					<div class="meaning">তোমরা যে অগ্নি প্রজ্জ্বলিত কর, সে সম্পর্কে ভেবে দেখেছ কি?<br>See ye the Fire which ye kindle?</div>
+					<hr>
+					<p class="suraCount">72</p>
+					<div class="sura">أَأَنتُمْ أَنشَأْتُمْ شَجَرَتَهَا أَمْ نَحْنُ الْمُنشِؤُونَ</div>
+					<div class="meaning">তোমরা কি এর বৃক্ষ সৃষ্টি করেছ, না আমি সৃষ্টি করেছি ?<br>Is it ye who grow the tree which feeds the fire, or do We grow it?</div>
+					<hr>
+					<p class="suraCount">73</p>
+					<div class="sura">نَحْنُ جَعَلْنَاهَا تَذْكِرَةً وَمَتَاعًا لِّلْمُقْوِينَ</div>
+					<div class="meaning">আমি সেই বৃক্ষকে করেছি স্মরণিকা এবং মরুবাসীদের জন্য সামগ্রী।<br>We have made it a memorial (of Our handiwork), and an article of comfort and convenience for the denizens of deserts.</div>
+					<hr>
+					<p class="suraCount">74</p>
+					<div class="sura">فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ</div>
+					<div class="meaning">অতএব, আপনি আপনার মহান পালনকর্তার নামে পবিত্রতা ঘোষণা করুন।<br>Then celebrate with praises the name of thy Lord, the Supreme!</div>
+					<hr>
+					<p class="suraCount">75</p>
+					<div class="sura">فَلَا أُقْسِمُ بِمَوَاقِعِ النُّجُومِ</div>
+					<div class="meaning">অতএব, আমি তারকারাজির অস্তাচলের শপথ করছি,<br>Furthermore I call to witness the setting of the Stars,-</div>
+					<hr>
+					<p class="suraCount">76</p>
+					<div class="sura">وَإِنَّهُ لَقَسَمٌ لَّوْ تَعْلَمُونَ عَظِيمٌ</div>
+					<div class="meaning">নিশ্চয় এটা এক মহা শপথ-যদি তোমরা জানতে।<br>And that is indeed a mighty adjuration if ye but knew,-</div>
+					<hr>
+					<p class="suraCount">77</p>
+					<div class="sura">إِنَّهُ لَقُرْآنٌ كَرِيمٌ</div>
+					<div class="meaning">নিশ্চয় এটা সম্মানিত কোরআন,<br>That this is indeed a qur'an Most Honourable,</div>
+					<hr>
+					<p class="suraCount">78</p>
+					<div class="sura">فِي كِتَابٍ مَّكْنُونٍ</div>
+					<div class="meaning">যা আছে এক গোপন কিতাবে,<br>In Book well-guarded,</div>
+					<hr>
+					<p class="suraCount">79</p>
+					<div class="sura">لَّا يَمَسُّهُ إِلَّا الْمُطَهَّرُونَ</div>
+					<div class="meaning">যারা পাক-পবিত্র, তারা ব্যতীত অন্য কেউ একে স্পর্শ করবে না।<br>Which none shall touch but those who are clean:</div>
+					<hr>
+					<p class="suraCount">80</p>
+					<div class="sura">تَنزِيلٌ مِّن رَّبِّ الْعَالَمِينَ</div>
+					<div class="meaning">এটা বিশ্ব-পালনকর্তার পক্ষ থেকে অবতীর্ণ।<br>A Revelation from the Lord of the Worlds.</div>
+					<hr>
+					<p class="suraCount">81</p>
+					<div class="sura">أَفَبِهَذَا الْحَدِيثِ أَنتُم مُّدْهِنُونَ</div>
+					<div class="meaning">তবুও কি তোমরা এই বাণীর প্রতি শৈথিল্য পদর্শন করবে?<br>Is it such a Message that ye would hold in light esteem?</div>
+					<hr>
+					<p class="suraCount">82</p>
+					<div class="sura">وَتَجْعَلُونَ رِزْقَكُمْ أَنَّكُمْ تُكَذِّبُونَ</div>
+					<div class="meaning">এবং একে মিথ্যা বলাকেই তোমরা তোমাদের ভূমিকায় পরিণত করবে?<br>And have ye made it your livelihood that ye should declare it false?</div>
+					<hr>
+					<p class="suraCount">83</p>
+					<div class="sura">فَلَوْلَا إِذَا بَلَغَتِ الْحُلْقُومَ</div>
+					<div class="meaning">অতঃপর যখন কারও প্রাণ কন্ঠাগত হয়।<br>Then why do ye not (intervene) when (the soul of the dying man) reaches the throat,-</div>
+					<hr>
+					<p class="suraCount">84</p>
+					<div class="sura">وَأَنتُمْ حِينَئِذٍ تَنظُرُونَ</div>
+					<div class="meaning">এবং তোমরা তাকিয়ে থাক,<br>And ye the while (sit) looking on,-</div>
+					<hr>
+					<p class="suraCount">85</p>
+					<div class="sura">وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنكُمْ وَلَكِن لَّا تُبْصِرُونَ</div>
+					<div class="meaning">তখন আমি তোমাদের অপেক্ষা তার অধিক নিকটে থাকি; কিন্তু তোমরা দেখ না।<br>But We are nearer to him than ye, and yet see not,-</div>
+					<hr>
+					<p class="suraCount">86</p>
+					<div class="sura">فَلَوْلَا إِن كُنتُمْ غَيْرَ مَدِينِينَ</div>
+					<div class="meaning">যদি তোমাদের হিসাব-কিতাব না হওয়াই ঠিক হয়,<br>Then why do ye not,- If you are exempt from (future) account,-</div>
+					<hr>
+					<p class="suraCount">87</p>
+					<div class="sura">تَرْجِعُونَهَا إِن كُنتُمْ صَادِقِينَ</div>
+					<div class="meaning">তবে তোমরা এই আত্মাকে ফিরাও না কেন, যদি তোমরা সত্যবাদী হও ?<br>Call back the soul, if ye are true (in the claim of independence)?</div>
+					<hr>
+					<p class="suraCount">88</p>
+					<div class="sura">فَأَمَّا إِن كَانَ مِنَ الْمُقَرَّبِينَ</div>
+					<div class="meaning">যদি সে নৈকট্যশীলদের একজন হয়;<br>Thus, then, if he be of those Nearest to Allah,</div>
+					<hr>
+					<p class="suraCount">89</p>
+					<div class="sura">فَرَوْحٌ وَرَيْحَانٌ وَجَنَّةُ نَعِيمٍ</div>
+					<div class="meaning">তবে তার জন্যে আছে সুখ, উত্তম রিযিক এবং নেয়ামতে ভরা উদ্যান।<br>(There is for him) Rest and Satisfaction, and a Garden of Delights.</div>
+					<hr>
+					<p class="suraCount">90</p>
+					<div class="sura">وَأَمَّا إِن كَانَ مِنَ أَصْحَابِ الْيَمِينِ</div>
+					<div class="meaning">আর যদি সে ডান পার্শ্বস্থদের একজন হয়,<br>And if he be of the Companions of the Right Hand,</div>
+					<hr>
+					<p class="suraCount">91</p>
+					<div class="sura">فَسَلَامٌ لَّكَ مِنْ أَصْحَابِ الْيَمِينِ</div>
+					<div class="meaning">তবে তাকে বলা হবেঃ তোমার জন্যে ডানপার্শ্বসস্থদের পক্ষ থেকে সালাম।<br>(For him is the salutation), "Peace be unto thee", from the Companions of the Right Hand.</div>
+					<hr>
+					<p class="suraCount">92</p>
+					<div class="sura">وَأَمَّا إِن كَانَ مِنَ الْمُكَذِّبِينَ الضَّالِّينَ</div>
+					<div class="meaning">আর যদি সে পথভ্রষ্ট মিথ্যারোপকারীদের একজন হয়,<br>And if he be of those who treat (Truth) as Falsehood, who go wrong,</div>
+					<hr>
+					<p class="suraCount">93</p>
+					<div class="sura">فَنُزُلٌ مِّنْ حَمِيمٍ</div>
+					<div class="meaning">তবে তার আপ্যায়ন হবে উত্তপ্ত পানি দ্বারা।<br>For him is Entertainment with Boiling Water.</div>
+					<hr>
+					<p class="suraCount">94</p>
+					<div class="sura">وَتَصْلِيَةُ جَحِيمٍ</div>
+					<div class="meaning">এবং সে নিক্ষিপ্ত হবে অগ্নিতে।<br>And burning in Hell-Fire.</div>
+					<hr>
+					<p class="suraCount">95</p>
+					<div class="sura">إِنَّ هَذَا لَهُوَ حَقُّ الْيَقِينِ</div>
+					<div class="meaning">এটা ধ্রুব সত্য।<br>Verily, this is the Very Truth and Certainly.</div>
+					<hr>
+					<p class="suraCount">96</p>
+					<div class="sura">فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ</div>
+					<div class="meaning">অতএব, আপনি আপনার মহান পালনকর্তার নামে পবিত্রতা ঘোষণা করুন।<br>So celebrate with praises the name of thy Lord, the Supreme.</div>
+				</p>
+			</div>
+		</div>
+	</body>

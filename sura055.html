@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আর রহমান Page -->
+		<div id="sura55" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আর রহমান</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 78</div>
+				<audio class="audio" controls>
+					<source src="audio/078.ogg" type="audio/ogg">
+					<source src="audio/078.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">الرَّحْمَنُ</div>
+					<div class="meaning">করুনাময় আল্লাহ।<br>((Allah)) Most Gracious!</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">عَلَّمَ الْقُرْآنَ</div>
+					<div class="meaning">শিক্ষা দিয়েছেন কোরআন,<br>It is He Who has taught the Qur'an.</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">خَلَقَ الْإِنسَانَ</div>
+					<div class="meaning">সৃষ্টি করেছেন মানুষ,<br>He has created man:</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">عَلَّمَهُ الْبَيَانَ</div>
+					<div class="meaning">তাকে শিখিয়েছেন বর্ণনা।<br>He has taught him speech (and intelligence).</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">الشَّمْسُ وَالْقَمَرُ بِحُسْبَانٍ</div>
+					<div class="meaning">সূর্য ও চন্দ্র হিসাবমত চলে।<br>The sun and the moon follow courses (exactly) computed;</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">وَالنَّجْمُ وَالشَّجَرُ يَسْجُدَانِ</div>
+					<div class="meaning">এবং তৃণলতা ও বৃক্ষাদি সেজদারত আছে।<br>And the herbs and the trees - both (alike) bow in adoration.</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">وَالسَّمَاء رَفَعَهَا وَوَضَعَ الْمِيزَانَ</div>
+					<div class="meaning">তিনি আকাশকে করেছেন সমুন্নত এবং স্থাপন করেছেন তুলাদন্ড।<br>And the Firmament has He raised high, and He has set up the Balance (of Justice),</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">أَلَّا تَطْغَوْا فِي الْمِيزَانِ</div>
+					<div class="meaning">যাতে তোমরা সীমালংঘন না কর তুলাদন্ডে।<br>In order that ye may not transgress (due) balance.</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">وَأَقِيمُوا الْوَزْنَ بِالْقِسْطِ وَلَا تُخْسِرُوا الْمِيزَانَ</div>
+					<div class="meaning">তোমরা ন্যায্য ওজন কায়েম কর এবং ওজনে কম দিয়ো না।<br>So establish weight with justice and fall not short in the balance.</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">وَالْأَرْضَ وَضَعَهَا لِلْأَنَامِ</div>
+					<div class="meaning">তিনি পৃথিবীকে স্থাপন করেছেন সৃষ্টজীবের জন্যে।<br>It is He Who has spread out the earth for (His) creatures:</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">فِيهَا فَاكِهَةٌ وَالنَّخْلُ ذَاتُ الْأَكْمَامِ</div>
+					<div class="meaning">এতে আছে ফলমূল এবং বহিরাবরণবিশিষ্ট খর্জুর বৃক্ষ।<br>Therein is fruit and date-palms, producing spathes (enclosing dates);</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">وَالْحَبُّ ذُو الْعَصْفِ وَالرَّيْحَانُ</div>
+					<div class="meaning">আর আছে খোসাবিশিষ্ট শস্য ও সুগন্ধি ফুল।<br>Also corn, with (its) leaves and stalk for fodder, and sweet-smelling plants.</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অনুগ্রহকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">خَلَقَ الْإِنسَانَ مِن صَلْصَالٍ كَالْفَخَّارِ</div>
+					<div class="meaning">তিনি মানুষকে সৃষ্টি করেছেন পোড়া মাটির ন্যায় শুষ্ক মৃত্তিকা থেকে।<br>He created man from sounding clay like unto pottery,</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">وَخَلَقَ الْجَانَّ مِن مَّارِجٍ مِّن نَّارٍ</div>
+					<div class="meaning">এবং জিনকে সৃষ্টি করেছেন অগ্নিশিখা থেকে।<br>And He created Jinns from fire free of smoke:</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অনুগ্রহ অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">رَبُّ الْمَشْرِقَيْنِ وَرَبُّ الْمَغْرِبَيْنِ</div>
+					<div class="meaning">তিনি দুই উদয়াচল ও দুই অস্তাচলের মালিক।<br>(He is) Lord of the two Easts and Lord of the two Wests:</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">مَرَجَ الْبَحْرَيْنِ يَلْتَقِيَانِ</div>
+					<div class="meaning">তিনি পাশাপাশি দুই দরিয়া প্রবাহিত করেছেন।<br>He has let free the two bodies of flowing water, meeting together:</div>
+					<hr>
+					<p class="suraCount">20</p>
+					<div class="sura">بَيْنَهُمَا بَرْزَخٌ لَّا يَبْغِيَانِ</div>
+					<div class="meaning">উভয়ের মাঝখানে রয়েছে এক অন্তরাল, যা তারা অতিক্রম করে না।<br>Between them is a Barrier which they do not transgress:</div>
+					<hr>
+					<p class="suraCount">21</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">22</p>
+					<div class="sura">يَخْرُجُ مِنْهُمَا اللُّؤْلُؤُ وَالْمَرْجَانُ</div>
+					<div class="meaning">উভয় দরিয়া থেকে উৎপন্ন হয় মোতি ও প্রবাল।<br>Out of them come Pearls and Coral:</div>
+					<hr>
+					<p class="suraCount">23</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">24</p>
+					<div class="sura">وَلَهُ الْجَوَارِ الْمُنشَآتُ فِي الْبَحْرِ كَالْأَعْلَامِ</div>
+					<div class="meaning">দরিয়ায় বিচরণশীল পর্বতদৃশ্য জাহাজসমূহ তাঁরই (নিয়ন্ত্রনাধীন)<br>And His are the Ships sailing smoothly through the seas, lofty as mountains:</div>
+					<hr>
+					<p class="suraCount">25</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">26</p>
+					<div class="sura">كُلُّ مَنْ عَلَيْهَا فَانٍ</div>
+					<div class="meaning">ভূপৃষ্টের সবকিছুই ধ্বংসশীল।<br>All that is on earth will perish:</div>
+					<hr>
+					<p class="suraCount">27</p>
+					<div class="sura">وَيَبْقَى وَجْهُ رَبِّكَ ذُو الْجَلَالِ وَالْإِكْرَامِ</div>
+					<div class="meaning">একমাত্র আপনার মহিমায় ও মহানুভব পালনকর্তার সত্তা ছাড়া।<br>But will abide (for ever) the Face of thy Lord,- full of Majesty, Bounty and Honour.</div>
+					<hr>
+					<p class="suraCount">28</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">29</p>
+					<div class="sura">يَسْأَلُهُ مَن فِي السَّمَاوَاتِ وَالْأَرْضِ كُلَّ يَوْمٍ هُوَ فِي شَأْنٍ</div>
+					<div class="meaning">নভোমন্ডল ও ভূমন্ডলের সবাই তাঁর কাছে প্রার্থী। তিনি সর্বদাই কোন না কোন কাজে রত আছেন।<br>Of Him seeks (its need) every creature in the heavens and on earth: every day in (new) Splendour doth He (shine)!</div>
+					<hr>
+					<p class="suraCount">30</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">31</p>
+					<div class="sura">سَنَفْرُغُ لَكُمْ أَيُّهَا الثَّقَلَانِ</div>
+					<div class="meaning">হে জিন ও মানব! আমি শীঘ্রই তোমাদের জন্যে কর্মমুক্ত হয়ে যাব।<br>Soon shall We settle your affairs, O both ye worlds!</div>
+					<hr>
+					<p class="suraCount">32</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">33</p>
+					<div class="sura">يَا مَعْشَرَ الْجِنِّ وَالْإِنسِ إِنِ اسْتَطَعْتُمْ أَن تَنفُذُوا مِنْ أَقْطَارِ السَّمَاوَاتِ وَالْأَرْضِ فَانفُذُوا لَا تَنفُذُونَ إِلَّا بِسُلْطَانٍ</div>
+					<div class="meaning">হে জিন ও মানবকূল, নভোমন্ডল ও ভূমন্ডলের প্রান্ত অতিক্রম করা যদি তোমাদের সাধ্যে কুলায়, তবে অতিক্রম কর। কিন্তু ছাড়পত্র ব্যতীত তোমরা তা অতিক্রম করতে পারবে না।<br>O ye assembly of Jinns and men! If it be ye can pass beyond the zones of the heavens and the earth, pass ye! not without authority shall ye be able to pass!</div>
+					<hr>
+					<p class="suraCount">34</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">35</p>
+					<div class="sura">يُرْسَلُ عَلَيْكُمَا شُوَاظٌ مِّن نَّارٍ وَنُحَاسٌ فَلَا تَنتَصِرَانِ</div>
+					<div class="meaning">ছাড়া হবে তোমাদের প্রতি অগ্নিস্ফুলিঙ্গ ও ধুম্রকুঞ্জ তখন তোমরা সেসব প্রতিহত করতে পারবে না।<br>On you will be sent (O ye evil ones twain!) a flame of fire (to burn) and a smoke (to choke): no defence will ye have:</div>
+					<hr>
+					<p class="suraCount">36</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">37</p>
+					<div class="sura">فَإِذَا انشَقَّتِ السَّمَاء فَكَانَتْ وَرْدَةً كَالدِّهَانِ</div>
+					<div class="meaning">যেদিন আকাশ বিদীর্ণ হবে তখন সেটি রক্তবর্ণে রঞ্জিত চামড়ার মত হয়ে যাবে।<br>When the sky is rent asunder, and it becomes red like ointment:</div>
+					<hr>
+					<p class="suraCount">38</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">39</p>
+					<div class="sura">فَيَوْمَئِذٍ لَّا يُسْأَلُ عَن ذَنبِهِ إِنسٌ وَلَا جَانٌّ</div>
+					<div class="meaning">সেদিন মানুষ না তার অপরাধ সম্পর্কে জিজ্ঞাসিত হবে, না জিন।<br>On that Day no question will be asked of man or Jinn as to his sin.</div>
+					<hr>
+					<p class="suraCount">40</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">41</p>
+					<div class="sura">يُعْرَفُ الْمُجْرِمُونَ بِسِيمَاهُمْ فَيُؤْخَذُ بِالنَّوَاصِي وَالْأَقْدَامِ</div>
+					<div class="meaning">অপরাধীদের পরিচয় পাওয়া যাবে তাদের চেহারা থেকে; অতঃপর তাদের কপালের চুল ও পা ধরে টেনে নেয়া হবে।<br>(For) the sinners will be known by their marks: and they will be seized by their forelocks and their feet.</div>
+					<hr>
+					<p class="suraCount">42</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">43</p>
+					<div class="sura">هَذِهِ جَهَنَّمُ الَّتِي يُكَذِّبُ بِهَا الْمُجْرِمُونَ</div>
+					<div class="meaning">এটাই জাহান্নাম, যাকে অপরাধীরা মিথ্যা বলত।<br>This is the Hell which the Sinners deny:</div>
+					<hr>
+					<p class="suraCount">44</p>
+					<div class="sura">يَطُوفُونَ بَيْنَهَا وَبَيْنَ حَمِيمٍ آنٍ</div>
+					<div class="meaning">তারা জাহান্নামের অগ্নি ও ফুটন্ত পানির মাঝখানে প্রদক্ষিণ করবে।<br>In its midst and in the midst of boiling hot water will they wander round!</div>
+					<hr>
+					<p class="suraCount">45</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">46</p>
+					<div class="sura">وَلِمَنْ خَافَ مَقَامَ رَبِّهِ جَنَّتَانِ</div>
+					<div class="meaning">যে ব্যক্তি তার পালনকর্তার সামনে পেশ হওয়ার ভয় রাখে, তার জন্যে রয়েছে দু’টি উদ্যান।<br>But for such as fear the time when they will stand before (the Judgment Seat of) their Lord, there will be two Gardens-</div>
+					<hr>
+					<p class="suraCount">47</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?-</div>
+					<hr>
+					<p class="suraCount">48</p>
+					<div class="sura">ذَوَاتَا أَفْنَانٍ</div>
+					<div class="meaning">উভয় উদ্যানই ঘন শাখা-পল্লববিশিষ্ট।<br>Containing all kinds (of trees and delights);-</div>
+					<hr>
+					<p class="suraCount">49</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?-</div>
+					<hr>
+					<p class="suraCount">50</p>
+					<div class="sura">فِيهِمَا عَيْنَانِ تَجْرِيَانِ</div>
+					<div class="meaning">উভয় উদ্যানে আছে বহমান দুই প্রস্রবন।<br>In them (each) will be two Springs flowing (free);</div>
+					<hr>
+					<p class="suraCount">51</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?-</div>
+					<hr>
+					<p class="suraCount">52</p>
+					<div class="sura">فِيهِمَا مِن كُلِّ فَاكِهَةٍ زَوْجَانِ</div>
+					<div class="meaning">উভয়ের মধ্যে প্রত্যেক ফল বিভিন্ন রকমের হবে।<br>In them will be Fruits of every kind, two and two.</div>
+					<hr>
+					<p class="suraCount">53</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">54</p>
+					<div class="sura">مُتَّكِئِينَ عَلَى فُرُشٍ بَطَائِنُهَا مِنْ إِسْتَبْرَقٍ وَجَنَى الْجَنَّتَيْنِ دَانٍ</div>
+					<div class="meaning">তারা তথায় রেশমের আস্তরবিশিষ্ট বিছানায় হেলান দিয়ে বসবে। উভয় উদ্যানের ফল তাদের নিকট ঝুলবে।<br>They will recline on Carpets, whose inner linings will be of rich brocade: the Fruit of the Gardens will be near (and easy of reach).</div>
+					<hr>
+					<p class="suraCount">55</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">56</p>
+					<div class="sura">فِيهِنَّ قَاصِرَاتُ الطَّرْفِ لَمْ يَطْمِثْهُنَّ إِنسٌ قَبْلَهُمْ وَلَا جَانٌّ</div>
+					<div class="meaning">তথায় থাকবে আনতনয়ন রমনীগন, কোন জিন ও মানব পূর্বে যাদের ব্যবহার করেনি।<br>In them will be (Maidens), chaste, restraining their glances, whom no man or Jinn before them has touched;-</div>
+					<hr>
+					<p class="suraCount">57</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?-</div>
+					<hr>
+					<p class="suraCount">58</p>
+					<div class="sura">كَأَنَّهُنَّ الْيَاقُوتُ وَالْمَرْجَانُ</div>
+					<div class="meaning">প্রবাল ও পদ্মরাগ সদৃশ রমণীগণ।<br>Like unto Rubies and coral.</div>
+					<hr>
+					<p class="suraCount">59</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">60</p>
+					<div class="sura">هَلْ جَزَاء الْإِحْسَانِ إِلَّا الْإِحْسَانُ</div>
+					<div class="meaning">সৎকাজের প্রতিদান উত্তম পুরস্কার ব্যতীত কি হতে পারে?<br>Is there any Reward for Good - other than Good?</div>
+					<hr>
+					<p class="suraCount">61</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">62</p>
+					<div class="sura">وَمِن دُونِهِمَا جَنَّتَانِ</div>
+					<div class="meaning">এই দু’টি ছাড়া আরও দু’টি উদ্যান রয়েছে।<br>And besides these two, there are two other Gardens,-</div>
+					<hr>
+					<p class="suraCount">63</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?-</div>
+					<hr>
+					<p class="suraCount">64</p>
+					<div class="sura">مُدْهَامَّتَانِ</div>
+					<div class="meaning">কালোমত ঘন সবুজ।<br>Dark-green in colour (from plentiful watering).</div>
+					<hr>
+					<p class="suraCount">65</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">66</p>
+					<div class="sura">فِيهِمَا عَيْنَانِ نَضَّاخَتَانِ</div>
+					<div class="meaning">তথায় আছে উদ্বেলিত দুই প্রস্রবণ।<br>In them (each) will be two Springs pouring forth water in continuous abundance:</div>
+					<hr>
+					<p class="suraCount">67</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">68</p>
+					<div class="sura">فِيهِمَا فَاكِهَةٌ وَنَخْلٌ وَرُمَّانٌ</div>
+					<div class="meaning">তথায় আছে ফল-মূল, খর্জুর ও আনার।<br>In them will be Fruits, and dates and pomegranates:</div>
+					<hr>
+					<p class="suraCount">69</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">70</p>
+					<div class="sura">فِيهِنَّ خَيْرَاتٌ حِسَانٌ</div>
+					<div class="meaning">সেখানে থাকবে সচ্চরিত্রা সুন্দরী রমণীগণ।<br>In them will be fair (Companions), good, beautiful;-</div>
+					<hr>
+					<p class="suraCount">71</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?-</div>
+					<hr>
+					<p class="suraCount">72</p>
+					<div class="sura">حُورٌ مَّقْصُورَاتٌ فِي الْخِيَامِ</div>
+					<div class="meaning">তাঁবুতে অবস্থানকারিণী হুরগণ।<br>Companions restrained (as to their glances), in (goodly) pavilions;-</div>
+					<hr>
+					<p class="suraCount">73</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?-</div>
+					<hr>
+					<p class="suraCount">74</p>
+					<div class="sura">لَمْ يَطْمِثْهُنَّ إِنسٌ قَبْلَهُمْ وَلَا جَانٌّ</div>
+					<div class="meaning">কোন জিন ও মানব পূর্বে তাদেরকে স্পর্শ করেনি।<br>Whom no man or Jinn before them has touched;-</div>
+					<hr>
+					<p class="suraCount">75</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?-</div>
+					<hr>
+					<p class="suraCount">76</p>
+					<div class="sura">مُتَّكِئِينَ عَلَى رَفْرَفٍ خُضْرٍ وَعَبْقَرِيٍّ حِسَانٍ</div>
+					<div class="meaning">তারা সবুজ মসনদে এবং উৎকৃষ্ট মূল্যবান বিছানায় হেলান দিয়ে বসবে।<br>Reclining on green Cushions and rich Carpets of beauty.</div>
+					<hr>
+					<p class="suraCount">77</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكُمَا تُكَذِّبَانِ</div>
+					<div class="meaning">অতএব, তোমরা উভয়ে তোমাদের পালনকর্তার কোন কোন অবদানকে অস্বীকার করবে?<br>Then which of the favours of your Lord will ye deny?</div>
+					<hr>
+					<p class="suraCount">78</p>
+					<div class="sura">تَبَارَكَ اسْمُ رَبِّكَ ذِي الْجَلَالِ وَالْإِكْرَامِ</div>
+					<div class="meaning">কত পূণ্যময় আপনার পালনকর্তার নাম, যিনি মহিমাময় ও মহানুভব।<br>Blessed be the name of thy Lord, full of Majesty, Bounty and Honour.</div>
+				</p>
+			</div>
+		</div>
+	</body>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আল লায়ল Page -->
+		<div id="sura92" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আল লায়ল</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 21</div>
+				<audio class="audio" controls>
+					<source src="audio/092.ogg" type="audio/ogg">
+					<source src="audio/092.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">وَاللَّيْلِ إِذَا يَغْشَى</div>
+					<div class="meaning">শপথ রাত্রির, যখন সে আচ্ছন্ন করে,<br>By the Night as it conceals (the light);</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">وَالنَّهَارِ إِذَا تَجَلَّى</div>
+					<div class="meaning">শপথ দিনের, যখন সে আলোকিত হয়<br>By the Day as it appears in glory;</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">وَمَا خَلَقَ الذَّكَرَ وَالْأُنثَى</div>
+					<div class="meaning">এবং তাঁর, যিনি নর ও নারী সৃষ্টি করেছেন,<br>By (the mystery of) the creation of male and female;-</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">إِنَّ سَعْيَكُمْ لَشَتَّى</div>
+					<div class="meaning">নিশ্চয় তোমাদের কর্ম প্রচেষ্টা বিভিন্ন ধরনের।<br>Verily, (the ends) ye strive for are diverse.</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">فَأَمَّا مَن أَعْطَى وَاتَّقَى</div>
+					<div class="meaning">অতএব, যে দান করে এবং খোদাভীরু হয়,<br>So he who gives (in charity) and fears ((Allah)),</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">وَصَدَّقَ بِالْحُسْنَى</div>
+					<div class="meaning">এবং উত্তম বিষয়কে সত্য মনে করে,<br>And (in all sincerity) testifies to the best,-</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">فَسَنُيَسِّرُهُ لِلْيُسْرَى</div>
+					<div class="meaning">আমি তাকে সুখের বিষয়ের জন্যে সহজ পথ দান করব।<br>We will indeed make smooth for him the path to Bliss.</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">وَأَمَّا مَن بَخِلَ وَاسْتَغْنَى</div>
+					<div class="meaning">আর যে কৃপণতা করে ও বেপরওয়া হয়<br>But he who is a greedy miser and thinks himself self-sufficient,</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">وَكَذَّبَ بِالْحُسْنَى</div>
+					<div class="meaning">এবং উত্তম বিষয়কে মিথ্যা মনে করে,<br>And gives the lie to the best,-</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">فَسَنُيَسِّرُهُ لِلْعُسْرَى</div>
+					<div class="meaning">আমি তাকে কষ্টের বিষয়ের জন্যে সহজ পথ দান করব।<br>We will indeed make smooth for him the path to Misery;</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">وَمَا يُغْنِي عَنْهُ مَالُهُ إِذَا تَرَدَّى</div>
+					<div class="meaning">যখন সে অধঃপতিত হবে, তখন তার সম্পদ তার কোনই কাজে আসবে না।<br>Nor will his wealth profit him when he falls headlong (into the Pit).</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">إِنَّ عَلَيْنَا لَلْهُدَى</div>
+					<div class="meaning">আমার দায়িত্ব পথ প্রদর্শন করা।<br>Verily We take upon Ourselves to guide,</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">وَإِنَّ لَنَا لَلْآخِرَةَ وَالْأُولَى</div>
+					<div class="meaning">আর আমি মালিক ইহকালের ও পরকালের।<br>And verily unto Us (belong) the End and the Beginning.</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">فَأَنذَرْتُكُمْ نَارًا تَلَظَّى</div>
+					<div class="meaning">অতএব, আমি তোমাদেরকে প্রজ্বলিত অগ্নি সম্পর্কে সতর্ক করে দিয়েছি।<br>Therefore do I warn you of a Fire blazing fiercely;</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">لَا يَصْلَاهَا إِلَّا الْأَشْقَى</div>
+					<div class="meaning">এতে নিতান্ত হতভাগ্য ব্যক্তিই প্রবেশ করবে,<br>None shall reach it but those most unfortunate ones</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">الَّذِي كَذَّبَ وَتَوَلَّى</div>
+					<div class="meaning">যে মিথ্যারোপ করে ও মুখ ফিরিয়ে নেয়।<br>Who give the lie to Truth and turn their backs.</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">وَسَيُجَنَّبُهَا الْأَتْقَى</div>
+					<div class="meaning">এ থেকে দূরে রাখা হবে খোদাভীরু ব্যক্তিকে,<br>But those most devoted to Allah shall be removed far from it,-</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">الَّذِي يُؤْتِي مَالَهُ يَتَزَكَّى</div>
+					<div class="meaning">যে আত্নশুদ্ধির জন্যে তার ধন-সম্পদ দান করে।<br>Those who spend their wealth for increase in self-purification,</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">وَمَا لِأَحَدٍ عِندَهُ مِن نِّعْمَةٍ تُجْزَى</div>
+					<div class="meaning">এবং তার উপর কারও কোন প্রতিদানযোগ্য অনুগ্রহ থাকে না।<br>And have in their minds no favour from anyone for which a reward is expected in return,</div>
+					<hr>
+					<p class="suraCount">20</p>
+					<div class="sura">إِلَّا ابْتِغَاء وَجْهِ رَبِّهِ الْأَعْلَى</div>
+					<div class="meaning">তার মহান পালনকর্তার সন্তুষ্টি অন্বেষণ ব্যতীত।<br>But only the desire to seek for the Countenance of their Lord Most High;</div>
+					<hr>
+					<p class="suraCount">21</p>
+					<div class="sura">وَلَسَوْفَ يَرْضَى</div>
+					<div class="meaning">সে সত্বরই সন্তুষ্টি লাভ করবে।<br>And soon will they attain (complete) satisfaction.</div>
+				</p>
+			</div>
+		</div>
+	</body>

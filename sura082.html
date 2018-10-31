@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আল ইনফিতার Page -->
+		<div id="sura82" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আল ইনফিতার</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 19</div>
+				<audio class="audio" controls>
+					<source src="audio/082.ogg" type="audio/ogg">
+					<source src="audio/082.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">إِذَا السَّمَاء انفَطَرَتْ</div>
+					<div class="meaning">যখন আকাশ বিদীর্ণ হবে,<br>When the Sky is cleft asunder;</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">وَإِذَا الْكَوَاكِبُ انتَثَرَتْ</div>
+					<div class="meaning">যখন নক্ষত্রসমূহ ঝরে পড়বে,<br>When the Stars are scattered;</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">وَإِذَا الْبِحَارُ فُجِّرَتْ</div>
+					<div class="meaning">যখন সমুদ্রকে উত্তাল করে তোলা হবে,<br>When the Oceans are suffered to burst forth;</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">وَإِذَا الْقُبُورُ بُعْثِرَتْ</div>
+					<div class="meaning">এবং যখন কবরসমূহ উম্মোচিত হবে,<br>And when the Graves are turned upside down;-</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">عَلِمَتْ نَفْسٌ مَّا قَدَّمَتْ وَأَخَّرَتْ</div>
+					<div class="meaning">তখন প্রত্যেকে জেনে নিবে সে কি অগ্রে প্রেরণ করেছে এবং কি পশ্চাতে ছেড়ে এসেছে।<br>(Then) shall each soul know what it hath sent forward and (what it hath) kept back.</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">يَا أَيُّهَا الْإِنسَانُ مَا غَرَّكَ بِرَبِّكَ الْكَرِيمِ</div>
+					<div class="meaning">হে মানুষ, কিসে তোমাকে তোমার মহামহিম পালনকর্তা সম্পর্কে বিভ্রান্ত করল?<br>O man! What has seduced thee from thy Lord Most Beneficent?-</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">الَّذِي خَلَقَكَ فَسَوَّاكَ فَعَدَلَكَ</div>
+					<div class="meaning">যিনি তোমাকে সৃষ্টি করেছেন, অতঃপর তোমাকে সুবিন্যস্ত করেছেন এবং সুষম করেছেন।<br>Him Who created thee. Fashioned thee in due proportion, and gave thee a just bias;</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">فِي أَيِّ صُورَةٍ مَّا شَاء رَكَّبَكَ</div>
+					<div class="meaning">যিনি তোমাকে তাঁর ইচ্ছামত আকৃতিতে গঠন করেছেন।<br>In whatever Form He wills, does He put thee together.</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">كَلَّا بَلْ تُكَذِّبُونَ بِالدِّينِ</div>
+					<div class="meaning">কখনও বিভ্রান্ত হয়ো না; বরং তোমরা দান-প্রতিদানকে মিথ্যা মনে কর।<br>Day! nit ye do reject Right and Judgment!</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">وَإِنَّ عَلَيْكُمْ لَحَافِظِينَ</div>
+					<div class="meaning">অবশ্যই তোমাদের উপর তত্ত্বাবধায়ক নিযুক্ত আছে।<br>But verily over you (are appointed angels) to protect you,-</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">كِرَامًا كَاتِبِينَ</div>
+					<div class="meaning">সম্মানিত আমল লেখকবৃন্দ।<br>Kind and honourable,- Writing down (your deeds):</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">يَعْلَمُونَ مَا تَفْعَلُونَ</div>
+					<div class="meaning">তারা জানে যা তোমরা কর।<br>They know (and understand) all that ye do.</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">إِنَّ الْأَبْرَارَ لَفِي نَعِيمٍ</div>
+					<div class="meaning">সৎকর্মশীলগণ থাকবে জান্নাতে।<br>As for the Righteous, they will be in bliss;</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">وَإِنَّ الْفُجَّارَ لَفِي جَحِيمٍ</div>
+					<div class="meaning">এবং দুষ্কর্মীরা থাকবে জাহান্নামে;<br>And the Wicked - they will be in the Fire,</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">يَصْلَوْنَهَا يَوْمَ الدِّينِ</div>
+					<div class="meaning">তারা বিচার দিবসে তথায় প্রবেশ করবে।<br>Which they will enter on the Day of Judgment,</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">وَمَا هُمْ عَنْهَا بِغَائِبِينَ</div>
+					<div class="meaning">তারা সেখান থেকে পৃথক হবে না।<br>And they will not be able to keep away therefrom.</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">وَمَا أَدْرَاكَ مَا يَوْمُ الدِّينِ</div>
+					<div class="meaning">আপনি জানেন, বিচার দিবস কি?<br>And what will explain to thee what the Day of Judgment is?</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">ثُمَّ مَا أَدْرَاكَ مَا يَوْمُ الدِّينِ</div>
+					<div class="meaning">অতঃপর আপনি জানেন, বিচার দিবস কি?<br>Again, what will explain to thee what the Day of Judgment is?</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">يَوْمَ لَا تَمْلِكُ نَفْسٌ لِّنَفْسٍ شَيْئًا وَالْأَمْرُ يَوْمَئِذٍ لِلَّهِ</div>
+					<div class="meaning">যেদিন কেউ কারও কোন উপকার করতে পারবে না এবং সেদিন সব কতৃêত্ব হবে আল্লাহর।<br>(It will be) the Day when no soul shall have power (to do) aught for another: For the command, that Day, will be (wholly) with Allah.</div>
+				</p>
+			</div>
+		</div>
+	</body>

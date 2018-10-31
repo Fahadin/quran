@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আত-তাতফীফ Page -->
+		<div id="sura83" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আত-তাতফীফ</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 36</div>
+				<audio class="audio" controls>
+					<source src="audio/083.ogg" type="audio/ogg">
+					<source src="audio/083.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">وَيْلٌ لِّلْمُطَفِّفِينَ</div>
+					<div class="meaning">যারা মাপে কম করে, তাদের জন্যে দুর্ভোগ,<br>Woe to those that deal in fraud,-</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">الَّذِينَ إِذَا اكْتَالُواْ عَلَى النَّاسِ يَسْتَوْفُونَ</div>
+					<div class="meaning">যারা লোকের কাছ থেকে যখন মেপে নেয়, তখন পূর্ণ মাত্রায় নেয়<br>Those who, when they have to receive by measure from men, exact full measure,</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">وَإِذَا كَالُوهُمْ أَو وَّزَنُوهُمْ يُخْسِرُونَ</div>
+					<div class="meaning">এবং যখন লোকদেরকে মেপে দেয় কিংবা ওজন করে দেয়, তখন কম করে দেয়।<br>But when they have to give by measure or weight to men, give less than due.</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">أَلَا يَظُنُّ أُولَئِكَ أَنَّهُم مَّبْعُوثُونَ</div>
+					<div class="meaning">তারা কি চিন্তা করে না যে, তারা পুনরুত্থিত হবে।<br>Do they not think that they will be called to account?-</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">لِيَوْمٍ عَظِيمٍ</div>
+					<div class="meaning">সেই মহাদিবসে,<br>On a Mighty Day,</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ</div>
+					<div class="meaning">যেদিন মানুষ দাঁড়াবে বিশ্ব পালনকর্তার সামনে।<br>A Day when (all) mankind will stand before the Lord of the Worlds?</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">كَلَّا إِنَّ كِتَابَ الفُجَّارِ لَفِي سِجِّينٍ</div>
+					<div class="meaning">এটা কিছুতেই উচিত নয়, নিশ্চয় পাপাচারীদের আমলনামা সিজ্জীনে আছে।<br>Day! Surely the record of the wicked is (preserved) in Sijjin.</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">وَمَا أَدْرَاكَ مَا سِجِّينٌ</div>
+					<div class="meaning">আপনি জানেন, সিজ্জীন কি?<br>And what will explain to thee what Sijjin is?</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">كِتَابٌ مَّرْقُومٌ</div>
+					<div class="meaning">এটা লিপিবদ্ধ খাতা।<br>(There is) a Register (fully) inscribed.</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ</div>
+					<div class="meaning">সেদিন দুর্ভোগ মিথ্যারোপকারীদের,<br>Woe, that Day, to those that deny-</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">الَّذِينَ يُكَذِّبُونَ بِيَوْمِ الدِّينِ</div>
+					<div class="meaning">যারা প্রতিফল দিবসকে মিথ্যারোপ করে।<br>Those that deny the Day of Judgment.</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">وَمَا يُكَذِّبُ بِهِ إِلَّا كُلُّ مُعْتَدٍ أَثِيمٍ</div>
+					<div class="meaning">প্রত্যেক সীমালংঘনকারী পাপিষ্ঠই কেবল একে মিথ্যারোপ করে।<br>And none can deny it but the Transgressor beyond bounds the Sinner!</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">إِذَا تُتْلَى عَلَيْهِ آيَاتُنَا قَالَ أَسَاطِيرُ الْأَوَّلِينَ</div>
+					<div class="meaning">তার কাছে আমার আয়াতসমূহ পাঠ করা হলে সে বলে, পুরাকালের উপকথা।<br>When Our Signs are rehearsed to him, he says, "Tales of the ancients!"</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">كَلَّا بَلْ رَانَ عَلَى قُلُوبِهِم مَّا كَانُوا يَكْسِبُونَ</div>
+					<div class="meaning">কখনও না, বরং তারা যা করে, তাই তাদের হৃদয় মরিচা ধরিয়ে দিয়েছে।<br>By no means! but on their hearts is the stain of the (ill) which they do!</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">كَلَّا إِنَّهُمْ عَن رَّبِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ</div>
+					<div class="meaning">কখনও না, তারা সেদিন তাদের পালনকর্তার থেকে পর্দার অন্তরালে থাকবে।<br>Verily, from (the Light of) their Lord, that Day, will they be veiled.</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">ثُمَّ إِنَّهُمْ لَصَالُوا الْجَحِيمِ</div>
+					<div class="meaning">অতঃপর তারা জাহান্নামে প্রবেশ করবে।<br>Further, they will enter the Fire of Hell.</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">ثُمَّ يُقَالُ هَذَا الَّذِي كُنتُم بِهِ تُكَذِّبُونَ</div>
+					<div class="meaning">এরপর বলা হবে, একেই তো তোমরা মিথ্যারোপ করতে।<br>Further, it will be said to them: "This is the (reality) which ye rejected as false!</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">كَلَّا إِنَّ كِتَابَ الْأَبْرَارِ لَفِي عِلِّيِّينَ</div>
+					<div class="meaning">কখনও না, নিশ্চয় সৎলোকদের আমলনামা আছে ইল্লিয়্যীনে।<br>Day, verily the record of the Righteous is (preserved) in 'Illiyin.</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">وَمَا أَدْرَاكَ مَا عِلِّيُّونَ</div>
+					<div class="meaning">আপনি জানেন ইল্লিয়্যীন কি?<br>And what will explain to thee what 'Illiyun is?</div>
+					<hr>
+					<p class="suraCount">20</p>
+					<div class="sura">كِتَابٌ مَّرْقُومٌ</div>
+					<div class="meaning">এটা লিপিবদ্ধ খাতা।<br>(There is) a Register (fully) inscribed,</div>
+					<hr>
+					<p class="suraCount">21</p>
+					<div class="sura">يَشْهَدُهُ الْمُقَرَّبُونَ</div>
+					<div class="meaning">আল্লাহর নৈকট্যপ্রাপ্ত ফেরেশতাগণ একে প্রত্যক্ষ করে।<br>To which bear witness those Nearest (to Allah..</div>
+					<hr>
+					<p class="suraCount">22</p>
+					<div class="sura">إِنَّ الْأَبْرَارَ لَفِي نَعِيمٍ</div>
+					<div class="meaning">নিশ্চয় সৎলোকগণ থাকবে পরম আরামে,<br>Truly the Righteous will be in Bliss:</div>
+					<hr>
+					<p class="suraCount">23</p>
+					<div class="sura">عَلَى الْأَرَائِكِ يَنظُرُونَ</div>
+					<div class="meaning">সিংহাসনে বসে অবলোকন করবে।<br>On Thrones (of Dignity) will they command a sight (of all things):</div>
+					<hr>
+					<p class="suraCount">24</p>
+					<div class="sura">تَعْرِفُ فِي وُجُوهِهِمْ نَضْرَةَ النَّعِيمِ</div>
+					<div class="meaning">আপনি তাদের মুখমন্ডলে স্বাচ্ছন্দ্যের সজীবতা দেখতে পাবেন।<br>Thou wilt recognise in their faces the beaming brightness of Bliss.</div>
+					<hr>
+					<p class="suraCount">25</p>
+					<div class="sura">يُسْقَوْنَ مِن رَّحِيقٍ مَّخْتُومٍ</div>
+					<div class="meaning">তাদেরকে মোহর করা বিশুদ্ধ পানীয় পান করানো হবে।<br>Their thirst will be slaked with Pure Wine sealed:</div>
+					<hr>
+					<p class="suraCount">26</p>
+					<div class="sura">خِتَامُهُ مِسْكٌ وَفِي ذَلِكَ فَلْيَتَنَافَسِ الْمُتَنَافِسُونَ</div>
+					<div class="meaning">তার মোহর হবে কস্তুরী। এ বিষয়ে প্রতিযোগীদের প্রতিযোগিতা করা উচিত।<br>The seal thereof will be Musk: And for this let those aspire, who have aspirations:</div>
+					<hr>
+					<p class="suraCount">27</p>
+					<div class="sura">وَمِزَاجُهُ مِن تَسْنِيمٍ</div>
+					<div class="meaning">তার মিশ্রণ হবে তসনীমের পানি।<br>With it will be (given) a mixture of Tasnim:</div>
+					<hr>
+					<p class="suraCount">28</p>
+					<div class="sura">عَيْنًا يَشْرَبُ بِهَا الْمُقَرَّبُونَ</div>
+					<div class="meaning">এটা একটা ঝরণা, যার পানি পান করবে নৈকট্যশীলগণ।<br>A spring, from (the waters) whereof drink those Nearest to Allah.</div>
+					<hr>
+					<p class="suraCount">29</p>
+					<div class="sura">إِنَّ الَّذِينَ أَجْرَمُوا كَانُواْ مِنَ الَّذِينَ آمَنُوا يَضْحَكُونَ</div>
+					<div class="meaning">যারা অপরাধী, তারা বিশ্বাসীদেরকে উপহাস করত।<br>Those in sin used to laugh at those who believed,</div>
+					<hr>
+					<p class="suraCount">30</p>
+					<div class="sura">وَإِذَا مَرُّواْ بِهِمْ يَتَغَامَزُونَ</div>
+					<div class="meaning">এবং তারা যখন তাদের কাছ দিয়ে গমন করত তখন পরস্পরে চোখ টিপে ইশারা করত।<br>And whenever they passed by them, used to wink at each other (in mockery);</div>
+					<hr>
+					<p class="suraCount">31</p>
+					<div class="sura">وَإِذَا انقَلَبُواْ إِلَى أَهْلِهِمُ انقَلَبُواْ فَكِهِينَ</div>
+					<div class="meaning">তারা যখন তাদের পরিবার-পরিজনের কাছে ফিরত, তখনও হাসাহাসি করে ফিরত।<br>And when they returned to their own people, they would return jesting;</div>
+					<hr>
+					<p class="suraCount">32</p>
+					<div class="sura">وَإِذَا رَأَوْهُمْ قَالُوا إِنَّ هَؤُلَاء لَضَالُّونَ</div>
+					<div class="meaning">আর যখন তারা বিশ্বাসীদেরকে দেখত, তখন বলত, নিশ্চয় এরা বিভ্রান্ত।<br>And whenever they saw them, they would say, "Behold! These are the people truly astray!"</div>
+					<hr>
+					<p class="suraCount">33</p>
+					<div class="sura">وَمَا أُرْسِلُوا عَلَيْهِمْ حَافِظِينَ</div>
+					<div class="meaning">অথচ তারা বিশ্বাসীদের তত্ত্বাবধায়করূপে প্রেরিত হয়নি।<br>But they had not been sent as keepers over them!</div>
+					<hr>
+					<p class="suraCount">34</p>
+					<div class="sura">فَالْيَوْمَ الَّذِينَ آمَنُواْ مِنَ الْكُفَّارِ يَضْحَكُونَ</div>
+					<div class="meaning">আজ যারা বিশ্বাসী, তারা কাফেরদেরকে উপহাস করছে।<br>But on this Day the Believers will laugh at the Unbelievers:</div>
+					<hr>
+					<p class="suraCount">35</p>
+					<div class="sura">عَلَى الْأَرَائِكِ يَنظُرُونَ</div>
+					<div class="meaning">সিংহাসনে বসে, তাদেরকে অবলোকন করছে,<br>On Thrones (of Dignity) they will command (a sight) (of all things).</div>
+					<hr>
+					<p class="suraCount">36</p>
+					<div class="sura">هَلْ ثُوِّبَ الْكُفَّارُ مَا كَانُوا يَفْعَلُونَ</div>
+					<div class="meaning">কাফেররা যা করত, তার প্রতিফল পেয়েছে তো?<br>Will not the Unbelievers have been paid back for what they did?</div>
+				</p>
+			</div>
+		</div>
+	</body>

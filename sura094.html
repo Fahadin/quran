@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আল ইনশিরাহ Page -->
+		<div id="sura94" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আল ইনশিরাহ</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 8</div>
+				<audio class="audio" controls>
+					<source src="audio/094.ogg" type="audio/ogg">
+					<source src="audio/094.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ</div>
+					<div class="meaning">আমি কি আপনার বক্ষ উম্মুক্ত করে দেইনি?<br>Have We not expanded thee thy breast?-</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">وَوَضَعْنَا عَنكَ وِزْرَكَ</div>
+					<div class="meaning">আমি লাঘব করেছি আপনার বোঝা,<br>And removed from thee thy burden</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">الَّذِي أَنقَضَ ظَهْرَكَ</div>
+					<div class="meaning">যা ছিল আপনার জন্যে অতিশয় দুঃসহ।<br>The which did gall thy back?-</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">وَرَفَعْنَا لَكَ ذِكْرَكَ</div>
+					<div class="meaning">আমি আপনার আলোচনাকে সমুচ্চ করেছি।<br>And raised high the esteem (in which) thou (art held)?</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">فَإِنَّ مَعَ الْعُسْرِ يُسْرًا</div>
+					<div class="meaning">নিশ্চয় কষ্টের সাথে স্বস্তি রয়েছে।<br>So, verily, with every difficulty, there is relief:</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">إِنَّ مَعَ الْعُسْرِ يُسْرًا</div>
+					<div class="meaning">নিশ্চয় কষ্টের সাথে স্বস্তি রয়েছে।<br>Verily, with every difficulty there is relief.</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">فَإِذَا فَرَغْتَ فَانصَبْ</div>
+					<div class="meaning">অতএব, যখন অবসর পান পরিশ্রম করুন।<br>Therefore, when thou art free (from thine immediate task), still labour hard,</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">وَإِلَى رَبِّكَ فَارْغَبْ</div>
+					<div class="meaning">এবং আপনার পালনকর্তার প্রতি মনোনিবেশ করুন।<br>And to thy Lord turn (all) thy attention.</div>
+				</p>
+			</div>
+		</div>
+	</body>

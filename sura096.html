@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আলাক Page -->
+		<div id="sura96" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আলাক</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 19</div>
+				<audio class="audio" controls>
+					<source src="audio/096.ogg" type="audio/ogg">
+					<source src="audio/096.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ</div>
+					<div class="meaning">পাঠ করুন আপনার পালনকর্তার নামে যিনি সৃষ্টি করেছেন<br>Proclaim! (or read!) in the name of thy Lord and Cherisher, Who created-</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ</div>
+					<div class="meaning">সৃষ্টি করেছেন মানুষকে জমাট রক্ত থেকে।<br>Created man, out of a (mere) clot of congealed blood:</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">اقْرَأْ وَرَبُّكَ الْأَكْرَمُ</div>
+					<div class="meaning">পাঠ করুন, আপনার পালনকর্তা মহা দয়ালু,<br>Proclaim! And thy Lord is Most Bountiful,-</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">الَّذِي عَلَّمَ بِالْقَلَمِ</div>
+					<div class="meaning">যিনি কলমের সাহায্যে শিক্ষা দিয়েছেন,<br>He Who taught (the use of) the pen,-</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">عَلَّمَ الْإِنسَانَ مَا لَمْ يَعْلَمْ</div>
+					<div class="meaning">শিক্ষা দিয়েছেন মানুষকে যা সে জানত না।<br>Taught man that which he knew not.</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">كَلَّا إِنَّ الْإِنسَانَ لَيَطْغَى</div>
+					<div class="meaning">সত্যি সত্যি মানুষ সীমালংঘন করে,<br>Day, but man doth transgress all bounds,</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">أَن رَّآهُ اسْتَغْنَى</div>
+					<div class="meaning">এ কারণে যে, সে নিজেকে অভাবমুক্ত মনে করে।<br>In that he looketh upon himself as self-sufficient.</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">إِنَّ إِلَى رَبِّكَ الرُّجْعَى</div>
+					<div class="meaning">নিশ্চয় আপনার পালনকর্তার দিকেই প্রত্যাবর্তন হবে।<br>Verily, to thy Lord is the return (of all).</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">أَرَأَيْتَ الَّذِي يَنْهَى</div>
+					<div class="meaning">আপনি কি তাকে দেখেছেন, যে নিষেধ করে<br>Seest thou one who forbids-</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">عَبْدًا إِذَا صَلَّى</div>
+					<div class="meaning">এক বান্দাকে যখন সে নামায পড়ে?<br>A votary when he (turns) to pray?</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">أَرَأَيْتَ إِن كَانَ عَلَى الْهُدَى</div>
+					<div class="meaning">আপনি কি দেখেছেন যদি সে সৎপথে থাকে।<br>Seest thou if he is on (the road of) Guidance?-</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">أَوْ أَمَرَ بِالتَّقْوَى</div>
+					<div class="meaning">অথবা খোদাভীতি শিক্ষা দেয়।<br>Or enjoins Righteousness?</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">أَرَأَيْتَ إِن كَذَّبَ وَتَوَلَّى</div>
+					<div class="meaning">আপনি কি দেখেছেন, যদি সে মিথ্যারোপ করে ও মুখ ফিরিয়ে নেয়।<br>Seest thou if he denies (Truth) and turns away?</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">أَلَمْ يَعْلَمْ بِأَنَّ اللَّهَ يَرَى</div>
+					<div class="meaning">সে কি জানে না যে, আল্লাহ দেখেন?<br>Knoweth he not that Allah doth see?</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">كَلَّا لَئِن لَّمْ يَنتَهِ لَنَسْفَعًا بِالنَّاصِيَةِ</div>
+					<div class="meaning">কখনই নয়, যদি সে বিরত না হয়, তবে আমি মস্তকের সামনের কেশগুচ্ছ ধরে হেঁচড়াবই-<br>Let him beware! If he desist not, We will drag him by the forelock,-</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ</div>
+					<div class="meaning">মিথ্যাচারী, পাপীর কেশগুচ্ছ।<br>A lying, sinful forelock!</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">فَلْيَدْعُ نَادِيَه</div>
+					<div class="meaning">অতএব, সে তার সভাসদদেরকে আহবান করুক।<br>Then, let him call (for help) to his council (of comrades):</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">سَنَدْعُ الزَّبَانِيَةَ</div>
+					<div class="meaning">আমিও আহবান করব জাহান্নামের প্রহরীদেরকে<br>We will call on the angels of punishment (to deal with him)!</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">كَلَّا لَا تُطِعْهُ وَاسْجُدْ وَاقْتَرِبْ</div>
+					<div class="meaning">কখনই নয়, আপনি তার আনুগত্য করবেন না। আপনি সেজদা করুন ও আমার নৈকট্য অর্জন করুন।<br>Day, heed him not: But bow down in adoration, and bring thyself the closer (to Allah.!</div>
+				</p>
+			</div>
+		</div>
+	</body>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা ফালাক্ব Page -->
+		<div id="sura113" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা ফালাক্ব</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 5</div>
+				<audio class="audio" controls>
+					<source src="audio/113.ogg" type="audio/ogg">
+					<source src="audio/113.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ</div>
+					<div class="meaning">বলুন, আমি আশ্রয় গ্রহণ করছি প্রভাতের পালনকর্তার,<br>Say: I seek refuge with the Lord of the Dawn</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">مِن شَرِّ مَا خَلَقَ</div>
+					<div class="meaning">তিনি যা সৃষ্টি করেছেন, তার অনিষ্ট থেকে,<br>From the mischief of created things;</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ</div>
+					<div class="meaning">অন্ধকার রাত্রির অনিষ্ট থেকে, যখন তা সমাগত হয়,<br>From the mischief of Darkness as it overspreads;</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ</div>
+					<div class="meaning">গ্রন্থিতে ফুঁৎকার দিয়ে জাদুকারিনীদের অনিষ্ট থেকে<br>From the mischief of those who practise secret arts;</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ</div>
+					<div class="meaning">এবং হিংসুকের অনিষ্ট থেকে যখন সে হিংসা করে।<br>And from the mischief of the envious one as he practises envy.</div>
+				</p>
+			</div>
+		</div>
+	</body>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আল বুরূজ Page -->
+		<div id="sura85" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আল বুরূজ</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 22</div>
+				<audio class="audio" controls>
+					<source src="audio/085.ogg" type="audio/ogg">
+					<source src="audio/085.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">وَالسَّمَاء ذَاتِ الْبُرُوجِ</div>
+					<div class="meaning">শপথ গ্রহ-নক্ষত্র শোভিত আকাশের,<br>By the sky, (displaying) the Zodiacal Signs;</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">وَالْيَوْمِ الْمَوْعُودِ</div>
+					<div class="meaning">এবং প্রতিশ্রুত দিবসের,<br>By the promised Day (of Judgment);</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">وَشَاهِدٍ وَمَشْهُودٍ</div>
+					<div class="meaning">এবং সেই দিবসের, যে উপস্থিত হয় ও যাতে উপস্থিত হয়<br>By one that witnesses, and the subject of the witness;-</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">قُتِلَ أَصْحَابُ الْأُخْدُودِ</div>
+					<div class="meaning">অভিশপ্ত হয়েছে গর্ত ওয়ালারা অর্থাৎ,<br>Woe to the makers of the pit (of fire),</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">النَّارِ ذَاتِ الْوَقُودِ</div>
+					<div class="meaning">অনেক ইন্ধনের অগ্নিসংযোগকারীরা;<br>Fire supplied (abundantly) with fuel:</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">إِذْ هُمْ عَلَيْهَا قُعُودٌ</div>
+					<div class="meaning">যখন তারা তার কিনারায় বসেছিল।<br>Behold! they sat over against the (fire),</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">وَهُمْ عَلَى مَا يَفْعَلُونَ بِالْمُؤْمِنِينَ شُهُودٌ</div>
+					<div class="meaning">এবং তারা বিশ্বাসীদের সাথে যা করেছিল, তা নিরীক্ষণ করছিল।<br>And they witnessed (all) that they were doing against the Believers.</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">وَمَا نَقَمُوا مِنْهُمْ إِلَّا أَن يُؤْمِنُوا بِاللَّهِ الْعَزِيزِ الْحَمِيدِ</div>
+					<div class="meaning">তারা তাদেরকে শাস্তি দিয়েছিল শুধু এ কারণে যে, তারা প্রশংসিত, পরাক্রান্ত আল্লাহর প্রতি বিশ্বাস স্থাপন করেছিল,<br>And they ill-treated them for no other reason than that they believed in Allah, Exalted in Power, Worthy of all Praise!-</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">الَّذِي لَهُ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ وَاللَّهُ عَلَى كُلِّ شَيْءٍ شَهِيدٌ</div>
+					<div class="meaning">যিনি নভোমন্ডল ও ভূমন্ডলের ক্ষমতার মালিক, আল্লাহর সামনে রয়েছে সবকিছু।<br>Him to Whom belongs the dominion of the heavens and the earth! And Allah is Witness to all things.</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">إِنَّ الَّذِينَ فَتَنُوا الْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ ثُمَّ لَمْ يَتُوبُوا فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ الْحَرِيقِ</div>
+					<div class="meaning">যারা মুমিন পুরুষ ও নারীকে নিপীড়ন করেছে, অতঃপর তওবা করেনি, তাদের জন্যে আছে জাহান্নামের শাস্তি, আর আছে দহন যন্ত্রণা,<br>Those who persecute (or draw into temptation) the Believers, men and women, and do not turn in repentance, will have the Penalty of Hell: They will have the Penalty of the Burning Fire.</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَهُمْ جَنَّاتٌ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ ذَلِكَ الْفَوْزُ الْكَبِيرُ</div>
+					<div class="meaning">যারা ঈমান আনে ও সৎকর্ম করে তাদের জন্যে আছে জান্নাত, যার তলদেশে প্রবাহিত হয় নির্ঝরিণীসমূহ। এটাই মহাসাফল্য।<br>For those who believe and do righteous deeds, will be Gardens; beneath which rivers flow: That is the great Salvation, (the fulfilment of all desires),</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">إِنَّ بَطْشَ رَبِّكَ لَشَدِيدٌ</div>
+					<div class="meaning">নিশ্চয় তোমার পালনকর্তার পাকড়াও অত্যন্ত কঠিন।<br>Truly strong is the Grip (and Power) of thy Lord.</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">إِنَّهُ هُوَ يُبْدِئُ وَيُعِيدُ</div>
+					<div class="meaning">তিনিই প্রথমবার অস্তিত্ব দান করেন এবং পুনরায় জীবিত করেন।<br>It is He Who creates from the very beginning, and He can restore (life).</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">وَهُوَ الْغَفُورُ الْوَدُودُ</div>
+					<div class="meaning">তিনি ক্ষমাশীল, প্রেমময়;<br>And He is the Oft-Forgiving, Full of Loving-Kindness,</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">ذُو الْعَرْشِ الْمَجِيدُ</div>
+					<div class="meaning">মহান আরশের অধিকারী।<br>Lord of the Throne of Glory,</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">فَعَّالٌ لِّمَا يُرِيدُ</div>
+					<div class="meaning">তিনি যা চান, তাই করেন।<br>Doer (without let) of all that He intends.</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">هَلْ أَتَاكَ حَدِيثُ الْجُنُودِ</div>
+					<div class="meaning">আপনার কাছে সৈন্যবাহিনীর ইতিবৃত্ত পৌছেছে কি?<br>Has the story reached thee, of the forces-</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">فِرْعَوْنَ وَثَمُودَ</div>
+					<div class="meaning">ফেরাউনের এবং সামুদের?<br>Of Pharaoh and the Thamud?</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">بَلِ الَّذِينَ كَفَرُوا فِي تَكْذِيبٍ</div>
+					<div class="meaning">বরং যারা কাফের, তারা মিথ্যারোপে রত আছে।<br>And yet the Unbelievers (persist) in rejecting (the Truth)!</div>
+					<hr>
+					<p class="suraCount">20</p>
+					<div class="sura">وَاللَّهُ مِن وَرَائِهِم مُّحِيطٌ</div>
+					<div class="meaning">আল্লাহ তাদেরকে চতুর্দিক থেকে পরিবেষ্টন করে রেখেছেন।<br>But Allah doth encompass them from behind!</div>
+					<hr>
+					<p class="suraCount">21</p>
+					<div class="sura">بَلْ هُوَ قُرْآنٌ مَّجِيدٌ</div>
+					<div class="meaning">বরং এটা মহান কোরআন,<br>Day, this is a Glorious Qur'an,</div>
+					<hr>
+					<p class="suraCount">22</p>
+					<div class="sura">فِي لَوْحٍ مَّحْفُوظٍ</div>
+					<div class="meaning">লওহে মাহফুযে লিপিবদ্ধ।<br>(Inscribed) in a Tablet Preserved!</div>
+				</p>
+			</div>
+		</div>
+	</body>

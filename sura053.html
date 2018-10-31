@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আন-নাজম Page -->
+		<div id="sura53" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আন-নাজম</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 62</div>
+				<audio class="audio" controls>
+					<source src="audio/053.ogg" type="audio/ogg">
+					<source src="audio/053.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">وَالنَّجْمِ إِذَا هَوَى</div>
+					<div class="meaning">নক্ষত্রের কসম, যখন অস্তমিত হয়।<br>By the Star when it goes down,-</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">مَا ضَلَّ صَاحِبُكُمْ وَمَا غَوَى</div>
+					<div class="meaning">তোমাদের সংগী পথভ্রষ্ট হননি এবং বিপথগামীও হননি।<br>Your Companion is neither astray nor being misled.</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">وَمَا يَنطِقُ عَنِ الْهَوَى</div>
+					<div class="meaning">এবং প্রবৃত্তির তাড়নায় কথা বলেন না।<br>Nor does he say (aught) of (his own) Desire.</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">إِنْ هُوَ إِلَّا وَحْيٌ يُوحَى</div>
+					<div class="meaning">কোরআন ওহী, যা প্রত্যাদেশ হয়।<br>It is no less than inspiration sent down to him:</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">عَلَّمَهُ شَدِيدُ الْقُوَى</div>
+					<div class="meaning">তাঁকে শিক্ষা দান করে এক শক্তিশালী ফেরেশতা,<br>He was taught by one Mighty in Power,</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">ذُو مِرَّةٍ فَاسْتَوَى</div>
+					<div class="meaning">সহজাত শক্তিসম্পন্ন, সে নিজ আকৃতিতে প্রকাশ পেল।<br>Endued with Wisdom: for he appeared (in stately form);</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">وَهُوَ بِالْأُفُقِ الْأَعْلَى</div>
+					<div class="meaning">উর্ধ্ব দিগন্তে,<br>While he was in the highest part of the horizon:</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">ثُمَّ دَنَا فَتَدَلَّى</div>
+					<div class="meaning">অতঃপর নিকটবর্তী হল ও ঝুলে গেল।<br>Then he approached and came closer,</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">فَكَانَ قَابَ قَوْسَيْنِ أَوْ أَدْنَى</div>
+					<div class="meaning">তখন দুই ধনুকের ব্যবধান ছিল অথবা আরও কম।<br>And was at a distance of but two bow-lengths or (even) nearer;</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">فَأَوْحَى إِلَى عَبْدِهِ مَا أَوْحَى</div>
+					<div class="meaning">তখন আল্লাহ তাঁর দাসের প্রতি যা প্রত্যাদেশ করবার, তা প্রত্যাদেশ করলেন।<br>So did ((Allah)) convey the inspiration to His Servant- (conveyed) what He (meant) to convey.</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">مَا كَذَبَ الْفُؤَادُ مَا رَأَى</div>
+					<div class="meaning">রসূলের অন্তর মিথ্যা বলেনি যা সে দেখেছে।<br>The (Prophet's) (mind and) heart in no way falsified that which he saw.</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">أَفَتُمَارُونَهُ عَلَى مَا يَرَى</div>
+					<div class="meaning">তোমরা কি বিষয়ে বিতর্ক করবে যা সে দেখেছে?<br>Will ye then dispute with him concerning what he saw?</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">وَلَقَدْ رَآهُ نَزْلَةً أُخْرَى</div>
+					<div class="meaning">নিশ্চয় সে তাকে আরেকবার দেখেছিল,<br>For indeed he saw him at a second descent,</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">عِندَ سِدْرَةِ الْمُنْتَهَى</div>
+					<div class="meaning">সিদরাতুলমুন্তাহার নিকটে,<br>Near the Lote-tree beyond which none may pass:</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">عِندَهَا جَنَّةُ الْمَأْوَى</div>
+					<div class="meaning">যার কাছে অবস্থিত বসবাসের জান্নাত।<br>Near it is the Garden of Abode.</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">إِذْ يَغْشَى السِّدْرَةَ مَا يَغْشَى</div>
+					<div class="meaning">যখন বৃক্ষটি দ্বারা আচ্ছন্ন হওয়ার, তদ্দ্বারা আচ্ছন্ন ছিল।<br>Behold, the Lote-tree was shrouded (in mystery unspeakable!)</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">مَا زَاغَ الْبَصَرُ وَمَا طَغَى</div>
+					<div class="meaning">তাঁর দৃষ্টিবিভ্রম হয় নি এবং সীমালংঘনও করেনি।<br>(His) sight never swerved, nor did it go wrong!</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">لَقَدْ رَأَى مِنْ آيَاتِ رَبِّهِ الْكُبْرَى</div>
+					<div class="meaning">নিশ্চয় সে তার পালনকর্তার মহান নিদর্শনাবলী অবলোকন করেছে।<br>For truly did he see, of the Signs of his Lord, the Greatest!</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">أَفَرَأَيْتُمُ اللَّاتَ وَالْعُزَّى</div>
+					<div class="meaning">তোমরা কি ভেবে দেখেছ লাত ও ওযযা সম্পর্কে।<br>Have ye seen Lat. and 'Uzza,</div>
+					<hr>
+					<p class="suraCount">20</p>
+					<div class="sura">وَمَنَاةَ الثَّالِثَةَ الْأُخْرَى</div>
+					<div class="meaning">এবং তৃতীয় আরেকটি মানাত সম্পর্কে?<br>And another, the third (goddess), Manat?</div>
+					<hr>
+					<p class="suraCount">21</p>
+					<div class="sura">أَلَكُمُ الذَّكَرُ وَلَهُ الْأُنثَى</div>
+					<div class="meaning">পুত্র-সন্তান কি তোমাদের জন্যে এবং কন্যা-সন্তান আল্লাহর জন্য?<br>What! for you the male sex, and for Him, the female?</div>
+					<hr>
+					<p class="suraCount">22</p>
+					<div class="sura">تِلْكَ إِذًا قِسْمَةٌ ضِيزَى</div>
+					<div class="meaning">এমতাবস্থায় এটা তো হবে খুবই অসংগত বন্টন।<br>Behold, such would be indeed a division most unfair!</div>
+					<hr>
+					<p class="suraCount">23</p>
+					<div class="sura">إِنْ هِيَ إِلَّا أَسْمَاء سَمَّيْتُمُوهَا أَنتُمْ وَآبَاؤُكُم مَّا أَنزَلَ اللَّهُ بِهَا مِن سُلْطَانٍ إِن يَتَّبِعُونَ إِلَّا الظَّنَّ وَمَا تَهْوَى الْأَنفُسُ وَلَقَدْ جَاءهُم مِّن رَّبِّهِمُ الْهُدَى</div>
+					<div class="meaning">এগুলো কতগুলো নাম বৈ নয়, যা তোমরা এবং তোমাদের পূর্ব-পুরুষদের রেখেছ। এর সমর্থনে আল্লাহ কোন দলীল নাযিল করেননি। তারা অনুমান এবং প্রবৃত্তিরই অনুসরণ করে। অথচ তাদের কাছে তাদের পালনকর্তার পক্ষ থেকে পথ নির্দেশ এসেছে।<br>These are nothing but names which ye have devised,- ye and your fathers,- for which Allah has sent down no authority (whatever). They follow nothing but conjecture and what their own souls desire!- Even though there has already come to them Guidance from their Lord!</div>
+					<hr>
+					<p class="suraCount">24</p>
+					<div class="sura">أَمْ لِلْإِنسَانِ مَا تَمَنَّى</div>
+					<div class="meaning">মানুষ যা চায়, তাই কি পায়?<br>Nay, shall man have (just) anything he hankers after?</div>
+					<hr>
+					<p class="suraCount">25</p>
+					<div class="sura">فَلِلَّهِ الْآخِرَةُ وَالْأُولَى</div>
+					<div class="meaning">অতএব, পরবর্তী ও পূর্ববর্তী সব মঙ্গলই আল্লাহর হাতে।<br>But it is to Allah that the End and the Beginning (of all things) belong.</div>
+					<hr>
+					<p class="suraCount">26</p>
+					<div class="sura">وَكَم مِّن مَّلَكٍ فِي السَّمَاوَاتِ لَا تُغْنِي شَفَاعَتُهُمْ شَيْئًا إِلَّا مِن بَعْدِ أَن يَأْذَنَ اللَّهُ لِمَن يَشَاء وَيَرْضَى</div>
+					<div class="meaning">আকাশে অনেক ফেরেশতা রয়েছে। তাদের কোন সুপারিশ ফলপ্রসূ হয় না যতক্ষণ আল্লাহ যার জন্যে ইচ্ছা ও যাকে পছন্দ করেন, অনুমতি না দেন।<br>How many-so-ever be the angels in the heavens, their intercession will avail nothing except after Allah has given leave for whom He pleases and that he is acceptable to Him.</div>
+					<hr>
+					<p class="suraCount">27</p>
+					<div class="sura">إِنَّ الَّذِينَ لَا يُؤْمِنُونَ بِالْآخِرَةِ لَيُسَمُّونَ الْمَلَائِكَةَ تَسْمِيَةَ الْأُنثَى</div>
+					<div class="meaning">যারা পরকালে বিশ্বাস করে না, তারাই ফেরেশতাকে নারীবাচক নাম দিয়ে থাকে।<br>Those who believe not in the Hereafter, name the angels with female names.</div>
+					<hr>
+					<p class="suraCount">28</p>
+					<div class="sura">وَمَا لَهُم بِهِ مِنْ عِلْمٍ إِن يَتَّبِعُونَ إِلَّا الظَّنَّ وَإِنَّ الظَّنَّ لَا يُغْنِي مِنَ الْحَقِّ شَيْئًا</div>
+					<div class="meaning">অথচ এ বিষয়ে তাদের কোন জ্ঞান নেই। তারা কেবল অনুমানের উপর চলে। অথচ সত্যের ব্যাপারে অনুমান মোটেই ফলপ্রসূ নয়।<br>But they have no knowledge therein. They follow nothing but conjecture; and conjecture avails nothing against Truth.</div>
+					<hr>
+					<p class="suraCount">29</p>
+					<div class="sura">فَأَعْرِضْ عَن مَّن تَوَلَّى عَن ذِكْرِنَا وَلَمْ يُرِدْ إِلَّا الْحَيَاةَ الدُّنْيَا</div>
+					<div class="meaning">অতএব যে আমার স্মরণে বিমুখ এবং কেবল পার্থিব জীবনই কামনা করে তার তরফ থেকে আপনি মুখ ফিরিয়ে নিন।<br>Therefore shun those who turn away from Our Message and desire nothing but the life of this world.</div>
+					<hr>
+					<p class="suraCount">30</p>
+					<div class="sura">ذَلِكَ مَبْلَغُهُم مِّنَ الْعِلْمِ إِنَّ رَبَّكَ هُوَ أَعْلَمُ بِمَن ضَلَّ عَن سَبِيلِهِ وَهُوَ أَعْلَمُ بِمَنِ اهْتَدَى</div>
+					<div class="meaning">তাদের জ্ঞানের পরিধি এ পর্যন্তই। নিশ্চয় আপনার পালনকর্তা ভাল জানেন, কে তাঁর পথ থেকে বিচ্যুত হয়েছে এবং তিনিই ভাল জানেন কে সুপথপ্রাপ্ত হয়েছে।<br>That is as far as knowledge will reach them. Verily thy Lord knoweth best those who stray from His Path, and He knoweth best those who receive guidance.</div>
+					<hr>
+					<p class="suraCount">31</p>
+					<div class="sura">وَلِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ لِيَجْزِيَ الَّذِينَ أَسَاؤُوا بِمَا عَمِلُوا وَيَجْزِيَ الَّذِينَ أَحْسَنُوا بِالْحُسْنَى</div>
+					<div class="meaning">নভোমন্ডল ও ভূমন্ডলে যা কিছু আছে, সবই আল্লাহর, যাতে তিনি মন্দকর্মীদেরকে তাদের কর্মের প্রতিফল দেন এবং সৎকর্মীদেরকে দেন ভাল ফল।<br>Yea, to Allah belongs all that is in the heavens and on earth: so that He rewards those who do evil, according to their deeds, and He rewards those who do good, with what is best.</div>
+					<hr>
+					<p class="suraCount">32</p>
+					<div class="sura">الَّذِينَ يَجْتَنِبُونَ كَبَائِرَ الْإِثْمِ وَالْفَوَاحِشَ إِلَّا اللَّمَمَ إِنَّ رَبَّكَ وَاسِعُ الْمَغْفِرَةِ هُوَ أَعْلَمُ بِكُمْ إِذْ أَنشَأَكُم مِّنَ الْأَرْضِ وَإِذْ أَنتُمْ أَجِنَّةٌ فِي بُطُونِ أُمَّهَاتِكُمْ فَلَا تُزَكُّوا أَنفُسَكُمْ هُوَ أَعْلَمُ بِمَنِ اتَّقَى</div>
+					<div class="meaning">যারা বড় বড় গোনাহ ও অশ্লীলকার্য থেকে বেঁচে থাকে ছোটখাট অপরাধ করলেও নিশ্চয় আপনার পালনকর্তার ক্ষমা সুদূর বিস্তৃত। তিনি তোমাদের সম্পর্কে ভাল জানেন, যখন তিনি তোমাদেরকে সৃষ্টি করেছেন মৃত্তিকা থেকে এবং যখন তোমরা মাতৃগর্ভে কচি শিশু ছিলে। অতএব তোমরা আত্নপ্রশংসা করো না। তিনি ভাল জানেন কে সংযমী।<br>Those who avoid great sins and shameful deeds, only (falling into) small faults,- verily thy Lord is ample in forgiveness. He knows you well when He brings you out of the earth, And when ye are hidden in your mothers' wombs. Therefore justify not yourselves: He knows best who it is that guards against evil.</div>
+					<hr>
+					<p class="suraCount">33</p>
+					<div class="sura">أَفَرَأَيْتَ الَّذِي تَوَلَّى</div>
+					<div class="meaning">আপনি কি তাকে দেখেছেন, যে মুখ ফিরিয়ে নেয়।<br>Seest thou one who turns back,</div>
+					<hr>
+					<p class="suraCount">34</p>
+					<div class="sura">وَأَعْطَى قَلِيلًا وَأَكْدَى</div>
+					<div class="meaning">এবং দেয় সামান্যই ও পাষাণ হয়ে যায়।<br>Gives a little, then hardens (his heart)?</div>
+					<hr>
+					<p class="suraCount">35</p>
+					<div class="sura">أَعِندَهُ عِلْمُ الْغَيْبِ فَهُوَ يَرَى</div>
+					<div class="meaning">তার কাছে কি অদৃশ্যের জ্ঞান আছে যে, সে দেখে?<br>What! Has he knowledge of the Unseen so that he can see?</div>
+					<hr>
+					<p class="suraCount">36</p>
+					<div class="sura">أَمْ لَمْ يُنَبَّأْ بِمَا فِي صُحُفِ مُوسَى</div>
+					<div class="meaning">তাকে কি জানানো হয়নি যা আছে মূসার কিতাবে,<br>Nay, is he not acquainted with what is in the Books of Moses-</div>
+					<hr>
+					<p class="suraCount">37</p>
+					<div class="sura">وَإِبْرَاهِيمَ الَّذِي وَفَّى</div>
+					<div class="meaning">এবং ইব্রাহীমের কিতাবে, যে তার দায়িত্ব পালন করেছিল?<br>And of Abraham who fulfilled his engagements?-</div>
+					<hr>
+					<p class="suraCount">38</p>
+					<div class="sura">أَلَّا تَزِرُ وَازِرَةٌ وِزْرَ أُخْرَى</div>
+					<div class="meaning">কিতাবে এই আছে যে, কোন ব্যক্তি কারও গোনাহ নিজে বহন করবে না।<br>Namely, that no bearer of burdens can bear the burden of another;</div>
+					<hr>
+					<p class="suraCount">39</p>
+					<div class="sura">وَأَن لَّيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَى</div>
+					<div class="meaning">এবং মানুষ তাই পায়, যা সে করে,<br>That man can have nothing but what he strives for;</div>
+					<hr>
+					<p class="suraCount">40</p>
+					<div class="sura">وَأَنَّ سَعْيَهُ سَوْفَ يُرَى</div>
+					<div class="meaning">তার কর্ম শীঘ্রই দেখা হবে।<br>That (the fruit of) his striving will soon come in sight:</div>
+					<hr>
+					<p class="suraCount">41</p>
+					<div class="sura">ثُمَّ يُجْزَاهُ الْجَزَاء الْأَوْفَى</div>
+					<div class="meaning">অতঃপর তাকে পূর্ণ প্রতিদান দেয়া হবে।<br>Then will he be rewarded with a reward complete;</div>
+					<hr>
+					<p class="suraCount">42</p>
+					<div class="sura">وَأَنَّ إِلَى رَبِّكَ الْمُنتَهَى</div>
+					<div class="meaning">তোমার পালনকর্তার কাছে সবকিছুর সমাপ্তি,<br>That to thy Lord is the final Goal;</div>
+					<hr>
+					<p class="suraCount">43</p>
+					<div class="sura">وَأَنَّهُ هُوَ أَضْحَكَ وَأَبْكَى</div>
+					<div class="meaning">এবং তিনিই হাসান ও কাঁদান<br>That it is He Who granteth Laughter and Tears;</div>
+					<hr>
+					<p class="suraCount">44</p>
+					<div class="sura">وَأَنَّهُ هُوَ أَمَاتَ وَأَحْيَا</div>
+					<div class="meaning">এবং তিনিই মারেন ও বাঁচান,<br>That it is He Who granteth Death and Life;</div>
+					<hr>
+					<p class="suraCount">45</p>
+					<div class="sura">وَأَنَّهُ خَلَقَ الزَّوْجَيْنِ الذَّكَرَ وَالْأُنثَى</div>
+					<div class="meaning">এবং তিনিই সৃষ্টি করেন যুগল-পুরুষ ও নারী।<br>That He did create in pairs,- male and female,</div>
+					<hr>
+					<p class="suraCount">46</p>
+					<div class="sura">مِن نُّطْفَةٍ إِذَا تُمْنَى</div>
+					<div class="meaning">একবিন্দু বীর্য থেকে যখন স্খলিত করা হয়।<br>From a seed when lodged (in its place);</div>
+					<hr>
+					<p class="suraCount">47</p>
+					<div class="sura">وَأَنَّ عَلَيْهِ النَّشْأَةَ الْأُخْرَى</div>
+					<div class="meaning">পুনরুত্থানের দায়িত্ব তাঁরই,<br>That He hath promised a Second Creation (Raising of the Dead);</div>
+					<hr>
+					<p class="suraCount">48</p>
+					<div class="sura">وَأَنَّهُ هُوَ أَغْنَى وَأَقْنَى</div>
+					<div class="meaning">এবং তিনিই ধনবান করেন ও সম্পদ দান করেন।<br>That it is He Who giveth wealth and satisfaction;</div>
+					<hr>
+					<p class="suraCount">49</p>
+					<div class="sura">وَأَنَّهُ هُوَ رَبُّ الشِّعْرَى</div>
+					<div class="meaning">তিনি শিরা নক্ষত্রের মালিক।<br>That He is the Lord of Sirius (the Mighty Star);</div>
+					<hr>
+					<p class="suraCount">50</p>
+					<div class="sura">وَأَنَّهُ أَهْلَكَ عَادًا الْأُولَى</div>
+					<div class="meaning">তিনিই প্রথম আদ সম্প্রদায়কে ধ্বংস করেছেন,<br>And that it is He Who destroyed the (powerful) ancient 'Ad (people),</div>
+					<hr>
+					<p class="suraCount">51</p>
+					<div class="sura">وَثَمُودَ فَمَا أَبْقَى</div>
+					<div class="meaning">এবং সামুদকেও; অতঃপর কাউকে অব্যহতি দেননি।<br>And the Thamud nor gave them a lease of perpetual life.</div>
+					<hr>
+					<p class="suraCount">52</p>
+					<div class="sura">وَقَوْمَ نُوحٍ مِّن قَبْلُ إِنَّهُمْ كَانُوا هُمْ أَظْلَمَ وَأَطْغَى</div>
+					<div class="meaning">এবং তাদের পূর্বে নূহের সম্প্রদায়কে, তারা ছিল আরও জালেম ও অবাধ্য।<br>And before them, the people of Noah, for that they were (all) most unjust and most insolent transgressors,</div>
+					<hr>
+					<p class="suraCount">53</p>
+					<div class="sura">وَالْمُؤْتَفِكَةَ أَهْوَى</div>
+					<div class="meaning">তিনিই জনপদকে শুন্যে উত্তোলন করে নিক্ষেপ করেছেন।<br>And He destroyed the Overthrown Cities (of Sodom and Gomorrah).</div>
+					<hr>
+					<p class="suraCount">54</p>
+					<div class="sura">فَغَشَّاهَا مَا غَشَّى</div>
+					<div class="meaning">অতঃপর তাকে আচ্ছন্ন করে নেয় যা আচ্ছন্ন করার।<br>So that (ruins unknown) have covered them up.</div>
+					<hr>
+					<p class="suraCount">55</p>
+					<div class="sura">فَبِأَيِّ آلَاء رَبِّكَ تَتَمَارَى</div>
+					<div class="meaning">অতঃপর তুমি তোমার পালনকর্তার কোন অনুগ্রহকে মিথ্যা বলবে?<br>Then which of the gifts of thy Lord, (O man,) wilt thou dispute about?</div>
+					<hr>
+					<p class="suraCount">56</p>
+					<div class="sura">هَذَا نَذِيرٌ مِّنَ النُّذُرِ الْأُولَى</div>
+					<div class="meaning">অতীতের সতর্ককারীদের মধ্যে সে-ও একজন সতর্ককারী।<br>This is a Warner, of the (series of) Warners of old!</div>
+					<hr>
+					<p class="suraCount">57</p>
+					<div class="sura">أَزِفَتْ الْآزِفَةُ</div>
+					<div class="meaning">কেয়ামত নিকটে এসে গেছে।<br>The (Judgment) ever approaching draws nigh:</div>
+					<hr>
+					<p class="suraCount">58</p>
+					<div class="sura">لَيْسَ لَهَا مِن دُونِ اللَّهِ كَاشِفَةٌ</div>
+					<div class="meaning">আল্লাহ ব্যতীত কেউ একে প্রকাশ করতে সক্ষম নয়।<br>No (soul) but Allah can lay it bare.</div>
+					<hr>
+					<p class="suraCount">59</p>
+					<div class="sura">أَفَمِنْ هَذَا الْحَدِيثِ تَعْجَبُونَ</div>
+					<div class="meaning">তোমরা কি এই বিষয়ে আশ্চর্যবোধ করছ?<br>Do ye then wonder at this recital?</div>
+					<hr>
+					<p class="suraCount">60</p>
+					<div class="sura">وَتَضْحَكُونَ وَلَا تَبْكُونَ</div>
+					<div class="meaning">এবং হাসছ-ক্রন্দন করছ না?<br>And will ye laugh and not weep,-</div>
+					<hr>
+					<p class="suraCount">61</p>
+					<div class="sura">وَأَنتُمْ سَامِدُونَ</div>
+					<div class="meaning">তোমরা ক্রীড়া-কৌতুক করছ,<br>Wasting your time in vanities?</div>
+					<hr>
+					<p class="suraCount">62</p>
+					<div class="sura">فَاسْجُدُوا لِلَّهِ وَاعْبُدُوا</div>
+					<div class="meaning">অতএব আল্লাহকে সেজদা কর এবং তাঁর এবাদত কর।<br>But fall ye down in prostration to Allah, and adore (Him)!</div>
+				</p>
+			</div>
+		</div>
+	</body>

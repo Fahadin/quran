@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা হুমাযাহ Page -->
+		<div id="sura104" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা হুমাযাহ</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 9</div>
+				<audio class="audio" controls>
+					<source src="audio/104.ogg" type="audio/ogg">
+					<source src="audio/104.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ</div>
+					<div class="meaning">প্রত্যেক পশ্চাতে ও সম্মুখে পরনিন্দাকারীর দুর্ভোগ,<br>Woe to every (kind of) scandal-monger and-backbiter,</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">الَّذِي جَمَعَ مَالًا وَعَدَّدَهُ</div>
+					<div class="meaning">যে অর্থ সঞ্চিত করে ও গণনা করে<br>Who pileth up wealth and layeth it by,</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">يَحْسَبُ أَنَّ مَالَهُ أَخْلَدَهُ</div>
+					<div class="meaning">সে মনে করে যে, তার অর্থ চিরকাল তার সাথে থাকবে!<br>Thinking that his wealth would make him last for ever!</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">كَلَّا لَيُنبَذَنَّ فِي الْحُطَمَةِ</div>
+					<div class="meaning">কখনও না, সে অবশ্যই নিক্ষিপ্ত হবে পিষ্টকারীর মধ্যে।<br>By no means! He will be sure to be thrown into That which Breaks to Pieces,</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">وَمَا أَدْرَاكَ مَا الْحُطَمَةُ</div>
+					<div class="meaning">আপনি কি জানেন, পিষ্টকারী কি?<br>And what will explain to thee That which Breaks to Pieces?</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">نَارُ اللَّهِ الْمُوقَدَةُ</div>
+					<div class="meaning">এটা আল্লাহর প্রজ্জ্বলিত অগ্নি,<br>(It is) the Fire of (the Wrath of) Allah kindled (to a blaze),</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">الَّتِي تَطَّلِعُ عَلَى الْأَفْئِدَةِ</div>
+					<div class="meaning">যা হৃদয় পর্যন্ত পৌছবে।<br>The which doth mount (Right) to the Hearts:</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ</div>
+					<div class="meaning">এতে তাদেরকে বেঁধে দেয়া হবে,<br>It shall be made into a vault over them,</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">فِي عَمَدٍ مُّمَدَّدَةٍ</div>
+					<div class="meaning">লম্বা লম্বা খুঁটিতে।<br>In columns outstretched.</div>
+				</p>
+			</div>
+		</div>
+	</body>

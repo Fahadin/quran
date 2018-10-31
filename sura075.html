@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আল ক্বেয়ামাহ Page -->
+		<div id="sura75" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আল ক্বেয়ামাহ</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 40</div>
+				<audio class="audio" controls>
+					<source src="audio/075.ogg" type="audio/ogg">
+					<source src="audio/075.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">لَا أُقْسِمُ بِيَوْمِ الْقِيَامَةِ</div>
+					<div class="meaning">আমি শপথ করি কেয়ামত দিবসের,<br>I do call to witness the Resurrection Day;</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">وَلَا أُقْسِمُ بِالنَّفْسِ اللَّوَّامَةِ</div>
+					<div class="meaning">আরও শপথ করি সেই মনের, যে নিজেকে ধিক্কার দেয়-<br>And I do call to witness the self-reproaching spirit: (Eschew Evil).</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">أَيَحْسَبُ الْإِنسَانُ أَلَّن نَجْمَعَ عِظَامَهُ</div>
+					<div class="meaning">মানুষ কি মনে করে যে আমি তার অস্থিসমূহ একত্রিত করব না?<br>Does man think that We cannot assemble his bones?</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">بَلَى قَادِرِينَ عَلَى أَن نُّسَوِّيَ بَنَانَهُ</div>
+					<div class="meaning">পরন্ত আমি তার অংগুলিগুলো পর্যন্ত সঠিকভাবে সন্নিবেশিত করতে সক্ষম।<br>Nay, We are able to put together in perfect order the very tips of his fingers.</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">بَلْ يُرِيدُ الْإِنسَانُ لِيَفْجُرَ أَمَامَهُ</div>
+					<div class="meaning">বরং মানুষ তার ভবিষ্যত জীবনেও ধৃষ্টতা করতে চায়<br>But man wishes to do wrong (even) in the time in front of him.</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">يَسْأَلُ أَيَّانَ يَوْمُ الْقِيَامَةِ</div>
+					<div class="meaning">সে প্রশ্ন করে-কেয়ামত দিবস কবে?<br>He questions: "When is the Day of Resurrection?"</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">فَإِذَا بَرِقَ الْبَصَرُ</div>
+					<div class="meaning">যখন দৃষ্টি চমকে যাবে,<br>At length, when the sight is dazed,</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">وَخَسَفَ الْقَمَرُ</div>
+					<div class="meaning">চন্দ্র জ্যোতিহীন হয়ে যাবে।<br>And the moon is buried in darkness.</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">وَجُمِعَ الشَّمْسُ وَالْقَمَرُ</div>
+					<div class="meaning">এবং সূর্য ও চন্দ্রকে একত্রিত করা হবে-<br>And the sun and moon are joined together,-</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">يَقُولُ الْإِنسَانُ يَوْمَئِذٍ أَيْنَ الْمَفَرُّ</div>
+					<div class="meaning">সে দিন মানুষ বলবেঃ পলায়নের জায়গা কোথায় ?<br>That Day will Man say: "Where is the refuge?"</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">كَلَّا لَا وَزَرَ</div>
+					<div class="meaning">না কোথাও আশ্রয়স্থল নেই।<br>By no means! No place of safety!</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">إِلَى رَبِّكَ يَوْمَئِذٍ الْمُسْتَقَرُّ</div>
+					<div class="meaning">আপনার পালনকর্তার কাছেই সেদিন ঠাঁই হবে।<br>Before thy Lord (alone), that Day will be the place of rest.</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">يُنَبَّأُ الْإِنسَانُ يَوْمَئِذٍ بِمَا قَدَّمَ وَأَخَّرَ</div>
+					<div class="meaning">সেদিন মানুষকে অবহিত করা হবে সে যা সামনে প্রেরণ করেছে ও পশ্চাতে ছেড়ে দিয়েছে।<br>That Day will Man be told (all) that he put forward, and all that he put back.</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">بَلِ الْإِنسَانُ عَلَى نَفْسِهِ بَصِيرَةٌ</div>
+					<div class="meaning">বরং মানুষ নিজেই তার নিজের সম্পর্কে চক্ষুমান।<br>Nay, man will be evidence against himself,</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">وَلَوْ أَلْقَى مَعَاذِيرَهُ</div>
+					<div class="meaning">যদিও সে তার অজুহাত পেশ করতে চাইবে।<br>Even though he were to put up his excuses.</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">لَا تُحَرِّكْ بِهِ لِسَانَكَ لِتَعْجَلَ بِهِ</div>
+					<div class="meaning">তাড়াতাড়ি শিখে নেয়ার জন্যে আপনি দ্রুত ওহী আবৃত্তি করবেন না।<br>Move not thy tongue concerning the (Qur'an) to make haste therewith.</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">إِنَّ عَلَيْنَا جَمْعَهُ وَقُرْآنَهُ</div>
+					<div class="meaning">এর সংরক্ষণ ও পাঠ আমারই দায়িত্ব।<br>It is for Us to collect it and to promulgate it:</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">فَإِذَا قَرَأْنَاهُ فَاتَّبِعْ قُرْآنَهُ</div>
+					<div class="meaning">অতঃপর আমি যখন তা পাঠ করি, তখন আপনি সেই পাঠের অনুসরণ করুন।<br>But when We have promulgated it, follow thou its recital (as promulgated):</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">ثُمَّ إِنَّ عَلَيْنَا بَيَانَهُ</div>
+					<div class="meaning">এরপর বিশদ বর্ণনা আমারই দায়িত্ব।<br>Nay more, it is for Us to explain it (and make it clear):</div>
+					<hr>
+					<p class="suraCount">20</p>
+					<div class="sura">كَلَّا بَلْ تُحِبُّونَ الْعَاجِلَةَ</div>
+					<div class="meaning">কখনও না, বরং তোমরা পার্থিব জীবনকে ভালবাস<br>Nay, (ye men!) but ye love the fleeting life,</div>
+					<hr>
+					<p class="suraCount">21</p>
+					<div class="sura">وَتَذَرُونَ الْآخِرَةَ</div>
+					<div class="meaning">এবং পরকালকে উপেক্ষা কর।<br>And leave alone the Hereafter.</div>
+					<hr>
+					<p class="suraCount">22</p>
+					<div class="sura">وُجُوهٌ يَوْمَئِذٍ نَّاضِرَةٌ</div>
+					<div class="meaning">সেদিন অনেক মুখমন্ডল উজ্জ্বল হবে।<br>Some faces, that Day, will beam (in brightness and beauty);-</div>
+					<hr>
+					<p class="suraCount">23</p>
+					<div class="sura">إِلَى رَبِّهَا نَاظِرَةٌ</div>
+					<div class="meaning">তারা তার পালনকর্তার দিকে তাকিয়ে থাকবে।<br>Looking towards their Lord;</div>
+					<hr>
+					<p class="suraCount">24</p>
+					<div class="sura">وَوُجُوهٌ يَوْمَئِذٍ بَاسِرَةٌ</div>
+					<div class="meaning">আর অনেক মুখমন্ডল সেদিন উদাস হয়ে পড়বে।<br>And some faces, that Day, will be sad and dismal,</div>
+					<hr>
+					<p class="suraCount">25</p>
+					<div class="sura">تَظُنُّ أَن يُفْعَلَ بِهَا فَاقِرَةٌ</div>
+					<div class="meaning">তারা ধারণা করবে যে, তাদের সাথে কোমর-ভাঙ্গা আচরণ করা হবে।<br>In the thought that some back-breaking calamity was about to be inflicted on them;</div>
+					<hr>
+					<p class="suraCount">26</p>
+					<div class="sura">كَلَّا إِذَا بَلَغَتْ التَّرَاقِيَ</div>
+					<div class="meaning">কখনও না, যখন প্রাণ কন্ঠাগত হবে।<br>Yea, when (the soul) reaches to the collar-bone (in its exit),</div>
+					<hr>
+					<p class="suraCount">27</p>
+					<div class="sura">وَقِيلَ مَنْ رَاقٍ</div>
+					<div class="meaning">এবং বলা হবে, কে ঝাড়বে<br>And there will be a cry, "Who is a magician (to restore him)?"</div>
+					<hr>
+					<p class="suraCount">28</p>
+					<div class="sura">وَظَنَّ أَنَّهُ الْفِرَاقُ</div>
+					<div class="meaning">এবং সে মনে করবে যে, বিদায়ের ক্ষণ এসে গেছে।<br>And he will conclude that it was (the Time) of Parting;</div>
+					<hr>
+					<p class="suraCount">29</p>
+					<div class="sura">وَالْتَفَّتِ السَّاقُ بِالسَّاقِ</div>
+					<div class="meaning">এবং গোছা গোছার সাথে জড়িত হয়ে যাবে।<br>And one leg will be joined with another:</div>
+					<hr>
+					<p class="suraCount">30</p>
+					<div class="sura">إِلَى رَبِّكَ يَوْمَئِذٍ الْمَسَاقُ</div>
+					<div class="meaning">সেদিন, আপনার পালনকর্তার নিকট সবকিছু নীত হবে।<br>That Day the Drive will be (all) to thy Lord!</div>
+					<hr>
+					<p class="suraCount">31</p>
+					<div class="sura">فَلَا صَدَّقَ وَلَا صَلَّى</div>
+					<div class="meaning">সে বিশ্বাস করেনি এবং নামায পড়েনি;<br>So he gave nothing in charity, nor did he pray!-</div>
+					<hr>
+					<p class="suraCount">32</p>
+					<div class="sura">وَلَكِن كَذَّبَ وَتَوَلَّى</div>
+					<div class="meaning">পরন্ত মিথ্যারোপ করেছে ও পৃষ্ঠ প্রদর্শন করেছে।<br>But on the contrary, he rejected Truth and turned away!</div>
+					<hr>
+					<p class="suraCount">33</p>
+					<div class="sura">ثُمَّ ذَهَبَ إِلَى أَهْلِهِ يَتَمَطَّى</div>
+					<div class="meaning">অতঃপর সে দম্ভভরে পরিবার-পরিজনের নিকট ফিরে গিয়েছে।<br>Then did he stalk to his family in full conceit!</div>
+					<hr>
+					<p class="suraCount">34</p>
+					<div class="sura">أَوْلَى لَكَ فَأَوْلَى</div>
+					<div class="meaning">তোমার দুর্ভোগের উপর দুর্ভোগ।<br>Woe to thee, (O men!), yea, woe!</div>
+					<hr>
+					<p class="suraCount">35</p>
+					<div class="sura">ثُمَّ أَوْلَى لَكَ فَأَوْلَى</div>
+					<div class="meaning">অতঃপর, তোমার দুর্ভোগের উপর দূর্ভোগ।<br>Again, Woe to thee, (O men!), yea, woe!</div>
+					<hr>
+					<p class="suraCount">36</p>
+					<div class="sura">أَيَحْسَبُ الْإِنسَانُ أَن يُتْرَكَ سُدًى</div>
+					<div class="meaning">মানুষ কি মনে করে যে, তাকে এমনি ছেড়ে দেয়া হবে?<br>Does man think that he will be left uncontrolled, (without purpose)?</div>
+					<hr>
+					<p class="suraCount">37</p>
+					<div class="sura">أَلَمْ يَكُ نُطْفَةً مِّن مَّنِيٍّ يُمْنَى</div>
+					<div class="meaning">সে কি স্খলিত বীর্য ছিল না?<br>Was he not a drop of sperm emitted (in lowly form)?</div>
+					<hr>
+					<p class="suraCount">38</p>
+					<div class="sura">ثُمَّ كَانَ عَلَقَةً فَخَلَقَ فَسَوَّى</div>
+					<div class="meaning">অতঃপর সে ছিল রক্তপিন্ড, অতঃপর আল্লাহ তাকে সৃষ্টি করেছেন এবং সুবিন্যস্ত করেছেন।<br>Then did he become a leech-like clot; then did ((Allah)) make and fashion (him) in due proportion.</div>
+					<hr>
+					<p class="suraCount">39</p>
+					<div class="sura">فَجَعَلَ مِنْهُ الزَّوْجَيْنِ الذَّكَرَ وَالْأُنثَى</div>
+					<div class="meaning">অতঃপর তা থেকে সৃষ্টি করেছেন যুগল নর ও নারী।<br>And of him He made two sexes, male and female.</div>
+					<hr>
+					<p class="suraCount">40</p>
+					<div class="sura">أَلَيْسَ ذَلِكَ بِقَادِرٍ عَلَى أَن يُحْيِيَ الْمَوْتَى</div>
+					<div class="meaning">তবুও কি সেই আল্লাহ মৃতদেরকে জীবিত করতে সক্ষম নন?<br>Has not He, (the same), the power to give life to the dead?</div>
+				</p>
+			</div>
+		</div>
+	</body>

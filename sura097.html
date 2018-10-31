@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা কদর Page -->
+		<div id="sura97" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা কদর</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 5</div>
+				<audio class="audio" controls>
+					<source src="audio/097.ogg" type="audio/ogg">
+					<source src="audio/097.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">إِنَّا أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ</div>
+					<div class="meaning">আমি একে নাযিল করেছি শবে-কদরে।<br>We have indeed revealed this (Message) in the Night of Power:</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">وَمَا أَدْرَاكَ مَا لَيْلَةُ الْقَدْرِ</div>
+					<div class="meaning">শবে-কদর সমন্ধে আপনি কি জানেন?<br>And what will explain to thee what the night of power is?</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">لَيْلَةُ الْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ</div>
+					<div class="meaning">শবে-কদর হল এক হাজার মাস অপেক্ষা শ্রেষ্ঠ।<br>The Night of Power is better than a thousand months.</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">تَنَزَّلُ الْمَلَائِكَةُ وَالرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ</div>
+					<div class="meaning">এতে প্রত্যেক কাজের জন্যে ফেরেশতাগণ ও রূহ অবতীর্ণ হয় তাদের পালনকর্তার নির্দেশক্রমে।<br>Therein come down the angels and the Spirit by Allah.s permission, on every errand:</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">سَلَامٌ هِيَ حَتَّى مَطْلَعِ الْفَجْرِ</div>
+					<div class="meaning">এটা নিরাপত্তা, যা ফজরের উদয় পর্যন্ত অব্যাহত থাকে।<br>Peace!...This until the rise of morn!</div>
+				</p>
+			</div>
+		</div>
+	</body>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আদিয়াত Page -->
+		<div id="sura100" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আদিয়াত</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 11</div>
+				<audio class="audio" controls>
+					<source src="audio/100.ogg" type="audio/ogg">
+					<source src="audio/100.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">وَالْعَادِيَاتِ ضَبْحًا</div>
+					<div class="meaning">শপথ উর্ধ্বশ্বাসে চলমান অশ্বসমূহের,<br>By the (Steeds) that run, with panting (breath),</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">فَالْمُورِيَاتِ قَدْحًا</div>
+					<div class="meaning">অতঃপর ক্ষুরাঘাতে অগ্নিবিচ্ছুরক অশ্বসমূহের<br>And strike sparks of fire,</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">فَالْمُغِيرَاتِ صُبْحًا</div>
+					<div class="meaning">অতঃপর প্রভাতকালে আক্রমণকারী অশ্বসমূহের<br>And push home the charge in the morning,</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">فَأَثَرْنَ بِهِ نَقْعًا</div>
+					<div class="meaning">ও যারা সে সময়ে ধুলি উৎক্ষিপ্ত করে<br>And raise the dust in clouds the while,</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">فَوَسَطْنَ بِهِ جَمْعًا</div>
+					<div class="meaning">অতঃপর যারা শক্রদলের অভ্যন্তরে ঢুকে পড়ে-<br>And penetrate forthwith into the midst (of the foe) en masse;-</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">إِنَّ الْإِنسَانَ لِرَبِّهِ لَكَنُودٌ</div>
+					<div class="meaning">নিশ্চয় মানুষ তার পালনকর্তার প্রতি অকৃতজ্ঞ।<br>Truly man is, to his Lord, ungrateful;</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">وَإِنَّهُ عَلَى ذَلِكَ لَشَهِيدٌ</div>
+					<div class="meaning">এবং সে অবশ্য এ বিষয়ে অবহিত<br>And to that (fact) he bears witness (by his deeds);</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">وَإِنَّهُ لِحُبِّ الْخَيْرِ لَشَدِيدٌ</div>
+					<div class="meaning">এবং সে নিশ্চিতই ধন-সম্পদের ভালবাসায় মত্ত।<br>And violent is he in his love of wealth.</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِي الْقُبُورِ</div>
+					<div class="meaning">সে কি জানে না, যখন কবরে যা আছে, তা উত্থিত হবে<br>Does he not know,- when that which is in the graves is scattered abroad</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">وَحُصِّلَ مَا فِي الصُّدُورِ</div>
+					<div class="meaning">এবং অন্তরে যা আছে, তা অর্জন করা হবে?<br>And that which is (locked up) in (human) breasts is made manifest-</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَّخَبِيرٌ</div>
+					<div class="meaning">সেদিন তাদের কি হবে, সে সম্পর্কে তাদের পালনকর্তা সবিশেষ জ্ঞাত।<br>That their Lord had been Well-acquainted with them, (even to) that Day.?</div>
+				</p>
+			</div>
+		</div>
+	</body>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আল মা’আরিজ Page -->
+		<div id="sura70" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আল মা’আরিজ</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 44</div>
+				<audio class="audio" controls>
+					<source src="audio/070.ogg" type="audio/ogg">
+					<source src="audio/070.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">سَأَلَ سَائِلٌ بِعَذَابٍ وَاقِعٍ</div>
+					<div class="meaning">একব্যক্তি চাইল, সেই আযাব সংঘটিত হোক যা অবধারিত-<br>A questioner asked about a Penalty to befall-</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">لِّلْكَافِرينَ لَيْسَ لَهُ دَافِعٌ</div>
+					<div class="meaning">কাফেরদের জন্যে, যার প্রতিরোধকারী কেউ নেই।<br>The Unbelievers, the which there is none to ward off,-</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">مِّنَ اللَّهِ ذِي الْمَعَارِجِ</div>
+					<div class="meaning">তা আসবে আল্লাহ তা’আলার পক্ষ থেকে, যিনি সমুন্নত মর্তবার অধিকারী।<br>(A Penalty) from Allah, Lord of the Ways of Ascent.</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">تَعْرُجُ الْمَلَائِكَةُ وَالرُّوحُ إِلَيْهِ فِي يَوْمٍ كَانَ مِقْدَارُهُ خَمْسِينَ أَلْفَ سَنَةٍ</div>
+					<div class="meaning">ফেরেশতাগণ এবং রূহ আল্লাহ তা’আলার দিকে উর্ধ্বগামী হয় এমন একদিনে, যার পরিমাণ পঞ্চাশ হাজার বছর।<br>The angels and the spirit ascend unto him in a Day the measure whereof is (as) fifty thousand years:</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">فَاصْبِرْ صَبْرًا جَمِيلًا</div>
+					<div class="meaning">অতএব, আপনি উত্তম সবর করুন।<br>Therefore do thou hold Patience,- a Patience of beautiful (contentment).</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">إِنَّهُمْ يَرَوْنَهُ بَعِيدًا</div>
+					<div class="meaning">তারা এই আযাবকে সুদূরপরাহত মনে করে,<br>They see the (Day) indeed as a far-off (event):</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">وَنَرَاهُ قَرِيبًا</div>
+					<div class="meaning">আর আমি একে আসন্ন দেখছি।<br>But We see it (quite) near.</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">يَوْمَ تَكُونُ السَّمَاء كَالْمُهْلِ</div>
+					<div class="meaning">সেদিন আকাশ হবে গলিত তামার মত।<br>The Day that the sky will be like molten brass,</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">وَتَكُونُ الْجِبَالُ كَالْعِهْنِ</div>
+					<div class="meaning">এবং পর্বতসমূহ হবে রঙ্গীন পশমের মত,<br>And the mountains will be like wool,</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">وَلَا يَسْأَلُ حَمِيمٌ حَمِيمًا</div>
+					<div class="meaning">বন্ধু বন্ধুর খবর নিবে না।<br>And no friend will ask after a friend,</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">يُبَصَّرُونَهُمْ يَوَدُّ الْمُجْرِمُ لَوْ يَفْتَدِي مِنْ عَذَابِ يَوْمِئِذٍ بِبَنِيهِ</div>
+					<div class="meaning">যদিও একে অপরকে দেখতে পাবে। সেদিন গোনাহগার ব্যক্তি পনস্বরূপ দিতে চাইবে তার সন্তান-সন্ততিকে,<br>Though they will be put in sight of each other,- the sinner's desire will be: Would that he could redeem himself from the Penalty of that Day by (sacrificing) his children,</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">وَصَاحِبَتِهِ وَأَخِيهِ</div>
+					<div class="meaning">তার স্ত্রীকে, তার ভ্রাতাকে,<br>His wife and his brother,</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">وَفَصِيلَتِهِ الَّتِي تُؤْويهِ</div>
+					<div class="meaning">তার গোষ্ঠীকে, যারা তাকে আশ্রয় দিত।<br>His kindred who sheltered him,</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">وَمَن فِي الْأَرْضِ جَمِيعًا ثُمَّ يُنجِيهِ</div>
+					<div class="meaning">এবং পৃথিবীর সবকিছুকে, অতঃপর নিজেকে রক্ষা করতে চাইবে।<br>And all, all that is on earth,- so it could deliver him:</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">كَلَّا إِنَّهَا لَظَى</div>
+					<div class="meaning">কখনই নয়। নিশ্চয় এটা লেলিহান অগ্নি।<br>By no means! for it would be the Fire of Hell!-</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">نَزَّاعَةً لِّلشَّوَى</div>
+					<div class="meaning">যা চামড়া তুলে দিবে।<br>Plucking out (his being) right to the skull!-</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">تَدْعُو مَنْ أَدْبَرَ وَتَوَلَّى</div>
+					<div class="meaning">সে সেই ব্যক্তিকে ডাকবে যে সত্যের প্রতি পৃষ্ঠপ্রদর্শন করেছিল ও বিমুখ হয়েছিল।<br>Inviting (all) such as turn their backs and turn away their faces (from the Right).</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">وَجَمَعَ فَأَوْعَى</div>
+					<div class="meaning">সম্পদ পুঞ্জীভূত করেছিল, অতঃপর আগলিয়ে রেখেছিল।<br>And collect (wealth) and hide it (from use)!</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">إِنَّ الْإِنسَانَ خُلِقَ هَلُوعًا</div>
+					<div class="meaning">মানুষ তো সৃজিত হয়েছে ভীরুরূপে।<br>Truly man was created very impatient;-</div>
+					<hr>
+					<p class="suraCount">20</p>
+					<div class="sura">إِذَا مَسَّهُ الشَّرُّ جَزُوعًا</div>
+					<div class="meaning">যখন তাকে অনিষ্ট স্পর্শ করে, তখন সে হা-হুতাশ করে।<br>Fretful when evil touches him;</div>
+					<hr>
+					<p class="suraCount">21</p>
+					<div class="sura">وَإِذَا مَسَّهُ الْخَيْرُ مَنُوعًا</div>
+					<div class="meaning">আর যখন কল্যাণপ্রাপ্ত হয়, তখন কৃপণ হয়ে যায়।<br>And niggardly when good reaches him;-</div>
+					<hr>
+					<p class="suraCount">22</p>
+					<div class="sura">إِلَّا الْمُصَلِّينَ</div>
+					<div class="meaning">তবে তারা স্বতন্ত্র, যারা নামায আদায় কারী।<br>Not so those devoted to Prayer;-</div>
+					<hr>
+					<p class="suraCount">23</p>
+					<div class="sura">الَّذِينَ هُمْ عَلَى صَلَاتِهِمْ دَائِمُونَ</div>
+					<div class="meaning">যারা তাদের নামাযে সার্বক্ষণিক কায়েম থাকে।<br>Those who remain steadfast to their prayer;</div>
+					<hr>
+					<p class="suraCount">24</p>
+					<div class="sura">وَالَّذِينَ فِي أَمْوَالِهِمْ حَقٌّ مَّعْلُومٌ</div>
+					<div class="meaning">এবং যাদের ধন-সম্পদে নির্ধারিত হক আছে<br>And those in whose wealth is a recognised right.</div>
+					<hr>
+					<p class="suraCount">25</p>
+					<div class="sura">لِّلسَّائِلِ وَالْمَحْرُومِ</div>
+					<div class="meaning">যাঞ্ছাকারী ও বঞ্চিতের<br>For the (needy) who asks and him who is prevented (for some reason from asking);</div>
+					<hr>
+					<p class="suraCount">26</p>
+					<div class="sura">وَالَّذِينَ يُصَدِّقُونَ بِيَوْمِ الدِّينِ</div>
+					<div class="meaning">এবং যারা প্রতিফল দিবসকে সত্য বলে বিশ্বাস করে।<br>And those who hold to the truth of the Day of Judgment;</div>
+					<hr>
+					<p class="suraCount">27</p>
+					<div class="sura">وَالَّذِينَ هُم مِّنْ عَذَابِ رَبِّهِم مُّشْفِقُونَ</div>
+					<div class="meaning">এবং যারা তাদের পালনকর্তার শাস্তির সম্পর্কে ভীত-কম্পিত।<br>And those who fear the displeasure of their Lord,-</div>
+					<hr>
+					<p class="suraCount">28</p>
+					<div class="sura">إِنَّ عَذَابَ رَبِّهِمْ غَيْرُ مَأْمُونٍ</div>
+					<div class="meaning">নিশ্চয় তাদের পালনকর্তার শাস্তি থেকে নিঃশঙ্কা থাকা যায় না।<br>For their Lord's displeasure is the opposite of Peace and Tranquillity;-</div>
+					<hr>
+					<p class="suraCount">29</p>
+					<div class="sura">وَالَّذِينَ هُمْ لِفُرُوجِهِمْ حَافِظُونَ</div>
+					<div class="meaning">এবং যারা তাদের যৌন-অঙ্গকে সংযত রাখে<br>And those who guard their chastity,</div>
+					<hr>
+					<p class="suraCount">30</p>
+					<div class="sura">إِلَّا عَلَى أَزْوَاجِهِمْ أَوْ مَا مَلَكَتْ أَيْمَانُهُمْ فَإِنَّهُمْ غَيْرُ مَلُومِينَ</div>
+					<div class="meaning">কিন্তু তাদের স্ত্রী অথবা মালিকানাভূক্ত দাসীদের বেলায় তিরস্কৃত হবে না।<br>Except with their wives and the (captives) whom their right hands possess,- for (then) they are not to be blamed,</div>
+					<hr>
+					<p class="suraCount">31</p>
+					<div class="sura">فَمَنِ ابْتَغَى وَرَاء ذَلِكَ فَأُوْلَئِكَ هُمُ الْعَادُونَ</div>
+					<div class="meaning">অতএব, যারা এদের ছাড়া অন্যকে কামনা করে, তারাই সীমালংঘনকারী।<br>But those who trespass beyond this are transgressors;-</div>
+					<hr>
+					<p class="suraCount">32</p>
+					<div class="sura">وَالَّذِينَ هُمْ لِأَمَانَاتِهِمْ وَعَهْدِهِمْ رَاعُونَ</div>
+					<div class="meaning">এবং যারা তাদের আমানত ও অঙ্গীকার রক্ষা করে<br>And those who respect their trusts and covenants;</div>
+					<hr>
+					<p class="suraCount">33</p>
+					<div class="sura">وَالَّذِينَ هُم بِشَهَادَاتِهِمْ قَائِمُونَ</div>
+					<div class="meaning">এবং যারা তাদের সাক্ষ্যদানে সরল-নিষ্ঠাবান<br>And those who stand firm in their testimonies;</div>
+					<hr>
+					<p class="suraCount">34</p>
+					<div class="sura">وَالَّذِينَ هُمْ عَلَى صَلَاتِهِمْ يُحَافِظُونَ</div>
+					<div class="meaning">এবং যারা তাদের নামাযে যত্নবান,<br>And those who guard (the sacredness) of their worship;-</div>
+					<hr>
+					<p class="suraCount">35</p>
+					<div class="sura">أُوْلَئِكَ فِي جَنَّاتٍ مُّكْرَمُونَ</div>
+					<div class="meaning">তারাই জান্নাতে সম্মানিত হবে।<br>Such will be the honoured ones in the Gardens (of Bliss).</div>
+					<hr>
+					<p class="suraCount">36</p>
+					<div class="sura">فَمَالِ الَّذِينَ كَفَرُوا قِبَلَكَ مُهْطِعِينَ</div>
+					<div class="meaning">অতএব, কাফেরদের কি হল যে, তারা আপনার দিকে উর্ধ্বশ্বাসে ছুটে আসছে।<br>Now what is the matter with the Unbelievers that they rush madly before thee-</div>
+					<hr>
+					<p class="suraCount">37</p>
+					<div class="sura">عَنِ الْيَمِينِ وَعَنِ الشِّمَالِ عِزِينَ</div>
+					<div class="meaning">ডান ও বামদিক থেকে দলে দলে।<br>From the right and from the left, in crowds?</div>
+					<hr>
+					<p class="suraCount">38</p>
+					<div class="sura">أَيَطْمَعُ كُلُّ امْرِئٍ مِّنْهُمْ أَن يُدْخَلَ جَنَّةَ نَعِيمٍ</div>
+					<div class="meaning">তাদের প্রত্যেকেই কি আশা করে যে, তাকে নেয়ামতের জান্নাতে দাখিল করা হবে?<br>Does every man of them long to enter the Garden of Bliss?</div>
+					<hr>
+					<p class="suraCount">39</p>
+					<div class="sura">كَلَّا إِنَّا خَلَقْنَاهُم مِّمَّا يَعْلَمُونَ</div>
+					<div class="meaning">কখনই নয়, আমি তাদেরকে এমন বস্তু দ্বারা সৃষ্টি করেছি, যা তারা জানে।<br>By no means! For We have created them out of the (base matter) they know!</div>
+					<hr>
+					<p class="suraCount">40</p>
+					<div class="sura">فَلَا أُقْسِمُ بِرَبِّ الْمَشَارِقِ وَالْمَغَارِبِ إِنَّا لَقَادِرُونَ</div>
+					<div class="meaning">আমি শপথ করছি উদয়াচল ও অস্তাচলসমূহের পালনকর্তার, নিশ্চয়ই আমি সক্ষম!<br>Now I do call to witness the Lord of all points in the East and the West that We can certainly-</div>
+					<hr>
+					<p class="suraCount">41</p>
+					<div class="sura">عَلَى أَن نُّبَدِّلَ خَيْرًا مِّنْهُمْ وَمَا نَحْنُ بِمَسْبُوقِينَ</div>
+					<div class="meaning">তাদের পরিবর্তে উৎকৃষ্টতর মানুষ সৃষ্টি করতে এবং এটা আমার সাধ্যের অতীত নয়।<br>Substitute for them better (men) than they; And We are not to be defeated (in Our Plan).</div>
+					<hr>
+					<p class="suraCount">42</p>
+					<div class="sura">فَذَرْهُمْ يَخُوضُوا وَيَلْعَبُوا حَتَّى يُلَاقُوا يَوْمَهُمُ الَّذِي يُوعَدُونَ</div>
+					<div class="meaning">অতএব, আপনি তাদেরকে ছেড়ে দিন, তারা বাকবিতন্ডা ও ক্রীড়া-কৌতুক করুক সেই দিবসের সম্মুখীন হওয়া পর্যন্ত, যে দিবসের ওয়াদা তাদের সাথে করা হচ্ছে।<br>So leave them to plunge in vain talk and play about, until they encounter that Day of theirs which they have been promised!-</div>
+					<hr>
+					<p class="suraCount">43</p>
+					<div class="sura">يَوْمَ يَخْرُجُونَ مِنَ الْأَجْدَاثِ سِرَاعًا كَأَنَّهُمْ إِلَى نُصُبٍ يُوفِضُونَ</div>
+					<div class="meaning">সে দিন তারা কবর থেকে দ্রুতবেগে বের হবে, যেন তারা কোন এক লক্ষ্যস্থলের দিকে ছুটে যাচ্ছে।<br>The Day whereon they will issue from their sepulchres in sudden haste as if they were rushing to a goal-post (fixed for them),-</div>
+					<hr>
+					<p class="suraCount">44</p>
+					<div class="sura">خَاشِعَةً أَبْصَارُهُمْ تَرْهَقُهُمْ ذِلَّةٌ ذَلِكَ الْيَوْمُ الَّذِي كَانُوا يُوعَدُونَ</div>
+					<div class="meaning">তাদের দৃষ্টি থাকবে অবনমিত; তারা হবে হীনতাগ্রস্ত। এটাই সেইদিন, যার ওয়াদা তাদেরকে দেয়া হত।<br>Their eyes lowered in dejection,- ignominy covering them (all over)! such is the Day the which they are promised!</div>
+				</p>
+			</div>
+		</div>
+	</body>

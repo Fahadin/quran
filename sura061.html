@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আছ-ছফ Page -->
+		<div id="sura61" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আছ-ছফ</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 14</div>
+				<audio class="audio" controls>
+					<source src="audio/061.ogg" type="audio/ogg">
+					<source src="audio/061.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">سَبَّحَ لِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ وَهُوَ الْعَزِيزُ الْحَكِيمُ</div>
+					<div class="meaning">নভোমন্ডলে ও ভূমন্ডলে যা কিছু আছে, সবই আল্লাহর পবিত্রতা ঘোষণা করে। তিনি পরাক্রান্ত প্রজ্ঞাবান।<br>Whatever is in the heavens and on earth, let it declare the Praises and Glory of Allah. for He is the Exalted in Might, the Wise.</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">يَا أَيُّهَا الَّذِينَ آَمَنُوا لِمَ تَقُولُونَ مَا لَا تَفْعَلُونَ</div>
+					<div class="meaning">মুমিনগণ! তোমরা যা কর না, তা কেন বল?<br>O ye who believe! Why say ye that which ye do not?</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">كَبُرَ مَقْتًا عِندَ اللَّهِ أَن تَقُولُوا مَا لَا تَفْعَلُونَ</div>
+					<div class="meaning">তোমরা যা কর না, তা বলা আল্লাহর কাছে খুবই অসন্তোষজনক।<br>Grievously odious is it in the sight of Allah that ye say that which ye do not.</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">إِنَّ اللَّهَ يُحِبُّ الَّذِينَ يُقَاتِلُونَ فِي سَبِيلِهِ صَفًّا كَأَنَّهُم بُنيَانٌ مَّرْصُوصٌ</div>
+					<div class="meaning">আল্লাহ তাদেরকে ভালবাসেন, যারা তাঁর পথে সারিবদ্ধভাবে লড়াই করে, যেন তারা সীসাগালানো প্রাচীর।<br>Truly Allah loves those who fight in His Cause in battle array, as if they were a solid cemented structure.</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">وَإِذْ قَالَ مُوسَى لِقَوْمِهِ يَا قَوْمِ لِمَ تُؤْذُونَنِي وَقَد تَّعْلَمُونَ أَنِّي رَسُولُ اللَّهِ إِلَيْكُمْ فَلَمَّا زَاغُوا أَزَاغَ اللَّهُ قُلُوبَهُمْ وَاللَّهُ لَا يَهْدِي الْقَوْمَ الْفَاسِقِينَ</div>
+					<div class="meaning">স্মরণ কর, যখন মূসা (আঃ) তাঁর সম্প্রদায়কে বললঃ হে আমার সম্প্রদায়, তোমরা কেন আমাকে কষ্ট দাও, অথচ তোমরা জান যে, আমি তোমাদের কাছে আল্লাহর রসূল। অতঃপর তারা যখন বক্রতা অবলম্বন করল, তখন আল্লাহ তাদের অন্তরকে বক্র করে দিলেন। আল্লাহ পাপাচারী সম্প্রদায়কে পথপ্রদর্শন করেন না।<br>And remember, Moses said to his people: "O my people! why do ye vex and insult me, though ye know that I am the apostle of Allah (sent) to you?" Then when they went wrong, Allah let their hearts go wrong. For Allah guides not those who are rebellious transgressors.</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">وَإِذْ قَالَ عِيسَى ابْنُ مَرْيَمَ يَا بَنِي إِسْرَائِيلَ إِنِّي رَسُولُ اللَّهِ إِلَيْكُم مُّصَدِّقًا لِّمَا بَيْنَ يَدَيَّ مِنَ التَّوْرَاةِ وَمُبَشِّرًا بِرَسُولٍ يَأْتِي مِن بَعْدِي اسْمُهُ أَحْمَدُ فَلَمَّا جَاءهُم بِالْبَيِّنَاتِ قَالُوا هَذَا سِحْرٌ مُّبِينٌ</div>
+					<div class="meaning">স্মরণ কর, যখন মরিয়ম-তনয় ঈসা (আঃ) বললঃ হে বনী ইসরাইল! আমি তোমাদের কাছে আল্লাহর প্রেরিত রসূল, আমার পূর্ববর্তী তওরাতের আমি সত্যায়নকারী এবং আমি এমন একজন রসূলের সুসংবাদদাতা, যিনি আমার পরে আগমন করবেন। তাঁর নাম আহমদ। অতঃপর যখন সে স্পষ্ট প্রমাণাদি নিয়ে আগমন করল, তখন তারা বললঃ এ তো এক প্রকাশ্য যাদু।<br>And remember, Jesus, the son of Mary, said: "O Children of Israel! I am the apostle of Allah (sent) to you, confirming the Law (which came) before me, and giving Glad Tidings of an Messenger to come after me, whose name shall be Ahmad." But when he came to them with Clear Signs, they said, "this is evident sorcery!"</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">وَمَنْ أَظْلَمُ مِمَّنِ افْتَرَى عَلَى اللَّهِ الْكَذِبَ وَهُوَ يُدْعَى إِلَى الْإِسْلَامِ وَاللَّهُ لَا يَهْدِي الْقَوْمَ الظَّالِمِينَ</div>
+					<div class="meaning">যে ব্যক্তি ইসলামের দিকে আহুত হয়েও আল্লাহ সম্পর্কে মিথ্যা বলে; তার চাইতে অধিক যালেম আর কে? আল্লাহ যালেম সম্প্রদায়কে পথ প্রদর্শন করেন না।<br>Who doth greater wrong than one who invents falsehood against Allah, even as he is being invited to Islam? And Allah guides not those who do wrong.</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">يُرِيدُونَ لِيُطْفِؤُوا نُورَ اللَّهِ بِأَفْوَاهِهِمْ وَاللَّهُ مُتِمُّ نُورِهِ وَلَوْ كَرِهَ الْكَافِرُونَ</div>
+					<div class="meaning">তারা মুখের ফুঁৎকারে আল্লাহর আলো নিভিয়ে দিতে চায়। আল্লাহ তাঁর আলোকে পূর্ণরূপে বিকশিত করবেন যদিও কাফেররা তা অপছন্দ করে।<br>Their intention is to extinguish Allah.s Light (by blowing) with their mouths: But Allah will complete (the revelation of) His Light, even though the Unbelievers may detest (it).</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">هُوَ الَّذِي أَرْسَلَ رَسُولَهُ بِالْهُدَى وَدِينِ الْحَقِّ لِيُظْهِرَهُ عَلَى الدِّينِ كُلِّهِ وَلَوْ كَرِهَ الْمُشْرِكُونَ</div>
+					<div class="meaning">তিনি তাঁর রসূলকে পথ নির্দেশ ও সত্যধর্ম নিয়ে প্রেরণ করেছেন, যাতে একে সবধর্মের উপর প্রবল করে দেন যদিও মুশরিকরা তা অপছন্দ করে।<br>It is He Who has sent His Messenger with Guidance and the Religion of Truth, that he may proclaim it over all religion, even though the Pagans may detest (it).</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">يَا أَيُّهَا الَّذِينَ آَمَنُوا هَلْ أَدُلُّكُمْ عَلَى تِجَارَةٍ تُنجِيكُم مِّنْ عَذَابٍ أَلِيمٍ</div>
+					<div class="meaning">মুমিনগণ, আমি কি তোমাদেরকে এমন এক বানিজ্যের সন্ধান দিব, যা তোমাদেরকে যন্ত্রণাদায়ক শাস্তি থেকে মুক্তি দেবে?<br>O ye who believe! Shall I lead you to a bargain that will save you from a grievous Penalty?-</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">تُؤْمِنُونَ بِاللَّهِ وَرَسُولِهِ وَتُجَاهِدُونَ فِي سَبِيلِ اللَّهِ بِأَمْوَالِكُمْ وَأَنفُسِكُمْ ذَلِكُمْ خَيْرٌ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ</div>
+					<div class="meaning">তা এই যে, তোমরা আল্লাহ ও তাঁর রসূলের প্রতি বিশ্বাস স্থাপন করবে এবং আল্লাহর পথে নিজেদের ধন-সম্পদ ও জীবনপণ করে জেহাদ করবে। এটাই তোমাদের জন্যে উত্তম; যদি তোমরা বোঝ।<br>That ye believe in Allah and His Messenger, and that ye strive (your utmost) in the Cause of Allah, with your property and your persons: That will be best for you, if ye but knew!</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">يَغْفِرْ لَكُمْ ذُنُوبَكُمْ وَيُدْخِلْكُمْ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ وَمَسَاكِنَ طَيِّبَةً فِي جَنَّاتِ عَدْنٍ ذَلِكَ الْفَوْزُ الْعَظِيمُ</div>
+					<div class="meaning">তিনি তোমাদের পাপরাশি ক্ষমা করবেন এবং এমন জান্নাতে দাখিল করবেন, যার পাদদেশে নদী প্রবাহিত এবং বসবাসের জান্নাতে উত্তম বাসগৃহে। এটা মহাসাফল্য।<br>He will forgive you your sins, and admit you to Gardens beneath which Rivers flow, and to beautiful mansions in Gardens of Eternity: that is indeed the Supreme Achievement.</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">وَأُخْرَى تُحِبُّونَهَا نَصْرٌ مِّنَ اللَّهِ وَفَتْحٌ قَرِيبٌ وَبَشِّرِ الْمُؤْمِنِينَ</div>
+					<div class="meaning">এবং আরও একটি অনুগ্রহ দিবেন, যা তোমরা পছন্দ কর। আল্লাহর পক্ষ থেকে সাহায্য এবং আসন্ন বিজয়। মুমিনদেরকে এর সুসংবাদ দান করুন।<br>And another (favour will He bestow,) which ye do love,- help from Allah and a speedy victory. So give the Glad Tidings to the Believers.</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">يَا أَيُّهَا الَّذِينَ آَمَنُوا كُونوا أَنصَارَ اللَّهِ كَمَا قَالَ عِيسَى ابْنُ مَرْيَمَ لِلْحَوَارِيِّينَ مَنْ أَنصَارِي إِلَى اللَّهِ قَالَ الْحَوَارِيُّونَ نَحْنُ أَنصَارُ اللَّهِ فَآَمَنَت طَّائِفَةٌ مِّن بَنِي إِسْرَائِيلَ وَكَفَرَت طَّائِفَةٌ فَأَيَّدْنَا الَّذِينَ آَمَنُوا عَلَى عَدُوِّهِمْ فَأَصْبَحُوا ظَاهِرِينَ</div>
+					<div class="meaning">মুমিনগণ, তোমরা আল্লাহর সাহায্যকারী হয়ে যাও, যেমন ঈসা ইবনে-মরিয়ম তার শিষ্যবর্গকে বলেছিল, আল্লাহর পথে কে আমার সাহায্যকারী হবে? শিষ্যবর্গ বলেছিলঃ আমরা আল্লাহর পথে সাহায্যকারী। অতঃপর বনী-ইসরাঈলের একদল বিশ্বাস স্থাপন করল এবং একদল কাফের হয়ে গেল। যারা বিশ্বাস স্থাপন করেছিল, আমি তাদেরকে তাদের শত্রুদের মোকাবেলায় শক্তি যোগালাম, ফলে তারা বিজয়ী হল।<br>O ye who believe! Be ye helpers of Allah. As said Jesus the son of Mary to the Disciples, "Who will be my helpers to (the work of) Allah." Said the disciples, "We are Allah.s helpers!" then a portion of the Children of Israel believed, and a portion disbelieved: But We gave power to those who believed, against their enemies, and they became the ones that prevailed</div>
+				</p>
+			</div>
+		</div>
+	</body>

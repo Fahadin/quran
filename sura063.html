@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা মুনাফিকুন Page -->
+		<div id="sura63" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা মুনাফিকুন</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 11</div>
+				<audio class="audio" controls>
+					<source src="audio/063.ogg" type="audio/ogg">
+					<source src="audio/063.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">إِذَا جَاءكَ الْمُنَافِقُونَ قَالُوا نَشْهَدُ إِنَّكَ لَرَسُولُ اللَّهِ وَاللَّهُ يَعْلَمُ إِنَّكَ لَرَسُولُهُ وَاللَّهُ يَشْهَدُ إِنَّ الْمُنَافِقِينَ لَكَاذِبُونَ</div>
+					<div class="meaning">মুনাফিকরা আপনার কাছে এসে বলেঃ আমরা সাক্ষ্য দিচ্ছি যে আপনি নিশ্চয়ই আল্লাহর রসূল। আল্লাহ জানেন যে, আপনি অবশ্যই আল্লাহর রসূল এবং আল্লাহ সাক্ষ্য দিচ্ছেন যে, মুনাফিকরা অবশ্যই মিথ্যাবাদী।<br>When the Hypocrites come to thee, they say, "We bear witness that thou art indeed the Messenger of Allah." Yea, Allah knoweth that thou art indeed His Messenger, and Allah beareth witness that the Hypocrites are indeed liars.</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">اتَّخَذُوا أَيْمَانَهُمْ جُنَّةً فَصَدُّوا عَن سَبِيلِ اللَّهِ إِنَّهُمْ سَاء مَا كَانُوا يَعْمَلُونَ</div>
+					<div class="meaning">তারা তাদের শপথসমূহকে ঢালরূপে ব্যবহার করে। অতঃপর তারা আল্লাহর পথে বাধা সৃষ্টি করে। তারা যা করছে, তা খুবই মন্দ।<br>They have made their oaths a screen (for their misdeeds): thus they obstruct (men) from the Path of Allah. truly evil are their deeds.</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">ذَلِكَ بِأَنَّهُمْ آمَنُوا ثُمَّ كَفَرُوا فَطُبِعَ عَلَى قُلُوبِهِمْ فَهُمْ لَا يَفْقَهُونَ</div>
+					<div class="meaning">এটা এজন্য যে, তারা বিশ্বাস করার পর পুনরায় কাফের হয়েছে। ফলে তাদের অন্তরে মোহর মেরে দেয়া হয়েছে। অতএব তারা বুঝে না।<br>That is because they believed, then they rejected Faith: So a seal was set on their hearts: therefore they understand not.</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">وَإِذَا رَأَيْتَهُمْ تُعْجِبُكَ أَجْسَامُهُمْ وَإِن يَقُولُوا تَسْمَعْ لِقَوْلِهِمْ كَأَنَّهُمْ خُشُبٌ مُّسَنَّدَةٌ يَحْسَبُونَ كُلَّ صَيْحَةٍ عَلَيْهِمْ هُمُ الْعَدُوُّ فَاحْذَرْهُمْ قَاتَلَهُمُ اللَّهُ أَنَّى يُؤْفَكُونَ</div>
+					<div class="meaning">আপনি যখন তাদেরকে দেখেন, তখন তাদের দেহাবয়ব আপনার কাছে প্রীতিকর মনে হয়। আর যদি তারা কথা বলে, তবে আপনি তাদের কথা শুনেন। তারা প্রাচীরে ঠেকানো কাঠসদৃশ্য। প্রত্যেক শোরগোলকে তারা নিজেদের বিরুদ্ধে মনে করে। তারাই শত্রু, অতএব তাদের সম্পর্কে সতর্ক হোন। ধ্বংস করুন আল্লাহ তাদেরকে। তারা কোথায় বিভ্রান্ত হচ্ছে ?<br>When thou lookest at them, their exteriors please thee; and when they speak, thou listenest to their words. They are as (worthless as hollow) pieces of timber propped up, (unable to stand on their own). They think that every cry is against them. They are the enemies; so beware of them. The curse of Allah be on them! How are they deluded (away from the Truth)!</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">وَإِذَا قِيلَ لَهُمْ تَعَالَوْا يَسْتَغْفِرْ لَكُمْ رَسُولُ اللَّهِ لَوَّوْا رُؤُوسَهُمْ وَرَأَيْتَهُمْ يَصُدُّونَ وَهُم مُّسْتَكْبِرُونَ</div>
+					<div class="meaning">যখন তাদেরকে বলা হয়ঃ তোমরা এস, আল্লাহর রসূল তোমাদের জন্য ক্ষমাপ্রার্থনা করবেন, তখন তারা মাথা ঘুরিয়ে নেয় এবং আপনি তাদেরকে দেখেন যে, তারা অহংকার করে মুখ ফিরিয়ে নেয়।<br>And when it is said to them, "Come, the Messenger of Allah will pray for your forgiveness", they turn aside their heads, and thou wouldst see them turning away their faces in arrogance.</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">سَوَاء عَلَيْهِمْ أَسْتَغْفَرْتَ لَهُمْ أَمْ لَمْ تَسْتَغْفِرْ لَهُمْ لَن يَغْفِرَ اللَّهُ لَهُمْ إِنَّ اللَّهَ لَا يَهْدِي الْقَوْمَ الْفَاسِقِينَ</div>
+					<div class="meaning">আপনি তাদের জন্যে ক্ষমাপ্রার্থনা করুন অথবা না করুন, উভয়ই সমান। আল্লাহ কখনও তাদেরকে ক্ষমা করবেন না। আল্লাহ পাপাচারী সম্প্রদায়কে পথপ্রদর্শন করেন না।<br>It is equal to them whether thou pray for their forgiveness or not. Allah will not forgive them. Truly Allah guides not rebellious transgressors.</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">هُمُ الَّذِينَ يَقُولُونَ لَا تُنفِقُوا عَلَى مَنْ عِندَ رَسُولِ اللَّهِ حَتَّى يَنفَضُّوا وَلِلَّهِ خَزَائِنُ السَّمَاوَاتِ وَالْأَرْضِ وَلَكِنَّ الْمُنَافِقِينَ لَا يَفْقَهُونَ</div>
+					<div class="meaning">তারাই বলেঃ আল্লাহর রাসূলের সাহচর্যে যারা আছে তাদের জন্যে ব্যয় করো না। পরিণামে তারা আপনা-আপনি সরে যাবে। ভূ ও নভোমন্ডলের ধন-ভান্ডার আল্লাহরই কিন্তু মুনাফিকরা তা বোঝে না।<br>They are the ones who say, "Spend nothing on those who are with Allah.s Messenger, to the end that they may disperse (and quit Medina)." But to Allah belong the treasures of the heavens and the earth; but the Hypocrites understand not.</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">يَقُولُونَ لَئِن رَّجَعْنَا إِلَى الْمَدِينَةِ لَيُخْرِجَنَّ الْأَعَزُّ مِنْهَا الْأَذَلَّ وَلِلَّهِ الْعِزَّةُ وَلِرَسُولِهِ وَلِلْمُؤْمِنِينَ وَلَكِنَّ الْمُنَافِقِينَ لَا يَعْلَمُونَ</div>
+					<div class="meaning">তারাই বলেঃ আমরা যদি মদীনায় প্রত্যাবর্তন করি তবে সেখান থেকে সবল অবশ্যই দুর্বলকে বহিস্কৃত করবে। শক্তি তো আল্লাহ তাঁর রসূল ও মুমিনদেরই কিন্তু মুনাফিকরা তা জানে না।<br>They say, "If we return to Medina, surely the more honourable (element) will expel therefrom the meaner." But honour belongs to Allah and His Messenger, and to the Believers; but the Hypocrites know not.</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تُلْهِكُمْ أَمْوَالُكُمْ وَلَا أَوْلَادُكُمْ عَن ذِكْرِ اللَّهِ وَمَن يَفْعَلْ ذَلِكَ فَأُوْلَئِكَ هُمُ الْخَاسِرُونَ</div>
+					<div class="meaning">মুমিনগণ! তোমাদের ধন-সম্পদ ও সন্তান-সন্ততি যেন তোমাদেরকে আল্লাহর স্মরণ থেকে গাফেল না করে। যারা এ কারণে গাফেল হয়, তারাই তো ক্ষতিগ্রস্ত।<br>O ye who believe! Let not your riches or your children divert you from the remembrance of Allah. If any act thus, the loss is their own.</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">وَأَنفِقُوا مِن مَّا رَزَقْنَاكُم مِّن قَبْلِ أَن يَأْتِيَ أَحَدَكُمُ الْمَوْتُ فَيَقُولَ رَبِّ لَوْلَا أَخَّرْتَنِي إِلَى أَجَلٍ قَرِيبٍ فَأَصَّدَّقَ وَأَكُن مِّنَ الصَّالِحِينَ</div>
+					<div class="meaning">আমি তোমাদেরকে যা দিয়েছি, তা থেকে মৃত্যু আসার আগেই ব্যয় কর। অন্যথায় সে বলবেঃ হে আমার পালনকর্তা, আমাকে আরও কিছুকাল অবকাশ দিলে না কেন? তাহলে আমি সদকা করতাম এবং সৎকর্মীদের অন্তর্ভুক্ত হতাম।<br>and spend something (in charity) out of the substance which We have bestowed on you, before Death should come to any of you and he should say, "O my Lord! why didst Thou not give me respite for a little while? I should then have given (largely) in charity, and I should have been one of the doers of good".</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">وَلَن يُؤَخِّرَ اللَّهُ نَفْسًا إِذَا جَاء أَجَلُهَا وَاللَّهُ خَبِيرٌ بِمَا تَعْمَلُونَ</div>
+					<div class="meaning">প্রত্যেক ব্যক্তির নির্ধারিত সময় যখন উপস্থিত হবে, তখন আল্লাহ কাউকে অবকাশ দেবেন না। তোমরা যা কর, আল্লাহ সে বিষয়ে খবর রাখেন।<br>But to no soul will Allah grant respite when the time appointed (for it) has come; and Allah is well acquainted with (all) that ye do.</div>
+				</p>
+			</div>
+		</div>
+	</body>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আত্ব-ত্বালাক্ব Page -->
+		<div id="sura65" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আত্ব-ত্বালাক্ব</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 12</div>
+				<audio class="audio" controls>
+					<source src="audio/065.ogg" type="audio/ogg">
+					<source src="audio/065.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">يَا أَيُّهَا النَّبِيُّ إِذَا طَلَّقْتُمُ النِّسَاء فَطَلِّقُوهُنَّ لِعِدَّتِهِنَّ وَأَحْصُوا الْعِدَّةَ وَاتَّقُوا اللَّهَ رَبَّكُمْ لَا تُخْرِجُوهُنَّ مِن بُيُوتِهِنَّ وَلَا يَخْرُجْنَ إِلَّا أَن يَأْتِينَ بِفَاحِشَةٍ مُّبَيِّنَةٍ وَتِلْكَ حُدُودُ اللَّهِ وَمَن يَتَعَدَّ حُدُودَ اللَّهِ فَقَدْ ظَلَمَ نَفْسَهُ لَا تَدْرِي لَعَلَّ اللَّهَ يُحْدِثُ بَعْدَ ذَلِكَ أَمْرًا</div>
+					<div class="meaning">হে নবী, তোমরা যখন স্ত্রীদেরকে তালাক দিতে চাও, তখন তাদেরকে তালাক দিয়ো ইদ্দতের প্রতি লক্ষ্য রেখে এবং ইদ্দত গণনা করো। তোমরা তোমাদের পালনকর্তা আল্লাহকে ভয় করো। তাদেরকে তাদের গৃহ থেকে বহিস্কার করো না এবং তারাও যেন বের না হয় যদি না তারা কোন সুস্পষ্ট নির্লজ্জ কাজে লিপ্ত হয়। এগুলো আল্লাহর নির্ধারিত সীমা। যে ব্যক্তি আল্লাহর সীমালংঘন করে, সে নিজেরই অনিষ্ট করে। সে জানে না, হয়তো আল্লাহ এই তালাকের পর কোন নতুন উপায় করে দেবেন।<br>O Prophet! When ye do divorce women, divorce them at their prescribed periods, and count (accurately), their prescribed periods: And fear Allah your Lord: and turn them not out of their houses, nor shall they (themselves) leave, except in case they are guilty of some open lewdness, those are limits set by Allah. and any who transgresses the limits of Allah, does verily wrong his (own) soul: thou knowest not if perchance Allah will bring about thereafter some new situation.</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">فَإِذَا بَلَغْنَ أَجَلَهُنَّ فَأَمْسِكُوهُنَّ بِمَعْرُوفٍ أَوْ فَارِقُوهُنَّ بِمَعْرُوفٍ وَأَشْهِدُوا ذَوَيْ عَدْلٍ مِّنكُمْ وَأَقِيمُوا الشَّهَادَةَ لِلَّهِ ذَلِكُمْ يُوعَظُ بِهِ مَن كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ وَمَن يَتَّقِ اللَّهَ يَجْعَل لَّهُ مَخْرَجًا</div>
+					<div class="meaning">অতঃপর তারা যখন তাদের ইদ্দতকালে পৌঁছে, তখন তাদেরকে যথোপযুক্ত পন্থায় রেখে দেবে অথবা যথোপযুক্ত পন্থায় ছেড়ে দেবে এবং তোমাদের মধ্য থেকে দু’জন নির্ভরযোগ্য লোককে সাক্ষী রাখবে। তোমরা আল্লাহর উদ্দেশ্যে সাক্ষ্য দিবে। এতদ্দ্বারা যে ব্যক্তি আল্লাহ ও পরকালে বিশ্বাস করে, তাকে উপদেশ দেয়া হচ্ছে। আর যে আল্লাহকে ভয় করে, আল্লাহ তার জন্যে নিস্কৃতির পথ করে দেবেন।<br>Thus when they fulfil their term appointed, either take them back on equitable terms or part with them on equitable terms; and take for witness two persons from among you, endued with justice, and establish the evidence (as) before Allah. Such is the admonition given to him who believes in Allah and the Last Day. And for those who fear Allah, He (ever) prepares a way out,</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ إِنَّ اللَّهَ بَالِغُ أَمْرِهِ قَدْ جَعَلَ اللَّهُ لِكُلِّ شَيْءٍ قَدْرًا</div>
+					<div class="meaning">এবং তাকে তার ধারণাতীত জায়গা থেকে রিযিক দেবেন। যে ব্যক্তি আল্লাহর উপর ভরসা করে তার জন্যে তিনিই যথেষ্ট। আল্লাহ তার কাজ পূর্ণ করবেন। আল্লাহ সবকিছুর জন্যে একটি পরিমাণ স্থির করে রেখেছেন।<br>And He provides for him from (sources) he never could imagine. And if any one puts his trust in Allah, sufficient is ((Allah)) for him. For Allah will surely accomplish his purpose: verily, for all things has Allah appointed a due proportion.</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">وَاللَّائِي يَئِسْنَ مِنَ الْمَحِيضِ مِن نِّسَائِكُمْ إِنِ ارْتَبْتُمْ فَعِدَّتُهُنَّ ثَلَاثَةُ أَشْهُرٍ وَاللَّائِي لَمْ يَحِضْنَ وَأُوْلَاتُ الْأَحْمَالِ أَجَلُهُنَّ أَن يَضَعْنَ حَمْلَهُنَّ وَمَن يَتَّقِ اللَّهَ يَجْعَل لَّهُ مِنْ أَمْرِهِ يُسْرًا</div>
+					<div class="meaning">তোমাদের স্ত্রীদের মধ্যে যাদের ঋতুবর্তী হওয়ার আশা নেই, তাদের ব্যাপারে সন্দেহ হলে তাদের ইদ্দত হবে তিন মাস। আর যারা এখনও ঋতুর বয়সে পৌঁছেনি, তাদেরও অনুরূপ ইদ্দতকাল হবে। গর্ভবর্তী নারীদের ইদ্দতকাল সন্তানপ্রসব পর্যন্ত। যে আল্লাহকে ভয় করে, আল্লাহ তার কাজ সহজ করে দেন।<br>Such of your women as have passed the age of monthly courses, for them the prescribed period, if ye have any doubts, is three months, and for those who have no courses (it is the same): for those who carry (life within their wombs), their period is until they deliver their burdens: and for those who fear Allah, He will make their path easy.</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">ذَلِكَ أَمْرُ اللَّهِ أَنزَلَهُ إِلَيْكُمْ وَمَن يَتَّقِ اللَّهَ يُكَفِّرْ عَنْهُ سَيِّئَاتِهِ وَيُعْظِمْ لَهُ أَجْرًا</div>
+					<div class="meaning">এটা আল্লাহর নির্দেশ, যা তিনি তোমাদের প্রতি নাযিল করেছেন। যে আল্লাহকে ভয় করে, আল্লাহ তার পাপ মোচন করেন এবং তাকে মহাপুরস্কার দেন।<br>That is the Command of Allah, which He has sent down to you: and if any one fears Allah, He will remove his ills, from him, and will enlarge his reward.</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">أَسْكِنُوهُنَّ مِنْ حَيْثُ سَكَنتُم مِّن وُجْدِكُمْ وَلَا تُضَارُّوهُنَّ لِتُضَيِّقُوا عَلَيْهِنَّ وَإِن كُنَّ أُولَاتِ حَمْلٍ فَأَنفِقُوا عَلَيْهِنَّ حَتَّى يَضَعْنَ حَمْلَهُنَّ فَإِنْ أَرْضَعْنَ لَكُمْ فَآتُوهُنَّ أُجُورَهُنَّ وَأْتَمِرُوا بَيْنَكُم بِمَعْرُوفٍ وَإِن تَعَاسَرْتُمْ فَسَتُرْضِعُ لَهُ أُخْرَى</div>
+					<div class="meaning">তোমরা তোমাদের সামর্থø অনুযায়ী যেরূপ গৃহে বাস কর, তাদেরকেও বসবাসের জন্যে সেরূপ গৃহ দাও। তাদেরকে কষ্ট দিয়ে সংকটাপন্ন করো না। যদি তারা গর্ভবতী হয়, তবে সন্তানপ্রসব পর্যন্ত তাদের ব্যয়ভার বহন করবে। যদি তারা তোমাদের সন্তানদেরকে স্তন্যদান করে, তবে তাদেরকে প্রাপ্য পারিশ্রমিক দেবে এবং এ সম্পর্কে পরস্পর সংযতভাবে পরামর্শ করবে। তোমরা যদি পরস্পর জেদ কর, তবে অন্য নারী স্তন্যদান করবে।<br>Let the women live (in 'iddat) in the same style as ye live, according to your means: Annoy them not, so as to restrict them. And if they carry (life in their wombs), then spend (your substance) on them until they deliver their burden: and if they suckle your (offspring), give them their recompense: and take mutual counsel together, according to what is just and reasonable. And if ye find yourselves in difficulties, let another woman suckle (the child) on the (father's) behalf.</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">لِيُنفِقْ ذُو سَعَةٍ مِّن سَعَتِهِ وَمَن قُدِرَ عَلَيْهِ رِزْقُهُ فَلْيُنفِقْ مِمَّا آتَاهُ اللَّهُ لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا مَا آتَاهَا سَيَجْعَلُ اللَّهُ بَعْدَ عُسْرٍ يُسْرًا</div>
+					<div class="meaning">বিত্তশালী ব্যক্তি তার বিত্ত অনুযায়ী ব্যয় করবে। যে ব্যক্তি সীমিত পরিমাণে রিযিকপ্রাপ্ত, সে আল্লাহ যা দিয়েছেন, তা থেকে ব্যয় করবে। আল্লাহ যাকে যা দিয়েছেন, তদপেক্ষা বেশী ব্যয় করার আদেশ কাউকে করেন না। আল্লাহ কষ্টের পর সুখ দেবেন।<br>Let the man of means spend according to his means: and the man whose resources are restricted, let him spend according to what Allah has given him. Allah puts no burden on any person beyond what He has given him. After a difficulty, Allah will soon grant relief.</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">وَكَأَيِّن مِّن قَرْيَةٍ عَتَتْ عَنْ أَمْرِ رَبِّهَا وَرُسُلِهِ فَحَاسَبْنَاهَا حِسَابًا شَدِيدًا وَعَذَّبْنَاهَا عَذَابًا نُّكْرًا</div>
+					<div class="meaning">অনেক জনপদ তাদের পালনকর্তা ও তাঁর রসূলগণের আদেশ অমান্য করেছিল, অতঃপর আমি তাদেরকে কঠোর হিসাবে ধৃত করেছিলাম এবং তাদেরকে ভীষণ শাস্তি দিয়েছিলাম।<br>How many populations that insolently opposed the Command of their Lord and of His apostles, did We not then call to account,- to severe account?- and We imposed on them an exemplary Punishment.</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">فَذَاقَتْ وَبَالَ أَمْرِهَا وَكَانَ عَاقِبَةُ أَمْرِهَا خُسْرًا</div>
+					<div class="meaning">অতঃপর তাদের কর্মের শাস্তি আস্বাদন করল এবং তাদের কর্মের পরিণাম ক্ষতিই ছিল।<br>Then did they taste the evil result of their conduct, and the End of their conduct was Perdition.</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">أَعَدَّ اللَّهُ لَهُمْ عَذَابًا شَدِيدًا فَاتَّقُوا اللَّهَ يَا أُوْلِي الْأَلْبَابِ الَّذِينَ آمَنُوا قَدْ أَنزَلَ اللَّهُ إِلَيْكُمْ ذِكْرًا</div>
+					<div class="meaning">আল্লাহ তাদের জন্যে যন্ত্রণাদায়ক শাস্তি প্রস্তত রেখেছেন অতএব, হে বুদ্ধিমানগণ, যারা ঈমান এনেছ, তোমরা আল্লাহকে ভয় কর। আল্লাহ তোমাদের প্রতি উপদেশ নাযিল করেছেন।<br>Allah has prepared for them a severe Punishment (in the Hereafter). Therefore fear Allah, O ye men of understanding - who have believed!- for Allah hath indeed sent down to you a Message,-</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">رَّسُولًا يَتْلُو عَلَيْكُمْ آيَاتِ اللَّهِ مُبَيِّنَاتٍ لِّيُخْرِجَ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ مِنَ الظُّلُمَاتِ إِلَى النُّورِ وَمَن يُؤْمِن بِاللَّهِ وَيَعْمَلْ صَالِحًا يُدْخِلْهُ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ خَالِدِينَ فِيهَا أَبَدًا قَدْ أَحْسَنَ اللَّهُ لَهُ رِزْقًا</div>
+					<div class="meaning">একজন রসূল, যিনি তোমাদের কাছে আল্লাহর সুস্পষ্ট আয়াতসমূহ পাঠ করেন, যাতে বিশ্বাসী ও সৎকর্মপরায়ণদের অন্ধকার থেকে আলোতে আনয়ন করেন। যে আল্লাহর প্রতি বিশ্বাস স্থাপন করে ও সৎকর্ম সম্পাদন করে, তিনি তাকে দাখিল করবেন জান্নাতে, যার তলদেশে নদী প্রবাহিত, তথায় তারা চিরকাল থাকবে। আল্লাহ তাকে উত্তম রিযিক দেবেন।<br>An Messenger, who rehearses to you the Signs of Allah containing clear explanations, that he may lead forth those who believe and do righteous deeds from the depths of Darkness into Light. And those who believe in Allah and work righteousness, He will admit to Gardens beneath which Rivers flow, to dwell therein for ever: Allah has indeed granted for them a most excellent Provision.</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">اللَّهُ الَّذِي خَلَقَ سَبْعَ سَمَاوَاتٍ وَمِنَ الْأَرْضِ مِثْلَهُنَّ يَتَنَزَّلُ الْأَمْرُ بَيْنَهُنَّ لِتَعْلَمُوا أَنَّ اللَّهَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ وَأَنَّ اللَّهَ قَدْ أَحَاطَ بِكُلِّ شَيْءٍ عِلْمًا</div>
+					<div class="meaning">আল্লাহ সপ্তাকাশ সৃষ্টি করেছেন এবং পৃথিবীও সেই পরিমাণে, এসবের মধ্যে তাঁর আদেশ অবতীর্ণ হয়, যাতে তোমরা জানতে পার যে, আল্লাহ সর্বশক্তিমান এবং সবকিছু তাঁর গোচরীভূত।<br>Allah is He Who created seven Firmaments and of the earth a similar number. Through the midst of them (all) descends His Command: that ye may know that Allah has power over all things, and that Allah comprehends, all things in (His) Knowledge.</div>
+				</p>
+			</div>
+		</div>
+	</body>

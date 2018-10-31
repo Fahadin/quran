@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আল আ’লা Page -->
+		<div id="sura87" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আল আ’লা</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 19</div>
+				<audio class="audio" controls>
+					<source src="audio/087.ogg" type="audio/ogg">
+					<source src="audio/087.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى</div>
+					<div class="meaning">আপনি আপনার মহান পালনকর্তার নামের পবিত্রতা বর্ণনা করুন<br>Glorify the name of thy Guardian-Lord Most High,</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">الَّذِي خَلَقَ فَسَوَّى</div>
+					<div class="meaning">যিনি সৃষ্টি করেছেন ও সুবিন্যস্ত করেছেন।<br>Who hath created, and further, given order and proportion;</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">وَالَّذِي قَدَّرَ فَهَدَى</div>
+					<div class="meaning">এবং যিনি সুপরিমিত করেছেন ও পথ প্রদর্শন করেছেন<br>Who hath ordained laws. And granted guidance;</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">وَالَّذِي أَخْرَجَ الْمَرْعَى</div>
+					<div class="meaning">এবং যিনি তৃণাদি উৎপন্ন করেছেন,<br>And Who bringeth out the (green and luscious) pasture,</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">فَجَعَلَهُ غُثَاء أَحْوَى</div>
+					<div class="meaning">অতঃপর করেছেন তাকে কাল আবর্জনা।<br>And then doth make it (but) swarthy stubble.</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">سَنُقْرِؤُكَ فَلَا تَنسَى</div>
+					<div class="meaning">আমি আপনাকে পাঠ করাতে থাকব, ফলে আপনি বিস্মৃত হবেন না<br>By degrees shall We teach thee to declare (the Message), so thou shalt not forget,</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">إِلَّا مَا شَاء اللَّهُ إِنَّهُ يَعْلَمُ الْجَهْرَ وَمَا يَخْفَى</div>
+					<div class="meaning">আল্লাহ যা ইচ্ছা করেন তা ব্যতীত। নিশ্চয় তিনি জানেন প্রকাশ্য ও গোপন বিষয়।<br>Except as Allah wills: For He knoweth what is manifest and what is hidden.</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">وَنُيَسِّرُكَ لِلْيُسْرَى</div>
+					<div class="meaning">আমি আপনার জন্যে সহজ শরীয়ত সহজতর করে দেবো।<br>And We will make it easy for thee (to follow) the simple (Path).</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">فَذَكِّرْ إِن نَّفَعَتِ الذِّكْرَى</div>
+					<div class="meaning">উপদেশ ফলপ্রসূ হলে উপদেশ দান করুন,<br>Therefore give admonition in case the admonition profits (the hearer).</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">سَيَذَّكَّرُ مَن يَخْشَى</div>
+					<div class="meaning">যে ভয় করে, সে উপদেশ গ্রহণ করবে,<br>The admonition will be received by those who fear ((Allah)):</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">وَيَتَجَنَّبُهَا الْأَشْقَى</div>
+					<div class="meaning">আর যে, হতভাগা, সে তা উপেক্ষা করবে,<br>But it will be avoided by those most unfortunate ones,</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">الَّذِي يَصْلَى النَّارَ الْكُبْرَى</div>
+					<div class="meaning">সে মহা-অগ্নিতে প্রবেশ করবে।<br>Who will enter the Great Fire,</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">ثُمَّ لَا يَمُوتُ فِيهَا وَلَا يَحْيَى</div>
+					<div class="meaning">অতঃপর সেখানে সে মরবেও না, জীবিতও থাকবে না।<br>In which they will then neither die nor live.</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">قَدْ أَفْلَحَ مَن تَزَكَّى</div>
+					<div class="meaning">নিশ্চয় সাফল্য লাভ করবে সে, যে শুদ্ধ হয়<br>But those will prosper who purify themselves,</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">وَذَكَرَ اسْمَ رَبِّهِ فَصَلَّى</div>
+					<div class="meaning">এবং তার পালনকর্তার নাম স্মরণ করে, অতঃপর নামায আদায় করে।<br>And glorify the name of their Guardian-Lord, and (lift their hearts) in prayer.</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">بَلْ تُؤْثِرُونَ الْحَيَاةَ الدُّنْيَا</div>
+					<div class="meaning">বস্তুতঃ তোমরা পার্থিব জীবনকে অগ্রাধিকার দাও,<br>Day (behold), ye prefer the life of this world;</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">وَالْآخِرَةُ خَيْرٌ وَأَبْقَى</div>
+					<div class="meaning">অথচ পরকালের জীবন উৎকৃষ্ট ও স্থায়ী।<br>But the Hereafter is better and more enduring.</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">إِنَّ هَذَا لَفِي الصُّحُفِ الْأُولَى</div>
+					<div class="meaning">এটা লিখিত রয়েছে পূর্ববতী কিতাবসমূহে;<br>And this is in the Books of the earliest (Revelation),-</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">صُحُفِ إِبْرَاهِيمَ وَمُوسَى</div>
+					<div class="meaning">ইব্রাহীম ও মূসার কিতাবসমূহে।<br>The Books of Abraham and Moses.</div>
+				</p>
+			</div>
+		</div>
+	</body>

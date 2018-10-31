@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা ত্বীন Page -->
+		<div id="sura95" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা ত্বীন</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 8</div>
+				<audio class="audio" controls>
+					<source src="audio/095.ogg" type="audio/ogg">
+					<source src="audio/095.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">وَالتِّينِ وَالزَّيْتُونِ</div>
+					<div class="meaning">শপথ আঞ্জীর (ডুমুর) ও যয়তুনের,<br>By the Fig and the Olive,</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">وَطُورِ سِينِينَ</div>
+					<div class="meaning">এবং সিনাই প্রান্তরস্থ তূর পর্বতের,<br>And the Mount of Sinai,</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">وَهَذَا الْبَلَدِ الْأَمِينِ</div>
+					<div class="meaning">এবং এই নিরাপদ নগরীর।<br>And this City of security,-</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">لَقَدْ خَلَقْنَا الْإِنسَانَ فِي أَحْسَنِ تَقْوِيمٍ</div>
+					<div class="meaning">আমি সৃষ্টি করেছি মানুষকে সুন্দরতর অবয়বে।<br>We have indeed created man in the best of moulds,</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">ثُمَّ رَدَدْنَاهُ أَسْفَلَ سَافِلِينَ</div>
+					<div class="meaning">অতঃপর তাকে ফিরিয়ে দিয়েছি নীচ থেকে নীচে।<br>Then do We abase him (to be) the lowest of the low,-</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ</div>
+					<div class="meaning">কিন্তু যারা বিশ্বাস স্থাপন করেছে ও সৎকর্ম করেছে, তাদের জন্যে রয়েছে অশেষ পুরস্কার।<br>Except such as believe and do righteous deeds: For they shall have a reward unfailing.</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">فَمَا يُكَذِّبُكَ بَعْدُ بِالدِّينِ</div>
+					<div class="meaning">অতঃপর কেন তুমি অবিশ্বাস করছ কেয়ামতকে?<br>Then what can, after this, contradict thee, as to the judgment (to come)?</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ</div>
+					<div class="meaning">আল্লাহ কি বিচারকদের মধ্যে শ্রেষ্টতম বিচারক নন?<br>Is not Allah the wisest of judges?</div>
+				</p>
+			</div>
+		</div>
+	</body>

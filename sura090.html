@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Quran Bangla</title>
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<style>
+			.ayat {
+				background: #ddd;
+				margin: 0px auto;
+				padding: 6px;
+				width: 40%;
+				overflow: hidden;
+				text-align: center;
+				text-shadow: none !important;
+				border-radius: 2px;
+			}
+			.firstsuru {
+				background: #4f8ff7;
+				color: #000;
+				text-shadow: none !important;
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			.firstSura {
+				font-size: 25px;
+				margin-bottom: 5px; 
+			}
+			.sura {
+				font-size: 37px;
+				text-align: right;
+				margin: 5px 0px;
+				text-shadow: none !important;
+			}
+			.meaning {
+				margin: 0px 0px;
+				line-height: 1.4em;
+				text-shadow: none !important;
+			}
+			.right {
+				text-align: right;
+			}
+			.center {
+				text-align: center;
+			}
+			.suraCount {
+				background: #4f8ff7;
+				text-shadow: none !important;
+				color: #ffffff;
+				text-align: center;
+				border-radius: 10%;
+				width: 12%;
+				padding: 3px;
+				margin-left: 87%;
+				margin-right: 1%;
+				margin-top: 12px; 
+				margin-bottom: 8px;
+				box-shadow: 0px 0px 3px #4f8ff7;
+			}
+		</style>
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/leaflet.js"></script>
+	</head>
+	
+	<body>
+		<!-- সূরা আল বালাদ Page -->
+		<div id="sura90" data-role="page">
+			<header data-role="header" data-position="fixed" data-id="appHeader">
+				<h1>সূরা আল বালাদ</h1>
+				<a href="suraitems.html" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+			</header>
+			<div data-role="content">
+				<div class="ayat">আয়াত - 20</div>
+				<audio class="audio" controls>
+					<source src="audio/090.ogg" type="audio/ogg">
+					<source src="audio/090.mp3" type="audio/mpeg">
+				</audio>
+				<style>
+					.audio {
+						width: 80%;
+						margin: 20px 10% 0px 10%;
+						border-radius: 3px;
+						box-shadow: 0px 0px 5px #000;
+					}
+				</style>
+				<p>
+					<div class="firstsuru">
+						<div class="firstSura">بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ</div>
+						<div class="firstSuraBangla">শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</div>
+					</div>
+					<hr>
+					<p class="suraCount">1</p>
+					<div class="sura">لَا أُقْسِمُ بِهَذَا الْبَلَدِ</div>
+					<div class="meaning">আমি এই নগরীর শপথ করি<br>I do call to witness this City;-</div>
+					<hr>
+					<p class="suraCount">2</p>
+					<div class="sura">وَأَنتَ حِلٌّ بِهَذَا الْبَلَدِ</div>
+					<div class="meaning">এবং এই নগরীতে আপনার উপর কোন প্রতিবন্ধকতা নেই।<br>And thou art a freeman of this City;-</div>
+					<hr>
+					<p class="suraCount">3</p>
+					<div class="sura">وَوَالِدٍ وَمَا وَلَدَ</div>
+					<div class="meaning">শপথ জনকের ও যা জন্ম দেয়।<br>And (the mystic ties of) parent and child;-</div>
+					<hr>
+					<p class="suraCount">4</p>
+					<div class="sura">لَقَدْ خَلَقْنَا الْإِنسَانَ فِي كَبَدٍ</div>
+					<div class="meaning">নিশ্চয় আমি মানুষকে শ্রমনির্ভররূপে সৃষ্টি করেছি।<br>Verily We have created man into toil and struggle.</div>
+					<hr>
+					<p class="suraCount">5</p>
+					<div class="sura">أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌ</div>
+					<div class="meaning">সে কি মনে করে যে, তার উপর কেউ ক্ষমতাবান হবে না ?<br>Thinketh he, that none hath power over him?</div>
+					<hr>
+					<p class="suraCount">6</p>
+					<div class="sura">يَقُولُ أَهْلَكْتُ مَالًا لُّبَدًا</div>
+					<div class="meaning">সে বলেঃ আমি প্রচুর ধন-সম্পদ ব্যয় করেছি।<br>He may say (boastfully); Wealth have I squandered in abundance!</div>
+					<hr>
+					<p class="suraCount">7</p>
+					<div class="sura">أَيَحْسَبُ أَن لَّمْ يَرَهُ أَحَدٌ</div>
+					<div class="meaning">সে কি মনে করে যে, তাকে কেউ দেখেনি?<br>Thinketh he that none beholdeth him?</div>
+					<hr>
+					<p class="suraCount">8</p>
+					<div class="sura">أَلَمْ نَجْعَل لَّهُ عَيْنَيْنِ</div>
+					<div class="meaning">আমি কি তাকে দেইনি চক্ষুদ্বয়,<br>Have We not made for him a pair of eyes?-</div>
+					<hr>
+					<p class="suraCount">9</p>
+					<div class="sura">وَلِسَانًا وَشَفَتَيْنِ</div>
+					<div class="meaning">জিহবা ও ওষ্ঠদ্বয় ?<br>And a tongue, and a pair of lips?-</div>
+					<hr>
+					<p class="suraCount">10</p>
+					<div class="sura">وَهَدَيْنَاهُ النَّجْدَيْنِ</div>
+					<div class="meaning">বস্তুতঃ আমি তাকে দু’টি পথ প্রদর্শন করেছি।<br>And shown him the two highways?</div>
+					<hr>
+					<p class="suraCount">11</p>
+					<div class="sura">فَلَا اقْتَحَمَ الْعَقَبَةَ</div>
+					<div class="meaning">অতঃপর সে ধর্মের ঘাঁটিতে প্রবেশ করেনি।<br>But he hath made no haste on the path that is steep.</div>
+					<hr>
+					<p class="suraCount">12</p>
+					<div class="sura">وَمَا أَدْرَاكَ مَا الْعَقَبَةُ</div>
+					<div class="meaning">আপনি জানেন, সে ঘাঁটি কি?<br>And what will explain to thee the path that is steep?-</div>
+					<hr>
+					<p class="suraCount">13</p>
+					<div class="sura">فَكُّ رَقَبَةٍ</div>
+					<div class="meaning">তা হচ্ছে দাসমুক্তি<br>(It is:) freeing the bondman;</div>
+					<hr>
+					<p class="suraCount">14</p>
+					<div class="sura">أَوْ إِطْعَامٌ فِي يَوْمٍ ذِي مَسْغَبَةٍ</div>
+					<div class="meaning">অথবা দুর্ভিক্ষের দিনে অন্নদান।<br>Or the giving of food in a day of privation</div>
+					<hr>
+					<p class="suraCount">15</p>
+					<div class="sura">يَتِيمًا ذَا مَقْرَبَةٍ</div>
+					<div class="meaning">এতীম আত্বীয়কে<br>To the orphan with claims of relationship,</div>
+					<hr>
+					<p class="suraCount">16</p>
+					<div class="sura">أَوْ مِسْكِينًا ذَا مَتْرَبَةٍ</div>
+					<div class="meaning">অথবা ধুলি-ধুসরিত মিসকীনকে<br>Or to the indigent (down) in the dust.</div>
+					<hr>
+					<p class="suraCount">17</p>
+					<div class="sura">ثُمَّ كَانَ مِنَ الَّذِينَ آمَنُوا وَتَوَاصَوْا بِالصَّبْرِ وَتَوَاصَوْا بِالْمَرْحَمَةِ</div>
+					<div class="meaning">অতঃপর তাদের অন্তর্ভুক্ত হওয়া, যারা ঈমান আনে এবং পরস্পরকে উপদেশ দেয় সবরের ও উপদেশ দেয় দয়ার।<br>Then will he be of those who believe, and enjoin patience, (constancy, and self-restraint), and enjoin deeds of kindness and compassion.</div>
+					<hr>
+					<p class="suraCount">18</p>
+					<div class="sura">أُوْلَئِكَ أَصْحَابُ الْمَيْمَنَةِ</div>
+					<div class="meaning">তারাই সৌভাগ্যশালী।<br>Such are the Companions of the Right Hand.</div>
+					<hr>
+					<p class="suraCount">19</p>
+					<div class="sura">وَالَّذِينَ كَفَرُوا بِآيَاتِنَا هُمْ أَصْحَابُ الْمَشْأَمَةِ</div>
+					<div class="meaning">আর যারা আমার আয়াতসমূহ অস্বীকার করে তারাই হতভাগা।<br>But those who reject Our Signs, they are the (unhappy) Companions of the Left Hand.</div>
+					<hr>
+					<p class="suraCount">20</p>
+					<div class="sura">عَلَيْهِمْ نَارٌ مُّؤْصَدَةٌ</div>
+					<div class="meaning">তারা অগ্নিপরিবেষ্টিত অবস্থায় বন্দী থাকবে।<br>On them will be Fire vaulted over (all round).</div>
+				</p>
+			</div>
+		</div>
+	</body>
